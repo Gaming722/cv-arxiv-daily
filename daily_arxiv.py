@@ -22,6 +22,9 @@ arxiv_url = "http://arxiv.org/"
 GITHUB_CODE_SEARCH_URL = "https://api.github.com/search/code"
 GITHUB_URL_RE = re.compile(r'https?://github\.com/[\w.-]+/[\w.-]+')
 
+# free, no-auth-required citation lookup - used as a rough quality signal
+SEMANTIC_SCHOLAR_URL = "https://api.semanticscholar.org/graph/v1/paper/arXiv:{}"
+
 def load_config(config_file:str) -> dict:
     '''
     config_file: input config file path
@@ -82,6 +85,41 @@ def pretty_math(s:str) -> str:
     ret += f'{space_trail}${match.group()[1:-1].strip()}${space_leading}'
     ret += s[math_end:]
     return ret
+
+def escape_table_cell(s:str) -> str:
+    # a literal "|" would otherwise break the markdown table it's embedded in
+    return s.replace('|', '\\|')
+
+def summarize_abstract(abstract:str, max_words:int = 30) -> str:
+    '''
+    Short abstract preview for the compact table view, so a paper's gist is
+    visible without switching to card view.
+    '''
+    words = (abstract or '').split()
+    snippet = ' '.join(words[:max_words])
+    if len(words) > max_words:
+        snippet += '...'
+    return escape_table_cell(snippet)
+
+def fetch_citation_count(arxiv_id:str):
+    '''
+    Rough, free quality signal via Semantic Scholar (no API key required).
+    Returns None on any failure/not-yet-indexed paper - callers should treat
+    that as "unknown", not "zero".
+    '''
+    try:
+        r = requests.get(SEMANTIC_SCHOLAR_URL.format(arxiv_id),
+                          params={"fields": "citationCount"}, timeout=10)
+    except requests.RequestException as e:
+        logging.warning(f'Semantic Scholar lookup failed for {arxiv_id}: {e}')
+        return None
+    finally:
+        time.sleep(1)  # be polite to the shared, unauthenticated rate limit
+
+    if r.status_code != 200:
+        logging.warning(f'Semantic Scholar lookup returned {r.status_code} for {arxiv_id}')
+        return None
+    return r.json().get('citationCount')
 
 def extract_code_link_from_abstract(abstract:str):
     '''
@@ -174,14 +212,16 @@ def get_daily_papers(topic,query="slam", max_results=2):
             "url": paper_url,
             "abstract": paper_abstract,
             "code": extract_code_link_from_abstract(paper_abstract),
+            "citations": None,
         }
 
     return {topic:content}
 
 def update_paper_links(filename):
     '''
-    weekly job: backfill code links for existing papers that don't have one
-    yet (repos are often published well after the paper itself).
+    weekly job: backfill code links and citation counts for existing papers
+    that don't have them yet (repos are often published, and citations start
+    accruing, well after the paper itself first appears).
     '''
     with open(filename,"r") as f:
         content = f.read()
@@ -190,12 +230,17 @@ def update_paper_links(filename):
     for keyword, papers in json_data.items():
         logging.info(f'keywords = {keyword}')
         for paper_id, paper in papers.items():
-            if paper.get('code'):
-                continue
-            code = find_code_link(paper)
-            if code:
-                paper['code'] = code
-                logging.info(f'paper_id = {paper_id}, found code link = {code}')
+            if not paper.get('code'):
+                code = find_code_link(paper)
+                if code:
+                    paper['code'] = code
+                    logging.info(f'paper_id = {paper_id}, found code link = {code}')
+
+            if paper.get('citations') is None:
+                citations = fetch_citation_count(paper['id'])
+                if citations is not None:
+                    paper['citations'] = citations
+                    logging.info(f'paper_id = {paper_id}, citation count = {citations}')
 
     with open(filename,"w") as f:
         json.dump(json_data,f)
@@ -280,14 +325,16 @@ def render_readme_md(filename, md_filename, show_badge=True):
             if not day_content:
                 continue
             f.write(f"## {keyword}\n\n")
-            f.write("|Publish Date|Title|Authors|PDF|Code|\n" + "|---|---|---|---|---|\n")
+            f.write("|Publish Date|Title|Summary|Authors|Citations|PDF|Code|\n"
+                    + "|---|---|---|---|---|---|---|\n")
 
             day_content = sort_papers(day_content)
             for paper_id, paper in day_content.items():
                 code_cell = f"**[link]({paper['code']})**" if paper.get('code') else "null"
-                row = "|**{}**|**{}**|{} et.al.|[{}]({})|{}|\n".format(
-                    paper['date'], paper['title'], paper['first_author'],
-                    paper['id'], paper['url'], code_cell)
+                citations_cell = paper['citations'] if paper.get('citations') is not None else "-"
+                row = "|**{}**|**{}**|{}|{} et.al.|{}|[{}]({})|{}|\n".format(
+                    paper['date'], escape_table_cell(paper['title']), summarize_abstract(paper['abstract']),
+                    paper['first_author'], citations_cell, paper['id'], paper['url'], code_cell)
                 f.write(pretty_math(row))
 
             f.write("\n")
@@ -407,13 +454,14 @@ def render_gitpage_md(filename, md_filename, show_badge=True):
             # inside this raw HTML block - without it, the pipe table is
             # left as literal text instead of being rendered.
             f.write('<div class="view-table" markdown="1">\n\n')
-            f.write("| Publish Date | Title | Authors | PDF | Code |\n")
-            f.write("|:---------|:-----------------------|:---------|:------|:------|\n")
+            f.write("| Publish Date | Title | Summary | Authors | Citations | PDF | Code |\n")
+            f.write("|:---------|:-----------------------|:---------|:---------|:------|:------|:------|\n")
             for paper_id, paper in day_content.items():
                 code_cell = f"**[link]({paper['code']})**" if paper.get('code') else "null"
-                row = "|**{}**|**{}**|{} et.al.|[{}]({})|{}|\n".format(
-                    paper['date'], paper['title'], paper['first_author'],
-                    paper['id'], paper['url'], code_cell)
+                citations_cell = paper['citations'] if paper.get('citations') is not None else "-"
+                row = "|**{}**|**{}**|{}|{} et.al.|{}|[{}]({})|{}|\n".format(
+                    paper['date'], escape_table_cell(paper['title']), summarize_abstract(paper['abstract']),
+                    paper['first_author'], citations_cell, paper['id'], paper['url'], code_cell)
                 f.write(pretty_math(row))
             f.write('\n</div>\n\n')
 
@@ -424,12 +472,13 @@ def render_gitpage_md(filename, md_filename, show_badge=True):
                 authors = html.escape(paper['authors'])
                 abstract = html.escape(paper['abstract'])
                 url = html.escape(paper['url'])
+                citations_html = f' &middot; {paper["citations"]} citations' if paper.get('citations') is not None else ''
                 code_html = ''
                 if paper.get('code'):
                     code_html = f' &middot; <a href="{html.escape(paper["code"])}">Code</a>'
                 f.write('<div class="paper-card">\n')
                 f.write(f'<h3><a href="{url}">{title}</a></h3>\n')
-                f.write(f'<p class="paper-meta">{paper["date"]} &middot; {authors}</p>\n')
+                f.write(f'<p class="paper-meta">{paper["date"]} &middot; {authors}{citations_html}</p>\n')
                 f.write(f'<p class="paper-abstract">{abstract}</p>\n')
                 f.write(f'<p class="paper-links"><a href="{url}">PDF</a>{code_html}</p>\n')
                 f.write('</div>\n')
