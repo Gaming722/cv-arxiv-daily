@@ -101,15 +101,17 @@ def summarize_abstract(abstract:str, max_words:int = 30) -> str:
         snippet += '...'
     return escape_table_cell(snippet)
 
-def fetch_citation_count(arxiv_id:str):
+def fetch_semantic_scholar_info(arxiv_id:str):
     '''
-    Rough, free quality signal via Semantic Scholar (no API key required).
-    Returns None on any failure/not-yet-indexed paper - callers should treat
-    that as "unknown", not "zero".
+    Rough, free signals via Semantic Scholar (no API key required): citation
+    count (quality proxy) and author affiliations (used to spot papers from
+    well-known labs - see is_top_lab_paper). Returns None on any
+    failure/not-yet-indexed paper - callers should treat that as "unknown",
+    not "zero"/"none".
     '''
     try:
         r = requests.get(SEMANTIC_SCHOLAR_URL.format(arxiv_id),
-                          params={"fields": "citationCount"}, timeout=10)
+                          params={"fields": "citationCount,authors.affiliations"}, timeout=10)
     except requests.RequestException as e:
         logging.warning(f'Semantic Scholar lookup failed for {arxiv_id}: {e}')
         return None
@@ -119,7 +121,45 @@ def fetch_citation_count(arxiv_id:str):
     if r.status_code != 200:
         logging.warning(f'Semantic Scholar lookup returned {r.status_code} for {arxiv_id}')
         return None
-    return r.json().get('citationCount')
+
+    result = r.json()
+    affiliations = []
+    for author in result.get('authors') or []:
+        affiliations.extend(author.get('affiliations') or [])
+
+    return {
+        "citations": result.get('citationCount'),
+        "affiliations": sorted(set(affiliations)),
+    }
+
+def is_top_lab_paper(paper:dict, top_labs) -> bool:
+    '''
+    Best-effort match of a paper's (Semantic Scholar-sourced) author
+    affiliations against a configurable list of well-known lab/institution
+    names. Coverage is limited - Semantic Scholar's affiliation data is
+    often sparse or missing, especially for very recent papers.
+    '''
+    if not top_labs:
+        return False
+    haystack = ' '.join(paper.get('affiliations') or []).lower()
+    if not haystack:
+        return False
+    return any(lab.lower() in haystack for lab in top_labs)
+
+def sort_papers_with_priority(papers:dict, top_labs):
+    '''
+    Same newest-first ordering as sort_papers, but papers matching
+    top_labs are pinned to the front of the list (still newest-first
+    among themselves).
+    '''
+    ordered = sort_papers(papers)
+    top, rest = {}, {}
+    for paper_id, paper in ordered.items():
+        if is_top_lab_paper(paper, top_labs):
+            top[paper_id] = paper
+        else:
+            rest[paper_id] = paper
+    return {**top, **rest}
 
 def extract_code_link_from_abstract(abstract:str):
     '''
@@ -213,6 +253,7 @@ def get_daily_papers(topic,query="slam", max_results=2):
             "abstract": paper_abstract,
             "code": extract_code_link_from_abstract(paper_abstract),
             "citations": None,
+            "affiliations": [],
         }
 
     return {topic:content}
@@ -237,10 +278,12 @@ def update_paper_links(filename):
                     logging.info(f'paper_id = {paper_id}, found code link = {code}')
 
             if paper.get('citations') is None:
-                citations = fetch_citation_count(paper['id'])
-                if citations is not None:
-                    paper['citations'] = citations
-                    logging.info(f'paper_id = {paper_id}, citation count = {citations}')
+                info = fetch_semantic_scholar_info(paper['id'])
+                if info is not None:
+                    paper['citations'] = info['citations']
+                    paper['affiliations'] = info['affiliations']
+                    logging.info(f"paper_id = {paper_id}, citations = {info['citations']}, "
+                                 f"affiliations = {info['affiliations']}")
 
     with open(filename,"w") as f:
         json.dump(json_data,f)
@@ -290,7 +333,7 @@ def write_badges(f):
     f.write((f"[issues-url]: https://github.com/Gaming722/"
              f"cv-arxiv-daily/issues\n\n"))
 
-def render_readme_md(filename, md_filename, show_badge=True):
+def render_readme_md(filename, md_filename, show_badge=True, top_labs=None):
     """
     @param filename: str, source json data
     @param md_filename: str, target README.md
@@ -328,12 +371,15 @@ def render_readme_md(filename, md_filename, show_badge=True):
             f.write("|Publish Date|Title|Summary|Authors|Citations|PDF|Code|\n"
                     + "|---|---|---|---|---|---|---|\n")
 
-            day_content = sort_papers(day_content)
+            day_content = sort_papers_with_priority(day_content, top_labs)
             for paper_id, paper in day_content.items():
                 code_cell = f"**[link]({paper['code']})**" if paper.get('code') else "null"
                 citations_cell = paper['citations'] if paper.get('citations') is not None else "-"
+                title_cell = escape_table_cell(paper['title'])
+                if is_top_lab_paper(paper, top_labs):
+                    title_cell = "🏆 " + title_cell
                 row = "|**{}**|**{}**|{}|{} et.al.|{}|[{}]({})|{}|\n".format(
-                    paper['date'], escape_table_cell(paper['title']), summarize_abstract(paper['abstract']),
+                    paper['date'], title_cell, summarize_abstract(paper['abstract']),
                     paper['first_author'], citations_cell, paper['id'], paper['url'], code_cell)
                 f.write(pretty_math(row))
 
@@ -421,7 +467,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 """
 
-def render_gitpage_md(filename, md_filename, show_badge=True):
+def render_gitpage_md(filename, md_filename, show_badge=True, top_labs=None):
     """
     @param filename: str, source json data
     @param md_filename: str, target docs/index.md
@@ -447,7 +493,7 @@ def render_gitpage_md(filename, md_filename, show_badge=True):
                 continue
             f.write(f"## {keyword}\n\n")
 
-            day_content = sort_papers(day_content)
+            day_content = sort_papers_with_priority(day_content, top_labs)
 
             # classic table view (default, no abstract)
             # markdown="1" tells kramdown to still parse the table syntax
@@ -459,8 +505,11 @@ def render_gitpage_md(filename, md_filename, show_badge=True):
             for paper_id, paper in day_content.items():
                 code_cell = f"**[link]({paper['code']})**" if paper.get('code') else "null"
                 citations_cell = paper['citations'] if paper.get('citations') is not None else "-"
+                title_cell = escape_table_cell(paper['title'])
+                if is_top_lab_paper(paper, top_labs):
+                    title_cell = "🏆 " + title_cell
                 row = "|**{}**|**{}**|{}|{} et.al.|{}|[{}]({})|{}|\n".format(
-                    paper['date'], escape_table_cell(paper['title']), summarize_abstract(paper['abstract']),
+                    paper['date'], title_cell, summarize_abstract(paper['abstract']),
                     paper['first_author'], citations_cell, paper['id'], paper['url'], code_cell)
                 f.write(pretty_math(row))
             f.write('\n</div>\n\n')
@@ -469,6 +518,8 @@ def render_gitpage_md(filename, md_filename, show_badge=True):
             f.write('<div class="view-cards">\n')
             for paper_id, paper in day_content.items():
                 title = html.escape(paper['title'])
+                if is_top_lab_paper(paper, top_labs):
+                    title = "🏆 " + title
                 authors = html.escape(paper['authors'])
                 abstract = html.escape(paper['abstract'])
                 url = html.escape(paper['url'])
@@ -498,6 +549,7 @@ def demo(**config):
     publish_gitpage = config['publish_gitpage']
     publish_wechat = config['publish_wechat']
     show_badge = config['show_badge']
+    top_labs = config.get('top_labs', [])
 
     b_update = config['update_paper_links']
     logging.info(f'Update Paper Link = {b_update}')
@@ -519,7 +571,7 @@ def demo(**config):
             update_paper_links(json_file)
         else:
             update_json_file(json_file,data_collector)
-        render_readme_md(json_file, md_file, show_badge = show_badge)
+        render_readme_md(json_file, md_file, show_badge = show_badge, top_labs = top_labs)
 
     # 2. update docs/index.md file (to gitpage)
     if publish_gitpage:
@@ -529,7 +581,7 @@ def demo(**config):
             update_paper_links(json_file)
         else:
             update_json_file(json_file,data_collector)
-        render_gitpage_md(json_file, md_file, show_badge = show_badge)
+        render_gitpage_md(json_file, md_file, show_badge = show_badge, top_labs = top_labs)
 
     # 3. Update docs/wechat.md file
     if publish_wechat:

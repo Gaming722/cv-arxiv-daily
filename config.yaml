@@ -11,6 +11,15 @@ publish_readme: True
 publish_gitpage: True
 publish_wechat: False
 
+# Papers whose (Semantic Scholar-sourced) author affiliations match any of
+# these strings (case-insensitive substring match) get pinned to the top of
+# their section as a rough quality signal. Best-effort only - affiliation
+# data is often missing, especially for very recent papers. Add/remove freely.
+top_labs: ["Stanford", "MIT", "UC Berkeley", "Carnegie Mellon", "CMU", "ETH Zurich",
+           "Google DeepMind", "DeepMind", "Google Research", "Meta AI", "FAIR",
+           "NVIDIA", "Boston Dynamics", "Toyota Research Institute", "Tsinghua",
+           "Zhejiang University", "Shanghai AI Lab", "Unitree Robotics"]
+
 # file paths
 json_readme_path: './docs/cv-arxiv-daily.json'
 json_gitpage_path: './docs/cv-arxiv-daily-web.json'
@@ -40,3 +49,7 @@ keywords:
                   "world model locomotion"]
     "Humanoid Robots":
         filters: ["humanoid robot control", "humanoid robot learning", "humanoid whole-body control"]
+    "Character Control & Game RL":
+        filters: ["character control reinforcement learning", "physics-based character animation",
+                  "motion imitation reinforcement learning", "reinforcement learning game playing",
+                  "game AI reinforcement learning", "adversarial motion priors"]
