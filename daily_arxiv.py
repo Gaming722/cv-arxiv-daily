@@ -262,7 +262,7 @@ def render_readme_md(filename, md_filename, show_badge=True):
 
     with open(md_filename,"a+") as f:
         f.write("## Updated on " + DateNow + "\n")
-        f.write("> Usage instructions: [here](./docs/README.md#usage)\n\n")
+        f.write("> Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)\n\n")
 
         # table of contents
         f.write("<details>\n")
@@ -317,7 +317,7 @@ def render_wechat_md(filename, md_filename, show_badge=True):
 
     with open(md_filename,"a+") as f:
         f.write("> Updated on " + DateNow + "\n")
-        f.write("> Usage instructions: [here](./docs/README.md#usage)\n\n")
+        f.write("> Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)\n\n")
 
         for keyword, day_content in data.items():
             if not day_content:
@@ -393,7 +393,7 @@ def render_gitpage_md(filename, md_filename, show_badge=True):
         f.write(GITPAGE_VIEW_TOGGLE_HTML)
 
         f.write("## Updated on " + DateNow + "\n")
-        f.write("> Usage instructions: [here](./docs/README.md#usage)\n\n")
+        f.write("> Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)\n\n")
 
         for keyword, day_content in data.items():
             if not day_content:

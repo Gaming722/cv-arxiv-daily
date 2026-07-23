@@ -35,7 +35,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </script>
 
 ## Updated on 2026.07.22
-> Usage instructions: [here](./docs/README.md#usage)
+> Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
 
