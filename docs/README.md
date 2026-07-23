@@ -21,7 +21,7 @@ This codebase is composed of the following parts:
 <details>
   <summary>Table of Contents</summary>
 
-1. Fork this [repo](https://github.com/Vincentqyw/cv-arxiv-daily)
+1. Fork this [repo](https://github.com/Gaming722/cv-arxiv-daily)
 2. Edit configs:
     - Change `GITHUB_USER_NAME` and `GITHUB_USER_EMAIL` in [cv-arxiv-daily.yml](../.github/workflows/cv-arxiv-daily.yml) and [update_paper_links.yml](../.github/workflows/update_paper_links.yml)
     - Change `user_name` in [config.yaml](../config.yaml)

@@ -1,11 +1,11 @@
 # TODO: add papers by configuration file
 base_url: "https://arxiv.paperswithcode.com/api/v0/papers/"
-user_name: "Vincentqyw"
+user_name: "Gaming722"
 repo_name: "cv-arxiv-daily"
 show_authors: True
 show_links: True
 show_badge: True
-max_results: 10
+max_results: 15
 
 publish_readme: True
 publish_gitpage: True
@@ -21,19 +21,22 @@ md_gitpage_path: './docs/index.md'
 md_wechat_path: './docs/wechat.md'
 
 # keywords to search
+# Each top-level key becomes a section in README/GitHub Pages; `filters` are
+# arxiv full-text search phrases OR'd together. Add/remove/edit freely.
 keywords:
-    "SLAM": 
-        filters: ["SLAM", "Visual Odometry"]
-    "SFM":
-        filters: ["SFM", "Structure from Motion"]
-    "Visual Localization":
-        filters: ["Visual Localization","Camera Localization",
-                  "Camera Re-localisation","Loop Closure Detection",
-                  "visual place recognition","image retrieval"]
-    "Keypoint Detection":
-        filters: ["Keypoint Detection", "Feature Descriptor"]
-    "Image Matching":
-        filters: ["Image Matching", "Keypoint Matching", 
-                  "Line Segment Detection", "Local Feature Matching"]
-    "NeRF":
-        filters: ["NeRF"]
+    "Legged Locomotion":
+        filters: ["legged locomotion", "quadruped locomotion", "bipedal locomotion",
+                  "humanoid locomotion", "legged robot control", "quadrupedal robot"]
+    "Loco-Manipulation":
+        filters: ["loco-manipulation", "legged manipulation", "whole-body manipulation",
+                  "mobile manipulation robot", "humanoid manipulation"]
+    "Reinforcement Learning for Legged Robots":
+        filters: ["reinforcement learning for legged robots", "reinforcement learning for locomotion",
+                  "sim-to-real reinforcement learning robot", "reward shaping legged robot",
+                  "reinforcement learning quadruped"]
+    "World Models for Robotics":
+        filters: ["world model for robot", "world model for manipulation",
+                  "learned world model robot", "model-based reinforcement learning robot",
+                  "world model locomotion"]
+    "Humanoid Robots":
+        filters: ["humanoid robot control", "humanoid robot learning", "humanoid whole-body control"]
