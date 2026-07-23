@@ -90,17 +90,6 @@ def escape_table_cell(s:str) -> str:
     # a literal "|" would otherwise break the markdown table it's embedded in
     return s.replace('|', '\\|')
 
-def summarize_abstract(abstract:str, max_words:int = 30) -> str:
-    '''
-    Short abstract preview for the compact table view, so a paper's gist is
-    visible without switching to card view.
-    '''
-    words = (abstract or '').split()
-    snippet = ' '.join(words[:max_words])
-    if len(words) > max_words:
-        snippet += '...'
-    return escape_table_cell(snippet)
-
 def fetch_semantic_scholar_info(arxiv_id:str):
     '''
     Rough, free signals via Semantic Scholar (no API key required): citation
@@ -368,8 +357,8 @@ def render_readme_md(filename, md_filename, show_badge=True, top_labs=None):
             if not day_content:
                 continue
             f.write(f"## {keyword}\n\n")
-            f.write("|Publish Date|Title|Summary|Authors|Citations|PDF|Code|\n"
-                    + "|---|---|---|---|---|---|---|\n")
+            f.write("|Publish Date|Title|Authors|Citations|PDF|Code|\n"
+                    + "|---|---|---|---|---|---|\n")
 
             day_content = sort_papers_with_priority(day_content, top_labs)
             for paper_id, paper in day_content.items():
@@ -378,8 +367,8 @@ def render_readme_md(filename, md_filename, show_badge=True, top_labs=None):
                 title_cell = escape_table_cell(paper['title'])
                 if is_top_lab_paper(paper, top_labs):
                     title_cell = "🏆 " + title_cell
-                row = "|**{}**|**{}**|{}|{} et.al.|{}|[{}]({})|{}|\n".format(
-                    paper['date'], title_cell, summarize_abstract(paper['abstract']),
+                row = "|**{}**|**{}**|{} et.al.|{}|[{}]({})|{}|\n".format(
+                    paper['date'], title_cell,
                     paper['first_author'], citations_cell, paper['id'], paper['url'], code_cell)
                 f.write(pretty_math(row))
 
@@ -500,16 +489,16 @@ def render_gitpage_md(filename, md_filename, show_badge=True, top_labs=None):
             # inside this raw HTML block - without it, the pipe table is
             # left as literal text instead of being rendered.
             f.write('<div class="view-table" markdown="1">\n\n')
-            f.write("| Publish Date | Title | Summary | Authors | Citations | PDF | Code |\n")
-            f.write("|:---------|:-----------------------|:---------|:---------|:------|:------|:------|\n")
+            f.write("| Publish Date | Title | Authors | Citations | PDF | Code |\n")
+            f.write("|:---------|:-----------------------|:---------|:------|:------|:------|\n")
             for paper_id, paper in day_content.items():
                 code_cell = f"**[link]({paper['code']})**" if paper.get('code') else "null"
                 citations_cell = paper['citations'] if paper.get('citations') is not None else "-"
                 title_cell = escape_table_cell(paper['title'])
                 if is_top_lab_paper(paper, top_labs):
                     title_cell = "🏆 " + title_cell
-                row = "|**{}**|**{}**|{}|{} et.al.|{}|[{}]({})|{}|\n".format(
-                    paper['date'], title_cell, summarize_abstract(paper['abstract']),
+                row = "|**{}**|**{}**|{} et.al.|{}|[{}]({})|{}|\n".format(
+                    paper['date'], title_cell,
                     paper['first_author'], citations_cell, paper['id'], paper['url'], code_cell)
                 f.write(pretty_math(row))
             f.write('\n</div>\n\n')
