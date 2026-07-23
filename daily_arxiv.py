@@ -403,7 +403,10 @@ def render_gitpage_md(filename, md_filename, show_badge=True):
             day_content = sort_papers(day_content)
 
             # classic table view (default, no abstract)
-            f.write('<div class="view-table">\n\n')
+            # markdown="1" tells kramdown to still parse the table syntax
+            # inside this raw HTML block - without it, the pipe table is
+            # left as literal text instead of being rendered.
+            f.write('<div class="view-table" markdown="1">\n\n')
             f.write("| Publish Date | Title | Authors | PDF | Code |\n")
             f.write("|:---------|:-----------------------|:---------|:------|:------|\n")
             for paper_id, paper in day_content.items():

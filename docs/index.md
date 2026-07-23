@@ -34,12 +34,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.07.23
+## Updated on 2026.07.22
 > Usage instructions: [here](./docs/README.md#usage)
 
 ## Legged Locomotion
 
-<div class="view-table">
+<div class="view-table" markdown="1">
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
@@ -156,7 +156,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 ## Loco-Manipulation
 
-<div class="view-table">
+<div class="view-table" markdown="1">
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
@@ -273,7 +273,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 ## Reinforcement Learning for Legged Robots
 
-<div class="view-table">
+<div class="view-table" markdown="1">
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
@@ -390,7 +390,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 ## World Models for Robotics
 
-<div class="view-table">
+<div class="view-table" markdown="1">
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
@@ -507,7 +507,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 ## Humanoid Robots
 
-<div class="view-table">
+<div class="view-table" markdown="1">
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
