@@ -55,7 +55,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-07-15**|**The Nonsmooth Impact Direction (NSID) of Robotic Systems**|Annika Kirner et.al.|-|[2607.13768](http://arxiv.org/abs/2607.13768)|null|
 |**2026-07-15**|**Design and Control of the "QuadBoat": A Quadruped Surface Vehicle for Drowning Rescue**|Lianxin Zhang et.al.|-|[2607.13633](http://arxiv.org/abs/2607.13633)|null|
 |**2026-07-15**|**Agile perceptive multi-skill locomotion for quadrupedal robots in the wild**|Jun-Gill Kang et.al.|-|[2607.13579](http://arxiv.org/abs/2607.13579)|null|
-|**2026-07-13**|**GaitSpan: Growing Humanoid Locomotion from Walking to Running**|Kwan-Yee Lin et.al.|-|[2607.12114](http://arxiv.org/abs/2607.12114)|null|
+|**2026-07-13**|**GaitSpan: Growing Humanoid Locomotion from Walking to Running**|Kwan-Yee Lin et.al.|0|[2607.12114](http://arxiv.org/abs/2607.12114)|null|
 |**2026-07-13**|**Robust bipedal locomotion on flowable slopes via foot-driven terrain manipulation**|Deniz Kerimoglu et.al.|-|[2607.11855](http://arxiv.org/abs/2607.11855)|null|
 |**2026-07-16**|**SKooP: Symmetric Koopman Predictions for Faster and More Generalizable Legged Robot Locomotion with Reinforcement Learning**|Evelyn D'Elia et.al.|-|[2607.11624](http://arxiv.org/abs/2607.11624)|null|
 |**2026-07-13**|**PAKE: Learning Whole-Body Loco-Manipulation with Partial Kinematic Embeddings**|Zhengmao He et.al.|-|[2607.11041](http://arxiv.org/abs/2607.11041)|null|
@@ -140,7 +140,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.12114">GaitSpan: Growing Humanoid Locomotion from Walking to Running</a></h3>
-<p class="paper-meta">2026-07-13 &middot; Kwan-Yee Lin, Zilin Wang, Janelle J. Liu, Stella X. Yu</p>
+<p class="paper-meta">2026-07-13 &middot; Kwan-Yee Lin, Zilin Wang, Janelle J. Liu, Stella X. Yu &middot; 0 citations</p>
 <p class="paper-abstract">A humanoid that can walk should not relearn locomotion from scratch to jog or run. Yet current approaches often obtain gait diversity by prescribing gait schedules, imitating motion clips, training experts to switch between or distilling skills into one policy. These strategies can produce impressive behaviors, but offer limited flexibility across continuous speed commands, terrains, and morphologies. We study skill growth with GaitSpan, a framework that expands a pretrained, basic walking policy into faster locomotion. It treats walking as a seed skill: reusable motor structure for balance, support, body coordination, and contact transition that can be regenerated at new rhythms, extended into longer/higher strides, and corrected by residual adaptation. This expansion has three aspects: 1) rhythm generation, which modulates the frozen walking policy with multiple internal clocks and learns command-conditioned combinations of the resulting canonical actions; 2) stride shaping, which rewards dynamic locomotion patterns appropriate for higher commanded speeds using a physically grounded objective inspired by spring-loaded inverted pendulum dynamics; and 3) residual adaptation, which captures motion details not accounted for by rhythm generation or stride shaping. GaitSpan is the first to deliver a single command-conditioned humanoid policy that spans walking, jogging, and running-like regimes covering a continuous speed range, transfers across morphologies, and deploys zero-shot on unseen sim-to-sim, and real-world terrains. Compared with baselines either trained with multi-experts or imitation from humans, it learns faster and achieves stronger gait performance.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.12114">PDF</a></p>
 </div>
@@ -452,7 +452,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-07-05**|**Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models**|Riccardo O. Feingold et.al.|-|[2607.04546](http://arxiv.org/abs/2607.04546)|null|
 |**2026-07-02**|**GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation**| GigaWorld Team et.al.|-|[2607.02642](http://arxiv.org/abs/2607.02642)|null|
 |**2026-07-02**|**DVG-WM: Disentangled Video Generation Enables Efficient Embodied World Model for Robotic Manipulation**|Ziyu Shan et.al.|-|[2606.32028](http://arxiv.org/abs/2606.32028)|null|
-|**2026-06-25**|**PhysiFormer: Learning to Simulate Mechanics in World Space**|Yiming Chen et.al.|-|[2606.27364](http://arxiv.org/abs/2606.27364)|null|
+|**2026-06-25**|**PhysiFormer: Learning to Simulate Mechanics in World Space**|Yiming Chen et.al.|0|[2606.27364](http://arxiv.org/abs/2606.27364)|null|
 |**2026-07-03**|**In-Context World Modeling for Robotic Control**|Siyin Wang et.al.|-|[2606.26025](http://arxiv.org/abs/2606.26025)|null|
 |**2026-06-17**|**ImageWAM: Do World Action Models Really Need Video Generation, or Just Image Editing?**|Yuyang Zhang et.al.|-|[2606.19531](http://arxiv.org/abs/2606.19531)|null|
 |**2026-06-11**|**FlowMo-WM: A World Model with Object Momentum and Hidden Ambient Drift**|Yitao Jiang et.al.|-|[2606.13817](http://arxiv.org/abs/2606.13817)|null|
@@ -520,7 +520,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2606.27364">PhysiFormer: Learning to Simulate Mechanics in World Space</a></h3>
-<p class="paper-meta">2026-06-25 &middot; Yiming Chen, Yushi Lan, Andrea Vedaldi</p>
+<p class="paper-meta">2026-06-25 &middot; Yiming Chen, Yushi Lan, Andrea Vedaldi &middot; 0 citations</p>
 <p class="paper-abstract">We present PhysiFormer, a diffusion transformer for physically-plausible 3D object motion. Unlike video world models that operate in view-dependent pixel space, PhysiFormer represents objects as 3D meshes expressed in world coordinates. Given the initial vertex positions and velocities, as well as object material type, rigid or elastic, the model samples future vertex trajectories. While related neural physics approaches build on ad-hoc latent spaces or explicitly enforce rigidity and causality, PhysiFormer shows that excellent results can be obtained without any such inductive biases, by casting vertex trajectory prediction as a single denoising diffusion process directly in world coordinates. The probabilistic formulation captures uncertainty in the learned dynamics, enabling diverse plausible futures from initial conditions, making this framework potentially useful for applications with unobserved uncertainty. The model features attention factorised over time, space, and objects for efficiency, enabling permutation-invariant multi-object reasoning without needing explicit object encoding. Trained on over 100k simulated trajectories, PhysiFormer generates rigid and elastic mechanics, and generalises to mixed-material settings, unseen real-world geometries, and larger object counts. It substantially outperforms autoregressive baselines in trajectory accuracy, rigidity preservation, and momentum-based physical consistency. Our results position coordinate-space diffusion as a promising step toward view-invariant, geometry-aware world modelling for robotics, graphics, and physical design. Visualisations, code, and models are available at https://yimingc9.github.io/physiformer.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2606.27364">PDF</a></p>
 </div>
@@ -700,13 +700,13 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-05-18**|**Unified Walking, Running, and Recovery for Humanoids via State-Dependent Adversarial Motion Priors**|Yidan Lu et.al.|-|[2605.18611](http://arxiv.org/abs/2605.18611)|null|
 |**2026-04-21**|**Multi-Gait Learning for Humanoid Robots Using Reinforcement Learning with Selective Adversarial Motion Prior**|Yuanye Wu et.al.|-|[2604.19102](http://arxiv.org/abs/2604.19102)|null|
 |**2026-04-07**|**Neural Assistive Impulses: Synthesizing Exaggerated Motions for Physics-based Characters**|Zhiquan Wang et.al.|-|[2604.05394](http://arxiv.org/abs/2604.05394)|null|
-|**2026-03-27**|**Partial Motion Imitation for Learning Cart Pushing with Legged Manipulators**|Mili Das et.al.|-|[2603.26659](http://arxiv.org/abs/2603.26659)|null|
+|**2026-03-27**|**Partial Motion Imitation for Learning Cart Pushing with Legged Manipulators**|Mili Das et.al.|0|[2603.26659](http://arxiv.org/abs/2603.26659)|null|
 |**2026-03-09**|**TeamHOI: Learning a Unified Policy for Cooperative Human-Object Interactions with Any Team Size**|Stefan Lionar et.al.|-|[2603.07988](http://arxiv.org/abs/2603.07988)|null|
 |**2026-03-01**|**Spherical Latent Motion Prior for Physics-Based Simulated Humanoid Control**|Jing Tan et.al.|-|[2603.01294](http://arxiv.org/abs/2603.01294)|null|
 |**2026-04-02**|**EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents**|Wenjia Wang et.al.|-|[2602.23205](http://arxiv.org/abs/2602.23205)|null|
 |**2026-02-20**|**CLOT: Closed-Loop Global Motion Tracking for Whole-Body Humanoid Teleoperation**|Tengjie Zhu et.al.|-|[2602.15060](http://arxiv.org/abs/2602.15060)|null|
 |**2026-05-21**|**HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control**|Jinrui Han et.al.|-|[2602.03205](http://arxiv.org/abs/2602.03205)|null|
-|**2025-12-13**|**Sim2Real Reinforcement Learning for Soccer skills**|Jonathan Spraggett et.al.|-|[2512.12437](http://arxiv.org/abs/2512.12437)|null|
+|**2025-12-13**|**Sim2Real Reinforcement Learning for Soccer skills**|Jonathan Spraggett et.al.|1|[2512.12437](http://arxiv.org/abs/2512.12437)|null|
 
 </div>
 
@@ -767,7 +767,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2603.26659">Partial Motion Imitation for Learning Cart Pushing with Legged Manipulators</a></h3>
-<p class="paper-meta">2026-03-27 &middot; Mili Das, Morgan Byrd, Donghoon Baek, Sehoon Ha</p>
+<p class="paper-meta">2026-03-27 &middot; Mili Das, Morgan Byrd, Donghoon Baek, Sehoon Ha &middot; 0 citations</p>
 <p class="paper-abstract">Loco-manipulation is a key capability for legged robots to perform practical mobile manipulation tasks, such as transporting and pushing objects, in real-world environments. However, learning robust loco-manipulation skills remains challenging due to the difficulty of maintaining stable locomotion while simultaneously performing precise manipulation behaviors. This work proposes a partial imitation learning approach that transfers the locomotion style learned from a locomotion task to cart loco-manipulation. A robust locomotion policy is first trained with extensive domain and terrain randomization, and a loco-manipulation policy is then learned by imitating only lower-body motions using a partial adversarial motion prior. We conduct experiments demonstrating that the learned policy successfully pushes a cart along diverse trajectories in IsaacLab and transfers effectively to MuJoCo. We also compare our method to several baselines and show that the proposed approach achieves more stable and accurate loco-manipulation behaviors.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2603.26659">PDF</a></p>
 </div>
@@ -803,7 +803,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2512.12437">Sim2Real Reinforcement Learning for Soccer skills</a></h3>
-<p class="paper-meta">2025-12-13 &middot; Jonathan Spraggett</p>
+<p class="paper-meta">2025-12-13 &middot; Jonathan Spraggett &middot; 1 citations</p>
 <p class="paper-abstract">This thesis work presents a more efficient and effective approach to training control-related tasks for humanoid robots using Reinforcement Learning (RL). The traditional RL methods are limited in adapting to real-world environments, complexity, and natural motions, but the proposed approach overcomes these limitations by using curriculum training and Adversarial Motion Priors (AMP) technique. The results show that the developed RL policies for kicking, walking, and jumping are more dynamic, and adaptive, and outperformed previous methods. However, the transfer of the learned policy from simulation to the real world was unsuccessful, highlighting the limitations of current RL methods in fully adapting to real-world scenarios.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2512.12437">PDF</a></p>
 </div>
