@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.08.04
+## Updated on 2026.08.05
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -195,6 +195,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-04**|**RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation**|Shuliang He et.al.|-|[2608.03387](http://arxiv.org/abs/2608.03387)|null|
 |**2026-07-31**|**Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control**|Hyunjong Song et.al.|-|[2607.29625](http://arxiv.org/abs/2607.29625)|null|
 |**2026-07-31**|**CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning**|Yuxin Chen et.al.|-|[2607.29172](http://arxiv.org/abs/2607.29172)|null|
 |**2026-07-22**|**Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning**|Nicolas Kosanovic et.al.|-|[2607.20399](http://arxiv.org/abs/2607.20399)|null|
@@ -216,6 +217,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.03387">RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation</a></h3>
+<p class="paper-meta">2026-08-04 &middot; Shuliang He, Shuai Wang, Bo Yue, Junchi Teng, Changyu Wang, Guiliang Liu</p>
+<p class="paper-abstract">Humanoid robots have the potential to perform dexterous manipulation in human environments, yet acquiring diverse and generalizable skills remains costly due to expensive hardware data collection and labor-intensive annotation. Recent advances in video generative models provide a promising opportunity to synthesize rich manipulation experiences from visual observations, but transferring such imagined behaviors into executable whole-body humanoid skills remains largely unexplored. In this work, we present RoboReact, a framework that automatically synthesizes whole-body humanoid manipulation skills from a single egocentric RGB-D observation. RoboReact generates human manipulation videos, extracts geometry-preserving interaction keyframes through depth-aware 3D reconstruction, and retargets them to high-DoF humanoid platforms while preserving hand-object interaction geometry. To bridge the gap between imagined plans and physical execution, RoboReact performs online object-centric re-grounding and leverages a vision-language model-guided refinement loop to adapt skills under geometric mismatch and execution deviations. The refined skills are executed through a whole-body controller, enabling coordinated whole-body manipulation and dexterous interaction. Experiments on real humanoid robots demonstrate that RoboReact generalizes across diverse object configurations and robustly recovers from execution disturbances without requiring teleoperation or human demonstrations. These results highlight the potential of combining generative models, vision-language reasoning, and closed-loop control for scalable humanoid skill acquisition.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.03387">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.29625">Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control</a></h3>
 <p class="paper-meta">2026-07-31 &middot; Hyunjong Song, William Z. Peng, Joo H. Kim</p>
@@ -453,7 +460,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-07-24**|**Robot-Factored World Models via Robot Rendering**|Byungjun Kim et.al.|-|[2607.22535](http://arxiv.org/abs/2607.22535)|null|
 |**2026-07-24**|**ViTacWorld: Scaling Visuo-Tactile World Models for Contact-Rich Robot Manipulation**|Yunao Huang et.al.|-|[2607.22530](http://arxiv.org/abs/2607.22530)|null|
 |**2026-07-22**|**RoboInter1.5: A Holistic Intermediate Representation Suite for Embodied World Modeling and Robotic Manipulation**|Ziqin Wang et.al.|-|[2607.18709](http://arxiv.org/abs/2607.18709)|null|
-|**2026-07-16**|**DriftWorld: Fast World Modeling through Drifting**|Susie Lu et.al.|-|[2607.15065](http://arxiv.org/abs/2607.15065)|null|
+|**2026-08-03**|**DriftWorld: Fast World Modeling through Drifting**|Susie Lu et.al.|-|[2607.15065](http://arxiv.org/abs/2607.15065)|null|
 |**2026-07-07**|**RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation**|Haoyu Zhao et.al.|-|[2607.06559](http://arxiv.org/abs/2607.06559)|null|
 |**2026-07-06**|**KAM-WM: Kinematic Affordance Maps from Latent World Models for Robot Manipulation**|Xinyu Shao et.al.|-|[2607.04652](http://arxiv.org/abs/2607.04652)|null|
 |**2026-07-05**|**Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models**|Riccardo O. Feingold et.al.|-|[2607.04546](http://arxiv.org/abs/2607.04546)|null|
@@ -491,7 +498,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.15065">DriftWorld: Fast World Modeling through Drifting</a></h3>
-<p class="paper-meta">2026-07-16 &middot; Susie Lu, Haonan Chen, Weirui Ye, Yilun Du</p>
+<p class="paper-meta">2026-08-03 &middot; Susie Lu, Haonan Chen, Weirui Ye, Yilun Du</p>
 <p class="paper-abstract">Predictive world models enable robots to plan by imagining the outcomes of their actions, but their value for control hinges on generating many rollouts quickly. This creates a bottleneck for diffusion-based world models: multistep sampling makes each rollout expensive, limiting large-scale action search at inference time. We introduce DriftWorld, an action-conditioned world model based on drifting generative models. Rather than denoising iteratively at inference, DriftWorld learns an action-conditioned drift during training, allowing it to generate future frames from the current observation and a candidate action sequence in a single forward pass at 30+ fps, which is 17x faster on average than diffusion based baselines. We evaluate DriftWorld on standard vision-based robotic manipulation benchmarks, including Bridge-V2, RT-1, Language Table, Push-T, and Robomimic. By producing rollouts that are both accurate and fast, DriftWorld achieves state-of-the-art decision-making performance with far less inference time than diffusion-based world model baselines. Beyond online control, DriftWorld can also serve as an offline simulator for ranking real-world robot policies, with rollout-based scores correlating with ground truth at up to 0.99. These results show that drifting models are a strong fit for robot world modeling, where fast, high-quality imagination directly supports planning and policy evaluation.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.15065">PDF</a></p>
 </div>
@@ -581,6 +588,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-01**|**Light-Loco-Parkour: Versatile Perceptive Whole-Body Locomotion via Multi-Skill Distillation**|Hongming Chen et.al.|-|[2608.02653](http://arxiv.org/abs/2608.02653)|null|
 |**2026-07-15**|**Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control**|J. M. A. Marcelo et.al.|-|[2607.14182](http://arxiv.org/abs/2607.14182)|null|
 |**2026-07-13**|**A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation**|Yunhai Feng et.al.|-|[2607.11874](http://arxiv.org/abs/2607.11874)|null|
 |**2026-07-07**|**Athena-WBC: Capability-Aligned Policy Experts for Long-Tail Humanoid Whole-Body Control**|Yuan Jiang et.al.|-|[2607.04837](http://arxiv.org/abs/2607.04837)|null|
@@ -600,6 +608,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.02653">Light-Loco-Parkour: Versatile Perceptive Whole-Body Locomotion via Multi-Skill Distillation</a></h3>
+<p class="paper-meta">2026-08-01 &middot; Hongming Chen, Zhuoran Li, Hongxi Wang, Jiangpeng Hu, Ziliang Li, Peize Liu, QingRui Zhao, Xuhao Liu, Liang Pan, Ximin Lyu, Yuntao Ma, Tingxiang Fan</p>
+<p class="paper-abstract">Existing humanoid whole-body control systems still fall short of the way humans move through cluttered terrain: they either track expressive whole-body references without terrain generalization, or react to terrain online while leaving the arms, torso, and knees largely unused. We present \texttt{Light-Loco-Parkour} (LLP), an end-to-end perceptive whole-body locomotion system that closes this gap with a single deployable policy. Conditioned only on onboard depth and a velocity command, the policy decides when to walk, balance, climb, step down, or vault, with no reference input, skill label, hand-coded gate, or runtime motion graph. Compared with prior humanoid systems, LLP makes three contributions. First, it introduces a whole-body perceptive-control pipeline that extends an RL-trained, velocity-tracking locomotion policy with parkour skills learned from object-interacting motions, so the same policy tracks velocity in open terrain, executes whole-body traversal at obstacles, and resumes locomotion afterward. Second, it acquires terrain-conditioned skills from sparse seeds by expanding a single motion into dynamically feasible, terrain-paired references across obstacle geometry, rather than relying on a large motion corpus. Third, it learns autonomous skill transitions from reward, letting the policy decide when and which whole-body skill to invoke from depth and command alone, with no one-hot skill label, hand-coded state machine, or runtime motion generator. Simulation and real-world experiments show high success across both benchmarked terrains and unseen obstacle variations, and the same policy transfers zero-shot to indoor and outdoor hardware experiments. These results demonstrate autonomous perceptive whole-body locomotion on a humanoid in outdoor settings, using only onboard sensing and a single deployable policy.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.02653">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.14182">Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control</a></h3>
 <p class="paper-meta">2026-07-15 &middot; J. M. A. Marcelo, M. Brienza, E. Bugli, L. Comito, D. Nardi, D. D. Bloisi, V. Suriani</p>
@@ -698,6 +712,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-04**|**Learning Context-Aware Motion Priors for Humanoid Control**|Yunyang Mo et.al.|-|[2608.03234](http://arxiv.org/abs/2608.03234)|null|
 |**2026-07-30**|**PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball**|Lizhi Yang et.al.|-|[2607.28623](http://arxiv.org/abs/2607.28623)|null|
 |**2026-07-12**|**Learning Roller-Skating Motions of Humanoid Robots Based on Adversarial Motion Priors**|Yunkang Cheng et.al.|-|[2607.10815](http://arxiv.org/abs/2607.10815)|null|
 |**2026-06-28**|**GPC: Large-Scale Generative Pretraining for Transferable Motor Control**|Yi Shi et.al.|-|[2606.29148](http://arxiv.org/abs/2606.29148)|null|
@@ -718,6 +733,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.03234">Learning Context-Aware Motion Priors for Humanoid Control</a></h3>
+<p class="paper-meta">2026-08-04 &middot; Yunyang Mo, Yi Gu, Yangchen Zhou, Hanyang Cao, Renjing Xu</p>
+<p class="paper-abstract">Motion priors provide powerful guidance for learning naturalistic humanoid behaviors. However, existing methods typically learn a general, task-agnostic prior from the entire reference dataset and apply it uniformly throughout policy training. As a result, the prior cannot distinguish which reference motions are relevant to the current task context, potentially providing irrelevant or conflicting guidance. We present Context-Aware Motion Priors (CMP), a framework that adapts a general motion prior to the current task context without manual skill labels, dataset partitioning, or a separate skill discovery stage. Specifically, CMP learns context-motion compatibility using high-advantage policy rollouts, while a demonstration-based objective keeps the learned relevance grounded in the reference distribution. The resulting relevance scores reweight reference supervision for training a lightweight context-conditioned adapter. To evaluate the effectiveness and generality of CMP, we instantiate it with both Adversarial Motion Priors and Score-Matching Motion Priors. Across five humanoid control tasks, CMP consistently improves task performance and sample efficiency, learns meaningful context-motion alignment, and remains robust to imbalanced reference distributions. These results show that adapting motion priors to task contexts provides more relevant guidance for humanoid policy learning.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.03234">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.28623">PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball</a></h3>
 <p class="paper-meta">2026-07-30 &middot; Lizhi Yang, Junheng Li, Aaron D. Ames</p>
