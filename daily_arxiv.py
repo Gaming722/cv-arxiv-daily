@@ -213,7 +213,26 @@ def get_daily_papers(topic,query="slam", max_results=2):
     )
     client = arxiv.Client()
 
-    for result in client.results(search_engine):
+    max_retries = 5
+    last_error = None
+    for attempt in range(max_retries):
+        try:
+            results = list(client.results(search_engine))
+            break
+        except arxiv.HTTPError as e:
+            is_429 = getattr(e, 'status', None) == 429 or getattr(e, 'status_code', None) == 429 or '429' in str(e)
+            if is_429 and attempt < max_retries - 1:
+                wait_time = 60 * (attempt + 1)
+                logging.warning(f"HTTP 429 rate limit hit, waiting {wait_time}s before retry {attempt + 1}/{max_retries}")
+                time.sleep(wait_time)
+                last_error = e
+                client = arxiv.Client()
+            else:
+                raise
+    else:
+        raise last_error
+
+    for result in results:
 
         paper_id            = result.get_short_id()
         paper_title         = result.title
