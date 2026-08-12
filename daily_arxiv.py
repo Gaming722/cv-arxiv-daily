@@ -220,7 +220,9 @@ def get_daily_papers(topic,query="slam", max_results=2):
             results = list(client.results(search_engine))
             break
         except arxiv.HTTPError as e:
-            status = getattr(e, 'status', None) or getattr(e, 'status_code', None)
+            status = getattr(e, 'status', None)
+            if status is None:
+                status = getattr(e, 'status_code', None)
             is_retriable = status in {429, 500, 502, 503, 504}
             if status is None:
                 is_retriable = any(code in str(e) for code in ('429', '500', '502', '503', '504'))
