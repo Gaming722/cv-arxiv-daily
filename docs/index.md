@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.08.10
+## Updated on 2026.08.12
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -43,13 +43,14 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-10**|**Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References**|Carlos Gonzalez et.al.|-|[2608.10220](http://arxiv.org/abs/2608.10220)|null|
 |**2026-08-07**|**Spatiotemporal Agility: Time-Constrained Reinforcement Learning for Vision-Guided Dynamic Quadrupedal Interception**|Yidong Zhu et.al.|-|[2608.06907](http://arxiv.org/abs/2608.06907)|null|
 |**2026-08-06**|**PathCover: A Fast Convex Decomposition along a Path via Randomized Iterative Space Partitioning (RISP) on Point Clouds**|Kunal S. Narkhede et.al.|-|[2608.05586](http://arxiv.org/abs/2608.05586)|null|
 |**2026-08-03**|**Open-DiffLoco: Open-Source Differentiable Learning for Deployable Blind Quadruped Locomotion**|Martin Opat et.al.|-|[2608.02069](http://arxiv.org/abs/2608.02069)|null|
 |**2026-07-31**|**Advances, challenges, and opportunities for legged robots**|Jonas Frey et.al.|-|[2607.28952](http://arxiv.org/abs/2607.28952)|null|
-|**2026-07-27**|**Learning Reusable Hybrid Motion Priors for Humanoid Locomotion from Motion Imitation**|Valerio Belli et.al.|0|[2607.24083](http://arxiv.org/abs/2607.24083)|null|
+|**2026-07-27**|**Learning Reusable Hybrid Motion Priors for Humanoid Locomotion from Motion Imitation**|Valerio Belli et.al.|-|[2607.24083](http://arxiv.org/abs/2607.24083)|null|
 |**2026-07-26**|**PRISM: Polynomial Representations for Interaction-Structured Motor Control**|Seung Hyun Lee et.al.|-|[2607.23473](http://arxiv.org/abs/2607.23473)|null|
-|**2026-07-25**|**Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline**|Qing Yang et.al.|0|[2607.22997](http://arxiv.org/abs/2607.22997)|null|
+|**2026-07-25**|**Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline**|Qing Yang et.al.|-|[2607.22997](http://arxiv.org/abs/2607.22997)|null|
 |**2026-07-21**|**Koopman DCM: Unstable Eigenfunctions as Data-driven Representations for Legged Balancing**|Stéphane Caron et.al.|-|[2607.18760](http://arxiv.org/abs/2607.18760)|null|
 |**2026-07-20**|**Towards Torque-Driven Reinforcement Learning for Quadruped Locomotion**|Jordan Dowdy et.al.|-|[2607.18365](http://arxiv.org/abs/2607.18365)|null|
 |**2026-07-20**|**Isaac Sim-to-Real: Reinforcement Learning based Locomotion for Quadrupeds**|Jordan Dowdy et.al.|-|[2607.18135](http://arxiv.org/abs/2607.18135)|null|
@@ -69,6 +70,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.10220">Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References</a></h3>
+<p class="paper-meta">2026-08-10 &middot; Carlos Gonzalez, Luis Sentis</p>
+<p class="paper-abstract">Humanoid locomotion in highly confined environments requires navigating dense environmental obstacles and complex self-collision bounds while maintaining multi-contact dynamic feasibility. Traditional trajectory optimizers frequently struggle in these restricted spaces, as navigating the large collision space with splines on particle abstractions is insufficient and leads to poor local minima. To address this, we propose a three-stage whole-body planning framework that formulates kinematic path planning directly over kinematically reachable rigid-body volumes. By integrating differentiable collision avoidance into a reachability-constrained formulation, our framework synthesizes volume-informed guides that reliably guide a full-order trajectory optimizer over long horizons. We show that these optimized plans serve as high-quality references to train a residual reinforcement learning policy for robust online execution. We validate our approach on the Unitree G1 humanoid across three benchmark testbeds exceeding NIST emergency response standards, achieving restricted confinement ratios ($C_r &lt; 1.5$). Our framework generates feasible trajectories across 12-to-18-second tasks with complex foot and hand contacts where standard baselines fail, while the learned policy successfully tracks these plans under extensive domain randomization in physics simulation.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.10220">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.06907">Spatiotemporal Agility: Time-Constrained Reinforcement Learning for Vision-Guided Dynamic Quadrupedal Interception</a></h3>
 <p class="paper-meta">2026-08-07 &middot; Yidong Zhu, Zibo Dai, Tongning Zhang, Leixin Chang, Hua Chen</p>
@@ -95,7 +102,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.24083">Learning Reusable Hybrid Motion Priors for Humanoid Locomotion from Motion Imitation</a></h3>
-<p class="paper-meta">2026-07-27 &middot; Valerio Belli, Valerio Modugno, Enrico Mingo Hoffman, Fabio Amadio &middot; 0 citations</p>
+<p class="paper-meta">2026-07-27 &middot; Valerio Belli, Valerio Modugno, Enrico Mingo Hoffman, Fabio Amadio</p>
 <p class="paper-abstract">Reinforcement learning can produce robust humanoid controllers, but each new task is typically trained as a separate policy with its own reward design and training process. Motion imitation provides an alternative source of motor competence by training policies to track retargeted human motions, yet the resulting controllers remain reference trackers and are not directly usable as task policies. We propose a three-stage pipeline that turns motion-imitation skills into a reusable hybrid motion prior (HMP) for humanoid locomotion. First, an expert policy is trained to imitate retargeted human motion-capture clips. Second, the expert is distilled into a frozen architecture composed of a proprioceptive encoder, a residual vector-quantized (RVQ) codebook, and an action decoder. Third, task-level policies are trained to solve locomotion tasks by selecting discrete codebook entries while the HMP remains frozen. We evaluate the method on velocity tracking, point-goal navigation, and fall-recovery velocity tracking in simulation, and deploy the velocity-tracking policy on a real Unitree G1 robot. The distillation process preserves the tracking behavior of the expert, while the resulting HMP can be reused without retraining as the action interface for different downstream locomotion policies. The learned HMP reveals an interpretable codebook structure in which the number of active RVQ stages modulates the available gait patterns. We further show that training the codebook with the rotation trick improves latent organization and reduces downstream falls compared with a standard straight-through estimator.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.24083">PDF</a></p>
 </div>
@@ -107,7 +114,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.22997">Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline</a></h3>
-<p class="paper-meta">2026-07-25 &middot; Qing Yang, Xun Wang, Ziguan Wang, Zhenjiang Li, Hongqiang Wang, Dongdong Weng &middot; 0 citations</p>
+<p class="paper-meta">2026-07-25 &middot; Qing Yang, Xun Wang, Ziguan Wang, Zhenjiang Li, Hongqiang Wang, Dongdong Weng</p>
 <p class="paper-abstract">Physical AI -- the integration of large vision-language-action (VLA) models with embodied agents that act in the real world -- has emerged as the next major frontier for AI, echoed by industry leaders such as Jensen Huang (``the next big thing is Physical AI, AI with a body,&#x27;&#x27; GTC Paris, June 2025) and Dr. Lisa Su (`we&#x27;re entering the world of Physical AI ... this is where AI enters the real world,&#x27; CES 2026). This paper presents an end-to-end, fully AMD-accelerated technology stack for embodied manipulation, spanning data-center training silicon, Radeon PRO simulation/rendering GPUs, and Ryzen AI edge compute, unified by the open ROCm software stack. We demonstrate that training and deploying VLA-based manipulation policies does not require a CUDA-locked ecosystem. Four progressive demonstrations are presented: (1) a Sim-to-Real manipulation pipeline trained with SmolVLA and deployed on a physical Franka arm; (2) a semantic, language-grounded object-selection task (`one-of-three&#x27;); (3) a Real2Sim synthetic-data generation pipeline that fuses 3D Gaussian Splatting (3DGS) reconstructions of real scenes with the Genesis physics engine; and (4) large-scale reinforcement learning for quadruped and humanoid locomotion benchmarked across multiple hardware platforms. All pipelines run natively on ROCm + PyTorch on RDNA4 (Radeon AI PRO R9700) and RDNA3.5 (Radeon PRO W7900) hardware and are reproducible on the free Radeon Cloud Platform.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.22997">PDF</a></p>
 </div>
@@ -209,7 +216,8 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
-|**2026-08-06**|**$ω$ -0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation**|Zhe Li et.al.|-|[2608.06375](http://arxiv.org/abs/2608.06375)|null|
+|**2026-08-07**|**LUCID: Latent-Skill Unified Control via Imagined Dynamics for Long-Horizon Humanoid Loco-Manipulation**|Cheng Guo et.al.|-|[2608.07746](http://arxiv.org/abs/2608.07746)|null|
+|**2026-08-09**|**$ω$ -0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation**|Zhe Li et.al.|-|[2608.06375](http://arxiv.org/abs/2608.06375)|null|
 |**2026-08-06**|**MobileWAM: Bridging World Action Models to Mobile Manipulation with Chain-of-Foresight**|Zehua Fan et.al.|-|[2608.04657](http://arxiv.org/abs/2608.04657)|null|
 |**2026-08-05**|**RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation**|Shuliang He et.al.|-|[2608.03387](http://arxiv.org/abs/2608.03387)|null|
 |**2026-07-31**|**Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control**|Hyunjong Song et.al.|-|[2607.29625](http://arxiv.org/abs/2607.29625)|null|
@@ -217,7 +225,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-07-22**|**Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning**|Nicolas Kosanovic et.al.|-|[2607.20399](http://arxiv.org/abs/2607.20399)|null|
 |**2026-07-20**|**FARO: Feasibility-Aware Robot Motion Optimization**|Michal Ciebielski et.al.|-|[2607.18362](http://arxiv.org/abs/2607.18362)|null|
 |**2026-07-26**|**Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation**|Peng Ren et.al.|-|[2607.18016](http://arxiv.org/abs/2607.18016)|null|
-|**2026-07-14**|**Vision-Based Dribbling for Humanoid Soccer via Privileged Representation Learning**|Flavio Maiorana et.al.|0|[2607.12702](http://arxiv.org/abs/2607.12702)|null|
+|**2026-07-14**|**Vision-Based Dribbling for Humanoid Soccer via Privileged Representation Learning**|Flavio Maiorana et.al.|-|[2607.12702](http://arxiv.org/abs/2607.12702)|null|
 |**2026-07-13**|**PAKE: Learning Whole-Body Loco-Manipulation with Partial Kinematic Embeddings**|Zhengmao He et.al.|-|[2607.11041](http://arxiv.org/abs/2607.11041)|null|
 |**2026-07-15**|**TAC-LOCO: Unified Whole-Body Control for Quadrupedal TACtile-Informed LOCO-Manipulation**|Muqun Hu et.al.|-|[2607.10132](http://arxiv.org/abs/2607.10132)|null|
 |**2026-07-10**|**Validating Virtual Reality for Studying Multimodal Human-Robot Interaction in Socially Aware Robot Navigation**|Hariharan Arunachalam et.al.|-|[2607.09261](http://arxiv.org/abs/2607.09261)|null|
@@ -234,8 +242,14 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 <div class="view-cards">
 <div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.07746">LUCID: Latent-Skill Unified Control via Imagined Dynamics for Long-Horizon Humanoid Loco-Manipulation</a></h3>
+<p class="paper-meta">2026-08-07 &middot; Cheng Guo, Mingzhe Ni, Angelo Cangelosi, Arash Ajoudani</p>
+<p class="paper-abstract">Long-horizon humanoid loco-manipulation requires composing versatile whole-body skills and reliable high-level decision making. Existing methods often coordinate pretrained skills with scripted planners, finite-state machines or task-specific model-free policies, restricting their ability to handle complex task sequences. To address this limitation, we propose \textbf{LUCID}, a hierarchical model-based reinforcement learning framework that plans over reusable skills through imagined rollouts of a learned dynamics model. LUCID first trains a structured latent-conditioned low-level policy via adversarial imitation and then freezes it while jointly learning a high-level policy and macro-dynamics world model. The world model predicts the temporally extended state transitions induced by latent decisions, enabling high-level policy optimization through imagined rollouts. We evaluate our framework across various simulated multi-object rearrangement scenarios. Experimental results show that LUCID improves the full-task success and partial-completion rates compared to prior baseline methods, demonstrating its effectiveness in complex sequential loco-manipulation tasks.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.07746">PDF</a></p>
+</div>
+<div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.06375">$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation</a></h3>
-<p class="paper-meta">2026-08-06 &middot; Zhe Li, Zhenzhe Zhang, Yangyang Wei, Wenjie Zhang, Xichen Yuan, Peiyuan Zhi, Gen Li, Xinying Guo, Fengjie Gao, Jianfei Yang, Shanghang Zhang</p>
+<p class="paper-meta">2026-08-09 &middot; Zhe Li, Zhenzhe Zhang, Yangyang Wei, Wenjie Zhang, Xichen Yuan, Peiyuan Zhi, Gen Li, Xinying Guo, Fengjie Gao, Jianfei Yang, Shanghang Zhang</p>
 <p class="paper-abstract">Humanoid household tasks often require concurrent loco-manipulation, where the robot must move, adjust posture, maintain balance, and manipulate objects as a single coordinated behavior. Yet existing humanoid policies typically decompose locomotion and manipulation, while recent world-action models remain either arm-centric or video-centered. We present $ω$-0, a latent predictive whole-body world-action model for real-world humanoid concurrent loco-manipulation. Given a language instruction, current visual observation, and robot proprioceptive state, $ω$-0 directly predicts controller-compatible whole-body action latents for real-robot execution. Rather than reconstructing future videos, $ω$-0 learns compact future observation embeddings as a lightweight predictive objective, coupling latent visual foresight with diffusion-based whole-body action generation. The model supports egocentric RGB, exocentric RGB, and exocentric depth inputs, and leverages controller-based simulation replay to ground human/public visual-motion priors into robot-executable action latents. We further collect $ω$-HOME, a 40+ hour real-world household humanoid dataset with synchronized multi-view observations, whole-body SMPL motions, robot states, and action latents. Real-world experiments on 11 household tasks demonstrate that a single $ω$-0 model can produce smooth manipulate-while-moving behaviors and consistently outperform representative imitation learning, VLA, humanoid, and WAM baselines.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2608.06375">PDF</a></p>
 </div>
@@ -283,7 +297,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.12702">Vision-Based Dribbling for Humanoid Soccer via Privileged Representation Learning</a></h3>
-<p class="paper-meta">2026-07-14 &middot; Flavio Maiorana, Valerio Spagnoli, Eugenio Bugli, Flavio Volpi, Daniele Affinita, Vincenzo Suriani, Daniele Nardi, Luca Iocchi &middot; 0 citations</p>
+<p class="paper-meta">2026-07-14 &middot; Flavio Maiorana, Valerio Spagnoli, Eugenio Bugli, Flavio Volpi, Daniele Affinita, Vincenzo Suriani, Daniele Nardi, Luca Iocchi</p>
 <p class="paper-abstract">Recent advances in humanoid robotics have highlighted the importance of deployable loco-manipulation skills. Dribbling a soccer ball while evading active opponents requires simultaneous balance, precise ball control, and awareness of a dynamic adversary under onboard sensing and real-time constraints. Existing approaches typically separate perception and motion, which can be effective in controlled settings but may fail under occlusions, fast ball movements, and complex opponent interactions, since perception is not directly optimized for control. We propose an integrated approach in which a temporal depth encoder is embedded into a reinforcement learning policy through a task-specific projection layer. We apply this framework to a simulated Booster T1 humanoid robot and show that it is possible to learn vision-based, opponent-aware dribbling directly from depth observations, without explicit state estimation or privileged scene information. The learned policy achieves 100% success in nominal target-driven dribbling and 96% success with a single static obstacle, while reaching 46% success against an actively moving ball-attacker opponent. These results demonstrate that the proposed framework supports robust vision-based dribbling in nominal and moderately dynamic settings, and provides a strong foundation for handling more challenging moving-adversary scenarios.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.12702">PDF</a></p>
 </div>
@@ -636,7 +650,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-06-30**|**Learn Weightlessness: Imitate Non-Self-Stabilizing Motions on Humanoid Robot**|Yucheng Xin et.al.|-|[2604.21351](http://arxiv.org/abs/2604.21351)|null|
 |**2026-04-18**|**Leveraging VR Robot Games to Facilitate Data Collection for Embodied Intelligence Tasks**|Yihan Zhang et.al.|-|[2604.16903](http://arxiv.org/abs/2604.16903)|null|
 |**2026-04-17**|**CLAW: Composable Language-Annotated Whole-body Motion Generation**|Jianuo Cao et.al.|-|[2604.11251](http://arxiv.org/abs/2604.11251)|**[link](https://github.com/JianuoCao/CLAW)**|
-|**2026-03-25**|**SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating**|Hanbyel Cho et.al.|2|[2603.23983](http://arxiv.org/abs/2603.23983)|null|
+|**2026-03-25**|**SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating**|Hanbyel Cho et.al.|-|[2603.23983](http://arxiv.org/abs/2603.23983)|null|
 |**2026-04-30**|**Make Tracking Easy: Neural Motion Retargeting for Humanoid Whole-body Control**|Qingrui Zhao et.al.|-|[2603.22201](http://arxiv.org/abs/2603.22201)|null|
 |**2026-03-05**|**PhysiFlow: Physics-Aware Humanoid Whole-Body VLA via Multi-Brain Latent Flow Matching and Robust Tracking**|Weikai Qin et.al.|-|[2603.05410](http://arxiv.org/abs/2603.05410)|null|
 
@@ -723,7 +737,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2603.23983">SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating</a></h3>
-<p class="paper-meta">2026-03-25 &middot; Hanbyel Cho, Sang-Hun Kim, Jeonguk Kang, Donghan Koo &middot; 2 citations</p>
+<p class="paper-meta">2026-03-25 &middot; Hanbyel Cho, Sang-Hun Kim, Jeonguk Kang, Donghan Koo</p>
 <p class="paper-abstract">Recent advances in real-time interactive text-driven motion generation have enabled humanoids to perform diverse behaviors. However, kinematics-only generators often exhibit physical hallucinations, producing motion trajectories that are physically infeasible to track with a downstream motion tracking controller or unsafe for real-world deployment. These failures often arise from the lack of explicit physics-aware objectives for real-robot execution and become more severe under out-of-distribution (OOD) user inputs. Hence, we propose SafeFlow, a text-driven humanoid whole-body control framework that combines physics-guided motion generation with a 3-Stage Safety Gate driven by explicit risk indicators. SafeFlow adopts a two-level architecture. At the high level, we generate motion trajectories using Physics-Guided Rectified Flow Matching in a VAE latent space to improve real-robot executability, and further accelerate sampling via Reflow to reduce the number of function evaluations (NFE) for real-time control. The 3-Stage Safety Gate enables selective execution by detecting semantic OOD prompts using a Mahalanobis score in text-embedding space, filtering unstable generations via a directional sensitivity discrepancy metric, and enforcing final hard kinematic constraints such as joint and velocity limits before passing the generated trajectory to a low-level motion tracking controller. Extensive experiments on the Unitree G1 demonstrate that SafeFlow outperforms prior diffusion-based methods in success rate, physical compliance, and inference speed, while maintaining diverse expressiveness.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2603.23983">PDF</a></p>
 </div>

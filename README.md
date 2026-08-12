@@ -1,4 +1,4 @@
-## Updated on 2026.08.10
+## Updated on 2026.08.12
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 <details>
@@ -17,7 +17,8 @@
 
 |Publish Date|Title|Authors|Citations|PDF|Code|
 |---|---|---|---|---|---|
-|**2026-08-07**|**Spatiotemporal Agility: Time-Constrained Reinforcement Learning for Vision-Guided Dynamic Quadrupedal Interception**|Yidong Zhu et.al.|0|[2608.06907](http://arxiv.org/abs/2608.06907)|null|
+|**2026-08-10**|**Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References**|Carlos Gonzalez et.al.|-|[2608.10220](http://arxiv.org/abs/2608.10220)|null|
+|**2026-08-07**|**Spatiotemporal Agility: Time-Constrained Reinforcement Learning for Vision-Guided Dynamic Quadrupedal Interception**|Yidong Zhu et.al.|-|[2608.06907](http://arxiv.org/abs/2608.06907)|null|
 |**2026-08-06**|**PathCover: A Fast Convex Decomposition along a Path via Randomized Iterative Space Partitioning (RISP) on Point Clouds**|Kunal S. Narkhede et.al.|-|[2608.05586](http://arxiv.org/abs/2608.05586)|null|
 |**2026-08-03**|**Open-DiffLoco: Open-Source Differentiable Learning for Deployable Blind Quadruped Locomotion**|Martin Opat et.al.|-|[2608.02069](http://arxiv.org/abs/2608.02069)|null|
 |**2026-07-31**|**Advances, challenges, and opportunities for legged robots**|Jonas Frey et.al.|-|[2607.28952](http://arxiv.org/abs/2607.28952)|null|
@@ -40,24 +41,25 @@
 |**2026-07-16**|**ADP: Adversarial Dynamics Priors for Physically Grounded Humanoid Locomotion**|Seokju Lee et.al.|-|[2607.03454](http://arxiv.org/abs/2607.03454)|null|
 |**2026-07-02**|**Multi-Rate Nonlinear Model Predictive Control for Wall-Supported Bipedal Locomotion of Quadrupedal Robots**|Taizoon Chunawala et.al.|-|[2607.01574](http://arxiv.org/abs/2607.01574)|null|
 
-<p align=right>(<a href=#updated-on-20260810>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260812>back to top</a>)</p>
 
 ## Loco-Manipulation
 
 |Publish Date|Title|Authors|Citations|PDF|Code|
 |---|---|---|---|---|---|
-|**2026-08-06**|**$ω$ -0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation**|Zhe Li et.al.|-|[2608.06375](http://arxiv.org/abs/2608.06375)|null|
+|**2026-08-07**|**LUCID: Latent-Skill Unified Control via Imagined Dynamics for Long-Horizon Humanoid Loco-Manipulation**|Cheng Guo et.al.|-|[2608.07746](http://arxiv.org/abs/2608.07746)|null|
+|**2026-08-09**|**$ω$ -0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation**|Zhe Li et.al.|-|[2608.06375](http://arxiv.org/abs/2608.06375)|null|
 |**2026-08-06**|**MobileWAM: Bridging World Action Models to Mobile Manipulation with Chain-of-Foresight**|Zehua Fan et.al.|-|[2608.04657](http://arxiv.org/abs/2608.04657)|null|
 |**2026-08-05**|**RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation**|Shuliang He et.al.|-|[2608.03387](http://arxiv.org/abs/2608.03387)|null|
 |**2026-07-31**|**Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control**|Hyunjong Song et.al.|-|[2607.29625](http://arxiv.org/abs/2607.29625)|null|
 |**2026-07-31**|**CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning**|Yuxin Chen et.al.|-|[2607.29172](http://arxiv.org/abs/2607.29172)|null|
 |**2026-07-22**|**Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning**|Nicolas Kosanovic et.al.|-|[2607.20399](http://arxiv.org/abs/2607.20399)|null|
-|**2026-07-20**|**FARO: Feasibility-Aware Robot Motion Optimization**|Michal Ciebielski et.al.|0|[2607.18362](http://arxiv.org/abs/2607.18362)|null|
+|**2026-07-20**|**FARO: Feasibility-Aware Robot Motion Optimization**|Michal Ciebielski et.al.|-|[2607.18362](http://arxiv.org/abs/2607.18362)|null|
 |**2026-07-26**|**Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation**|Peng Ren et.al.|-|[2607.18016](http://arxiv.org/abs/2607.18016)|null|
 |**2026-07-14**|**Vision-Based Dribbling for Humanoid Soccer via Privileged Representation Learning**|Flavio Maiorana et.al.|-|[2607.12702](http://arxiv.org/abs/2607.12702)|null|
 |**2026-07-13**|**PAKE: Learning Whole-Body Loco-Manipulation with Partial Kinematic Embeddings**|Zhengmao He et.al.|-|[2607.11041](http://arxiv.org/abs/2607.11041)|null|
 |**2026-07-15**|**TAC-LOCO: Unified Whole-Body Control for Quadrupedal TACtile-Informed LOCO-Manipulation**|Muqun Hu et.al.|-|[2607.10132](http://arxiv.org/abs/2607.10132)|null|
-|**2026-07-10**|**Validating Virtual Reality for Studying Multimodal Human-Robot Interaction in Socially Aware Robot Navigation**|Hariharan Arunachalam et.al.|0|[2607.09261](http://arxiv.org/abs/2607.09261)|null|
+|**2026-07-10**|**Validating Virtual Reality for Studying Multimodal Human-Robot Interaction in Socially Aware Robot Navigation**|Hariharan Arunachalam et.al.|-|[2607.09261](http://arxiv.org/abs/2607.09261)|null|
 |**2026-07-11**|**Calf-Integrated Arms for Bimanual Quadruped Loco-Manipulation**|Yan Pan et.al.|-|[2607.06186](http://arxiv.org/abs/2607.06186)|null|
 |**2026-06-30**|**RoboTacDex: A Dexterous Visual-Tactile-Action Dataset for Humanoid Manipulation**|Xinyi Wang et.al.|-|[2606.31836](http://arxiv.org/abs/2606.31836)|null|
 |**2026-07-01**|**Labimus: A Simulation and Benchmark for Humanoid Dexterous Manipulation in Chemical Laboratory**|Yuhan Wu et.al.|-|[2606.31037](http://arxiv.org/abs/2606.31037)|null|
@@ -67,7 +69,7 @@
 |**2026-06-28**|**AnyBody: Free-Form Whole-Body Humanoid Control from Arbitrary Keypoint Guidance**|Shuning Li et.al.|-|[2606.29209](http://arxiv.org/abs/2606.29209)|null|
 |**2026-06-26**|**CWI: Composite Humanoid Whole-Body Imitation System for Loco-manipulation**|Wenqi Ge et.al.|-|[2606.27676](http://arxiv.org/abs/2606.27676)|null|
 
-<p align=right>(<a href=#updated-on-20260810>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260812>back to top</a>)</p>
 
 ## Reinforcement Learning for Legged Robots
 
@@ -82,15 +84,15 @@
 |**2026-04-03**|**Learning Locomotion on Complex Terrain for Quadrupedal Robots with Foot Position Maps and Stability Rewards**|Matthew Hwang et.al.|-|[2604.02744](http://arxiv.org/abs/2604.02744)|null|
 |**2026-03-17**|**SLowRL: Safe Low-Rank Adaptation Reinforcement Learning for Locomotion**|Elham Daneshmand et.al.|-|[2603.17092](http://arxiv.org/abs/2603.17092)|null|
 |**2026-05-11**|**MOBIUS: A Multi-Modal Bipedal Robot that can Walk, Crawl, Climb, and Roll**|Alexander Schperberg et.al.|-|[2511.01774](http://arxiv.org/abs/2511.01774)|null|
-|**2026-07-15**|**Pretraining in Actor-Critic Reinforcement Learning for Locomotion**|Jiale Fan et.al.|0|[2510.12363](http://arxiv.org/abs/2510.12363)|null|
+|**2026-07-15**|**Pretraining in Actor-Critic Reinforcement Learning for Locomotion**|Jiale Fan et.al.|-|[2510.12363](http://arxiv.org/abs/2510.12363)|null|
 |**2025-12-04**|**PPL: Point Cloud Supervised Proprioceptive Locomotion Reinforcement Learning for Legged Robots in Crawl Spaces**|Bida Ma et.al.|-|[2508.09950](http://arxiv.org/abs/2508.09950)|null|
 |**2026-02-18**|**Robust Reinforcement Learning-Based Locomotion for Resource-Constrained Quadrupeds with Exteroceptive Sensing**|Davide Plozza et.al.|-|[2505.12537](http://arxiv.org/abs/2505.12537)|null|
 |**2025-04-14**|**GenTe: Generative Real-world Terrains for General Legged Robot Locomotion Control**|Hanwen Wan et.al.|-|[2504.09997](http://arxiv.org/abs/2504.09997)|null|
 |**2025-04-08**|**PTRL: Prior Transfer Deep Reinforcement Learning for Legged Robots Locomotion**|Haodong Huang et.al.|-|[2504.05629](http://arxiv.org/abs/2504.05629)|null|
-|**2025-02-23**|**Quadruped Robot Simulation Using Deep Reinforcement Learning -- A step towards locomotion policy**|Nabeel Ahmad Khan Jadoon et.al.|0|[2502.16401](http://arxiv.org/abs/2502.16401)|null|
+|**2025-02-23**|**Quadruped Robot Simulation Using Deep Reinforcement Learning -- A step towards locomotion policy**|Nabeel Ahmad Khan Jadoon et.al.|-|[2502.16401](http://arxiv.org/abs/2502.16401)|null|
 |**2024-08-28**|**Structural Optimization of Lightweight Bipedal Robot via SERL**|Yi Cheng et.al.|11|[2408.15632](http://arxiv.org/abs/2408.15632)|null|
 
-<p align=right>(<a href=#updated-on-20260810>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260812>back to top</a>)</p>
 
 ## World Models for Robotics
 
@@ -109,20 +111,20 @@
 |**2026-06-25**|**PhysiFormer: Learning to Simulate Mechanics in World Space**|Yiming Chen et.al.|-|[2606.27364](http://arxiv.org/abs/2606.27364)|null|
 |**2026-07-03**|**In-Context World Modeling for Robotic Control**|Siyin Wang et.al.|-|[2606.26025](http://arxiv.org/abs/2606.26025)|null|
 |**2026-06-17**|**ImageWAM: Do World Action Models Really Need Video Generation, or Just Image Editing?**|Yuyang Zhang et.al.|-|[2606.19531](http://arxiv.org/abs/2606.19531)|null|
-|**2026-06-11**|**FlowMo-WM: A World Model with Object Momentum and Hidden Ambient Drift**|Yitao Jiang et.al.|0|[2606.13817](http://arxiv.org/abs/2606.13817)|null|
+|**2026-06-11**|**FlowMo-WM: A World Model with Object Momentum and Hidden Ambient Drift**|Yitao Jiang et.al.|-|[2606.13817](http://arxiv.org/abs/2606.13817)|null|
 |**2026-06-16**|**WEAVER, Better, Faster, Longer: An Effective World Model for Robotic Manipulation**|Arnav Kumar Jain et.al.|-|[2606.13672](http://arxiv.org/abs/2606.13672)|null|
 |**2026-06-05**|**Blockchain Infrastructure for Intelligent Cyber--Physical--Social Systems:Post-Quantum Security, Interoperability, and Trustworthy Data Economies in the Era of Embodied AI**|Song Guo et.al.|-|[2606.06895](http://arxiv.org/abs/2606.06895)|null|
 |**2026-06-04**|**PiL-World: A Chunk-Wise World Model for VLA Policy-in-the-Loop Evaluation**|Chong Ma et.al.|-|[2606.05773](http://arxiv.org/abs/2606.05773)|null|
 |**2026-06-04**|**OSCAR: Omni-Embodiment Action-Conditioned World Model for Robotics**|Zhuoyuan Wu et.al.|-|[2606.04463](http://arxiv.org/abs/2606.04463)|null|
 
-<p align=right>(<a href=#updated-on-20260810>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260812>back to top</a>)</p>
 
 ## Humanoid Robots
 
 |Publish Date|Title|Authors|Citations|PDF|Code|
 |---|---|---|---|---|---|
 |**2026-08-01**|**Light-Loco-Parkour: Versatile Perceptive Whole-Body Locomotion via Multi-Skill Distillation**|Hongming Chen et.al.|-|[2608.02653](http://arxiv.org/abs/2608.02653)|null|
-|**2026-07-15**|**Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control**|J. M. A. Marcelo et.al.|0|[2607.14182](http://arxiv.org/abs/2607.14182)|null|
+|**2026-07-15**|**Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control**|J. M. A. Marcelo et.al.|-|[2607.14182](http://arxiv.org/abs/2607.14182)|null|
 |**2026-07-13**|**A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation**|Yunhai Feng et.al.|-|[2607.11874](http://arxiv.org/abs/2607.11874)|null|
 |**2026-07-07**|**Athena-WBC: Capability-Aligned Policy Experts for Long-Tail Humanoid Whole-Body Control**|Yuan Jiang et.al.|-|[2607.04837](http://arxiv.org/abs/2607.04837)|null|
 |**2026-07-19**|**ReactiveBFM: Reactive Closed-Loop Motion Planning Towards Universal Humanoid Whole-Body Control**|Xiao Chen et.al.|-|[2606.30362](http://arxiv.org/abs/2606.30362)|null|
@@ -134,11 +136,11 @@
 |**2026-06-30**|**Learn Weightlessness: Imitate Non-Self-Stabilizing Motions on Humanoid Robot**|Yucheng Xin et.al.|-|[2604.21351](http://arxiv.org/abs/2604.21351)|null|
 |**2026-04-18**|**Leveraging VR Robot Games to Facilitate Data Collection for Embodied Intelligence Tasks**|Yihan Zhang et.al.|-|[2604.16903](http://arxiv.org/abs/2604.16903)|null|
 |**2026-04-17**|**CLAW: Composable Language-Annotated Whole-body Motion Generation**|Jianuo Cao et.al.|-|[2604.11251](http://arxiv.org/abs/2604.11251)|**[link](https://github.com/JianuoCao/CLAW)**|
-|**2026-03-25**|**SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating**|Hanbyel Cho et.al.|2|[2603.23983](http://arxiv.org/abs/2603.23983)|null|
+|**2026-03-25**|**SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating**|Hanbyel Cho et.al.|-|[2603.23983](http://arxiv.org/abs/2603.23983)|null|
 |**2026-04-30**|**Make Tracking Easy: Neural Motion Retargeting for Humanoid Whole-body Control**|Qingrui Zhao et.al.|-|[2603.22201](http://arxiv.org/abs/2603.22201)|null|
 |**2026-03-05**|**PhysiFlow: Physics-Aware Humanoid Whole-Body VLA via Multi-Brain Latent Flow Matching and Robust Tracking**|Weikai Qin et.al.|-|[2603.05410](http://arxiv.org/abs/2603.05410)|null|
 
-<p align=right>(<a href=#updated-on-20260810>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260812>back to top</a>)</p>
 
 ## Character Control & Game RL
 
@@ -154,7 +156,7 @@
 |**2026-05-18**|**Unified Walking, Running, and Recovery for Humanoids via State-Dependent Adversarial Motion Priors**|Yidan Lu et.al.|-|[2605.18611](http://arxiv.org/abs/2605.18611)|null|
 |**2026-04-21**|**Multi-Gait Learning for Humanoid Robots Using Reinforcement Learning with Selective Adversarial Motion Prior**|Yuanye Wu et.al.|-|[2604.19102](http://arxiv.org/abs/2604.19102)|null|
 |**2026-04-07**|**Neural Assistive Impulses: Synthesizing Exaggerated Motions for Physics-based Characters**|Zhiquan Wang et.al.|-|[2604.05394](http://arxiv.org/abs/2604.05394)|null|
-|**2026-03-27**|**Partial Motion Imitation for Learning Cart Pushing with Legged Manipulators**|Mili Das et.al.|0|[2603.26659](http://arxiv.org/abs/2603.26659)|null|
+|**2026-03-27**|**Partial Motion Imitation for Learning Cart Pushing with Legged Manipulators**|Mili Das et.al.|-|[2603.26659](http://arxiv.org/abs/2603.26659)|null|
 |**2026-03-09**|**TeamHOI: Learning a Unified Policy for Cooperative Human-Object Interactions with Any Team Size**|Stefan Lionar et.al.|-|[2603.07988](http://arxiv.org/abs/2603.07988)|null|
 |**2026-03-01**|**Spherical Latent Motion Prior for Physics-Based Simulated Humanoid Control**|Jing Tan et.al.|-|[2603.01294](http://arxiv.org/abs/2603.01294)|null|
 |**2026-04-02**|**EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents**|Wenjia Wang et.al.|-|[2602.23205](http://arxiv.org/abs/2602.23205)|null|
@@ -162,7 +164,7 @@
 |**2026-05-21**|**HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control**|Jinrui Han et.al.|-|[2602.03205](http://arxiv.org/abs/2602.03205)|null|
 |**2025-12-13**|**Sim2Real Reinforcement Learning for Soccer skills**|Jonathan Spraggett et.al.|-|[2512.12437](http://arxiv.org/abs/2512.12437)|null|
 
-<p align=right>(<a href=#updated-on-20260810>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260812>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Gaming722/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Gaming722/cv-arxiv-daily/graphs/contributors
