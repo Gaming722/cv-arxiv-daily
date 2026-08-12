@@ -220,10 +220,24 @@ def get_daily_papers(topic,query="slam", max_results=2):
             results = list(client.results(search_engine))
             break
         except arxiv.HTTPError as e:
-            is_429 = getattr(e, 'status', None) == 429 or getattr(e, 'status_code', None) == 429 or '429' in str(e)
-            if is_429 and attempt < max_retries - 1:
+            status = getattr(e, 'status', None)
+            if status is None:
+                status = getattr(e, 'status_code', None)
+            if status is not None:
+                try:
+                    status = int(status)
+                except (TypeError, ValueError):
+                    status = None
+            if status is None:
+                is_retriable = re.search(
+                    r'\bHTTP(?:/[0-9.]+)?(?: Error)?\s+(429|500|502|503|504)\b',
+                    str(e),
+                ) is not None
+            else:
+                is_retriable = status in {429, 500, 502, 503, 504}
+            if is_retriable and attempt < max_retries - 1:
                 wait_time = 60 * (attempt + 1)
-                logging.warning(f"HTTP 429 rate limit hit, waiting {wait_time}s before retry {attempt + 1}/{max_retries}")
+                logging.warning(f"Transient arXiv error ({e}), waiting {wait_time}s before retry {attempt + 1}/{max_retries}")
                 time.sleep(wait_time)
                 last_error = e
                 client = arxiv.Client()
@@ -565,8 +579,12 @@ def demo(**config):
         logging.info(f"GET daily papers begin")
         for topic, keyword in keywords.items():
             logging.info(f"Keyword: {topic}")
-            data = get_daily_papers(topic, query = keyword,
-                                            max_results = max_results)
+            try:
+                data = get_daily_papers(topic, query = keyword,
+                                                max_results = max_results)
+            except arxiv.HTTPError as e:
+                logging.warning(f"Skipping keyword {topic} after repeated arXiv failures: {e}")
+                continue
             data_collector.append(data)
             print("\n")
         logging.info(f"GET daily papers end")
