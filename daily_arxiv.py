@@ -221,9 +221,9 @@ def get_daily_papers(topic,query="slam", max_results=2):
             break
         except arxiv.HTTPError as e:
             status = getattr(e, 'status', None) or getattr(e, 'status_code', None)
-            is_retriable = status in {429, 500, 502, 503, 504} or any(
-                code in str(e) for code in ('429', '500', '502', '503', '504')
-            )
+            is_retriable = status in {429, 500, 502, 503, 504}
+            if status is None:
+                is_retriable = any(code in str(e) for code in ('429', '500', '502', '503', '504'))
             if is_retriable and attempt < max_retries - 1:
                 wait_time = 60 * (attempt + 1)
                 logging.warning(f"Transient arXiv error ({e}), waiting {wait_time}s before retry {attempt + 1}/{max_retries}")
