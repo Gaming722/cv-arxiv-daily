@@ -230,7 +230,7 @@ def get_daily_papers(topic,query="slam", max_results=2):
                     status = None
             if status is None:
                 is_retriable = re.search(
-                    r'\b(?:HTTP(?:/[0-9.]+)?(?: Error)?\s+)?(429|500|502|503|504)\b',
+                    r'\bHTTP(?:/[0-9.]+)?(?: Error)?\s+(429|500|502|503|504)\b',
                     str(e),
                 ) is not None
             else:
