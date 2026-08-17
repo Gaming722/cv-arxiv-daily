@@ -50,7 +50,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-08-03**|**Open-DiffLoco: Open-Source Differentiable Learning for Deployable Blind Quadruped Locomotion**|Martin Opat et.al.|-|[2608.02069](http://arxiv.org/abs/2608.02069)|null|
 |**2026-07-31**|**Advances, challenges, and opportunities for legged robots**|Jonas Frey et.al.|-|[2607.28952](http://arxiv.org/abs/2607.28952)|null|
 |**2026-07-27**|**Learning Reusable Hybrid Motion Priors for Humanoid Locomotion from Motion Imitation**|Valerio Belli et.al.|-|[2607.24083](http://arxiv.org/abs/2607.24083)|null|
-|**2026-07-26**|**PRISM: Polynomial Representations for Interaction-Structured Motor Control**|Seung Hyun Lee et.al.|-|[2607.23473](http://arxiv.org/abs/2607.23473)|null|
+|**2026-07-26**|**PRISM: Polynomial Representations for Interaction-Structured Motor Control**|Seung Hyun Lee et.al.|0|[2607.23473](http://arxiv.org/abs/2607.23473)|null|
 |**2026-07-25**|**Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline**|Qing Yang et.al.|-|[2607.22997](http://arxiv.org/abs/2607.22997)|null|
 |**2026-07-21**|**Koopman DCM: Unstable Eigenfunctions as Data-driven Representations for Legged Balancing**|Stéphane Caron et.al.|-|[2607.18760](http://arxiv.org/abs/2607.18760)|null|
 |**2026-07-20**|**Towards Torque-Driven Reinforcement Learning for Quadruped Locomotion**|Jordan Dowdy et.al.|-|[2607.18365](http://arxiv.org/abs/2607.18365)|null|
@@ -61,7 +61,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-07-15**|**Design and Control of the "QuadBoat": A Quadruped Surface Vehicle for Drowning Rescue**|Lianxin Zhang et.al.|-|[2607.13633](http://arxiv.org/abs/2607.13633)|null|
 |**2026-07-15**|**Agile perceptive multi-skill locomotion for quadrupedal robots in the wild**|Jun-Gill Kang et.al.|-|[2607.13579](http://arxiv.org/abs/2607.13579)|null|
 |**2026-07-13**|**GaitSpan: Growing Humanoid Locomotion from Walking to Running**|Kwan-Yee Lin et.al.|-|[2607.12114](http://arxiv.org/abs/2607.12114)|null|
-|**2026-07-13**|**Robust bipedal locomotion on flowable slopes via foot-driven terrain manipulation**|Deniz Kerimoglu et.al.|-|[2607.11855](http://arxiv.org/abs/2607.11855)|null|
+|**2026-07-13**|**Robust bipedal locomotion on flowable slopes via foot-driven terrain manipulation**|Deniz Kerimoglu et.al.|0|[2607.11855](http://arxiv.org/abs/2607.11855)|null|
 |**2026-07-16**|**SKooP: Symmetric Koopman Predictions for Faster and More Generalizable Legged Robot Locomotion with Reinforcement Learning**|Evelyn D'Elia et.al.|-|[2607.11624](http://arxiv.org/abs/2607.11624)|null|
 |**2026-07-13**|**PAKE: Learning Whole-Body Loco-Manipulation with Partial Kinematic Embeddings**|Zhengmao He et.al.|-|[2607.11041](http://arxiv.org/abs/2607.11041)|null|
 |**2026-07-08**|**Physics-Guided Biomechanical Gait Adaptation for Humanoid Locomotion on Extreme Sloped Terrains**|Xuanyu Chen et.al.|-|[2607.07830](http://arxiv.org/abs/2607.07830)|null|
@@ -115,7 +115,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.23473">PRISM: Polynomial Representations for Interaction-Structured Motor Control</a></h3>
-<p class="paper-meta">2026-07-26 &middot; Seung Hyun Lee, Stella X. Yu</p>
+<p class="paper-meta">2026-07-26 &middot; Seung Hyun Lee, Stella X. Yu &middot; 0 citations</p>
 <p class="paper-abstract">Robot policies are typically MLPs mapping observations to actions. Yet robot observations are physical variables, and many action-relevant cues arise not from individual variables but from their interactions; power, inertial effects, contact, slip, and compliance depend on products among observable signals. We introduce PRISM, a policy representation that makes polynomial interactions among observable physical variables explicit, learnable, and compact. Rather than listing all polynomial terms, PRISM uses a factorized polynomial module to expose higher-order interaction features efficiently. In reinforcement learning, it keeps the standard MLP backbone but applies a gradually activated element-wise polynomial function after it. In imitation learning, it replaces linear proprioceptive conditioning in Diffusion Policy with a polynomial layer trained end-to-end. Across humanoid locomotion and contact-rich manipulation, PRISM improves performance over standard MLP policies and larger MLPs with matched capacity, showing that interaction structure cannot be replaced by capacity alone. It also yields sensorless compliant behavior without force, wrench, tactile input, contact labels, or admittance control. These results suggest that polynomial representations should become a standard architectural choice for embodied motor control. The project page is available at https://lsh3163.github.io/prism/</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.23473">PDF</a></p>
 </div>
@@ -181,7 +181,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.11855">Robust bipedal locomotion on flowable slopes via foot-driven terrain manipulation</a></h3>
-<p class="paper-meta">2026-07-13 &middot; Deniz Kerimoglu, Junnosuke Kamohara, Jiyeon Maeng, Ziwon Yoon, Seth Hutchinson, Ye Zhao, Daniel I. Goldman</p>
+<p class="paper-meta">2026-07-13 &middot; Deniz Kerimoglu, Junnosuke Kamohara, Jiyeon Maeng, Ziwon Yoon, Seth Hutchinson, Ye Zhao, Daniel I. Goldman &middot; 0 citations</p>
 <p class="paper-abstract">Bipedal robots are challenging to control because they operate close to instability, where small variations in foot-terrain contact can rapidly destabilize locomotion. On rigid terrain, bipedal robots mitigate this fragility by using well-established contact mechanics and control strategies. On flowable surfaces such as granular slopes, foot contact can induce large surface deformations and solid-fluid-like transitions, coupling terrain effects with robot dynamics, leading to underperformance or failure. This is partly due to the lack of reliable methods to represent the dynamics of flowable terrain, making it difficult to account for terrain effects in locomotion design. Here, we investigate how controlling terrain response can improve bipedal locomotion on granular slopes by studying the terradynamics of cleated feet, thin plates emanating from the foot soles. Systematic studies of a small-scale (1.4 kg) robophysical biped reveal that cleats with sparse and dense spacing lead to excessive terrain yielding and resistance, respectively, degrading performance and leading to failure. An intermediate cleat spacing distributes interaction forces to maintain substrate stresses near (or below) the yield threshold, enabling walking on granular slopes up to 30 degrees. Guided by these principles, we design a foot that actively adjusts cleat depth and accommodates both rigid and granular terrain. We also demonstrate that the principles of effective foot-terrain interaction translate to a larger (15 kg) autonomous biped. Our study presents an alternative to conventional body-centric robot control approaches, which regulate terrain-induced effects through body motion, by instead regulating terrain interactions through limb-centric approach.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.11855">PDF</a></p>
 </div>
@@ -229,10 +229,10 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-08-06**|**MobileWAM: Bridging World Action Models to Mobile Manipulation with Chain-of-Foresight**|Zehua Fan et.al.|-|[2608.04657](http://arxiv.org/abs/2608.04657)|null|
 |**2026-08-05**|**RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation**|Shuliang He et.al.|-|[2608.03387](http://arxiv.org/abs/2608.03387)|null|
 |**2026-07-31**|**Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control**|Hyunjong Song et.al.|-|[2607.29625](http://arxiv.org/abs/2607.29625)|null|
-|**2026-07-31**|**CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning**|Yuxin Chen et.al.|-|[2607.29172](http://arxiv.org/abs/2607.29172)|null|
+|**2026-07-31**|**CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning**|Yuxin Chen et.al.|0|[2607.29172](http://arxiv.org/abs/2607.29172)|null|
 |**2026-07-22**|**Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning**|Nicolas Kosanovic et.al.|-|[2607.20399](http://arxiv.org/abs/2607.20399)|null|
 |**2026-07-20**|**FARO: Feasibility-Aware Robot Motion Optimization**|Michal Ciebielski et.al.|-|[2607.18362](http://arxiv.org/abs/2607.18362)|null|
-|**2026-07-26**|**Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation**|Peng Ren et.al.|-|[2607.18016](http://arxiv.org/abs/2607.18016)|null|
+|**2026-07-26**|**Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation**|Peng Ren et.al.|0|[2607.18016](http://arxiv.org/abs/2607.18016)|null|
 |**2026-07-14**|**Vision-Based Dribbling for Humanoid Soccer via Privileged Representation Learning**|Flavio Maiorana et.al.|-|[2607.12702](http://arxiv.org/abs/2607.12702)|null|
 |**2026-07-13**|**PAKE: Learning Whole-Body Loco-Manipulation with Partial Kinematic Embeddings**|Zhengmao He et.al.|-|[2607.11041](http://arxiv.org/abs/2607.11041)|null|
 |**2026-07-15**|**TAC-LOCO: Unified Whole-Body Control for Quadrupedal TACtile-Informed LOCO-Manipulation**|Muqun Hu et.al.|-|[2607.10132](http://arxiv.org/abs/2607.10132)|null|
@@ -242,7 +242,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-07-01**|**Labimus: A Simulation and Benchmark for Humanoid Dexterous Manipulation in Chemical Laboratory**|Yuhan Wu et.al.|-|[2606.31037](http://arxiv.org/abs/2606.31037)|null|
 |**2026-06-29**|**VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes**|Yen-Jen Wang et.al.|-|[2606.30645](http://arxiv.org/abs/2606.30645)|null|
 |**2026-06-29**|**X-Morph: Human Motion Priors for Scalable Robot Learning Across Morphologies**|Ritwik Sharma et.al.|0|[2606.30290](http://arxiv.org/abs/2606.30290)|null|
-|**2026-07-07**|**KYON: Semi-Modular Wheel-Legged Quadruped With Agile Bimanual Capability**|Luca Rossini et.al.|-|[2606.30243](http://arxiv.org/abs/2606.30243)|null|
+|**2026-07-07**|**KYON: Semi-Modular Wheel-Legged Quadruped With Agile Bimanual Capability**|Luca Rossini et.al.|1|[2606.30243](http://arxiv.org/abs/2606.30243)|null|
 |**2026-06-28**|**AnyBody: Free-Form Whole-Body Humanoid Control from Arbitrary Keypoint Guidance**|Shuning Li et.al.|-|[2606.29209](http://arxiv.org/abs/2606.29209)|null|
 |**2026-06-26**|**CWI: Composite Humanoid Whole-Body Imitation System for Loco-manipulation**|Wenqi Ge et.al.|-|[2606.27676](http://arxiv.org/abs/2606.27676)|null|
 
@@ -287,7 +287,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.29172">CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning</a></h3>
-<p class="paper-meta">2026-07-31 &middot; Yuxin Chen, Hari Srikanth, Nathan Jew, Menglin Wu, Pengcheng Wang, Junli Ren, Masayoshi Tomizuka, Peng Xu, Jinyu Xie, Thomas Tian</p>
+<p class="paper-meta">2026-07-31 &middot; Yuxin Chen, Hari Srikanth, Nathan Jew, Menglin Wu, Pengcheng Wang, Junli Ren, Masayoshi Tomizuka, Peng Xu, Jinyu Xie, Thomas Tian &middot; 0 citations</p>
 <p class="paper-abstract">While robot foundation models are growing increasingly capable, the strongest models are typically trained on proprietary data and remain closed-source, limiting downstream users&#x27; ability to adapt them to new tasks, embodiments, and deployment settings. Following the LLM community, an emerging access paradigm for closed-weight robot foundation models is the managed supervised fine-tuning (SFT) API, where users submit training data and receive a tuned policy without access to model weights, gradients, or training internals. While such APIs let downstream users leverage powerful proprietary foundation models, they restrict policy improvement to pure imitation, ruling out reinforcement learning and other closed-loop methods that rely on internal training signals. This limitation is particularly acute for agile, contact-rich humanoid manipulation, where the gap between policy outputs and deployed behavior is large due to novel states, action tracking dynamics, latency, and controller-specific failure modes. We study how effective this managed-API regime is for humanoid adaptation, and how closed-loop improvement can be realized within it to push policies toward task mastery. We conduct one of the first empirical studies of managed-API adaptation on a real humanoid, instantiated on Gemini Robotics On-Device (GROD). We find that direct SFT through the API substantially outperforms a leading open-weight VLA trained on the same demonstrations, yet still falls short of deployment-level mastery on agile, contact-rich tasks. To close this gap, we introduce CLIFT: Closed-Loop Iterative Fine-Tuning, which turns deployment-time reward feedback into API-compatible supervised data and enables closed-loop policy improvement without accessing weights, gradients, likelihoods, or losses-pushing GROD to near-perfect success after two flywheel cycles, all without &quot;opening the model box.&quot;</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.29172">PDF</a></p>
 </div>
@@ -305,7 +305,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.18016">Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation</a></h3>
-<p class="paper-meta">2026-07-26 &middot; Peng Ren, Haoyang Ge, Jiang Zhao, Cong Huang, Yukun Shi, Pei Chi, Kai Chen</p>
+<p class="paper-meta">2026-07-26 &middot; Peng Ren, Haoyang Ge, Jiang Zhao, Cong Huang, Yukun Shi, Pei Chi, Kai Chen &middot; 0 citations</p>
 <p class="paper-abstract">Vision-language-action policies are a promising foundation for general robot control, but long-horizon humanoid loco-manipulation requires the robot to treat task objects as persistent physical entities across movement, contact, occlusion, and recovery. We study this problem as object-state divergence: the object state used to condition a whole-body action can differ from the state used to decide whether the action achieved the intended physical relation. We propose \emph{Persistent Object Tokenization} (POT), which maintains role-indexed 3D object records from RGB-D observations and converts them into object tokens for a whole-body action expert. Instantiated as \emph{POT-VLA}, the same object records condition action generation and support geometric predicate checks, yielding a closed-loop execution system in which object state is both actionable and verifiable. On a Unitree G1, POT-VLA improves a matched direct GR00T-N1.7 baseline from 39/80 to 71/80 successes over eight real-world task families. In an external Being-0-aligned reference, POT-VLA achieves 44/50 successes on aligned service tasks, compared with the 37/50 success reported by the Being-0 paper. The largest gains occur on tasks requiring maintained 3D relations, suggesting that persistent object-centered state is a useful abstraction for verifiable humanoid VLA execution.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.18016">PDF</a></p>
 </div>
@@ -365,7 +365,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2606.30243">KYON: Semi-Modular Wheel-Legged Quadruped With Agile Bimanual Capability</a></h3>
-<p class="paper-meta">2026-07-07 &middot; Luca Rossini, Arturo Laurenzi, Francesco Ruscelli, Yifang Zhang, Jingcheng Jiang, Giovanbattista Gravina, Lorenzo Baccelliere, Corrado Burchielli, Stefano Cordasco, Luca Muratore, Nikos Tsagarakis</p>
+<p class="paper-meta">2026-07-07 &middot; Luca Rossini, Arturo Laurenzi, Francesco Ruscelli, Yifang Zhang, Jingcheng Jiang, Giovanbattista Gravina, Lorenzo Baccelliere, Corrado Burchielli, Stefano Cordasco, Luca Muratore, Nikos Tsagarakis &middot; 1 citations</p>
 <p class="paper-abstract">This paper presents KYON, a hybrid wheel-legged quadruped robot equipped with a bimanual upper body for loco-manipulation tasks. The platform features a semi-modular design with a reconfigurable lower legs, enabling both wheeled and legged locomotion depending on the environment. A design approach that places actuators in the base and uses transmission mechanisms reduces distal inertia, improving agility and dynamic performance. The robot integrates a whole-body control framework together with a reinforcement learning based policy to handle nonlinear dynamics and enhance robustness to disturbances for the execution of locomotion and manipulation tasks, independently. Experimental results demonstrate effective dynamic locomotion and bimanual manipulation, validating the platform&#x27;s capability to operate in complex and unstructured scenarios.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2606.30243">PDF</a></p>
 </div>
@@ -390,12 +390,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
 |**2026-07-27**|**WARL: Wrench-Augmented Reinforcement Learning for Task-Agnostic Learning in Legged Robots**|Keita Yoneda et.al.|-|[2607.24036](http://arxiv.org/abs/2607.24036)|null|
-|**2026-07-20**|**Isaac Sim-to-Real: Reinforcement Learning based Locomotion for Quadrupeds**|Jordan Dowdy et.al.|-|[2607.18135](http://arxiv.org/abs/2607.18135)|null|
+|**2026-07-20**|**Isaac Sim-to-Real: Reinforcement Learning based Locomotion for Quadrupeds**|Jordan Dowdy et.al.|3|[2607.18135](http://arxiv.org/abs/2607.18135)|null|
 |**2026-07-17**|**Handroid: Bridging Dexterous Hand and Humanoid**|Ruogu Li et.al.|-|[2607.16187](http://arxiv.org/abs/2607.16187)|null|
 |**2026-05-14**|**Energy-Efficient Quadruped Locomotion with Compliant Feet**|Pramod Pal et.al.|-|[2605.14411](http://arxiv.org/abs/2605.14411)|null|
 |**2026-05-08**|**Active Embodiment Identification with Reinforcement Learning for Legged Robots**|Nico Bohlinger et.al.|-|[2605.08020](http://arxiv.org/abs/2605.08020)|null|
 |**2026-05-07**|**asRoBallet: Closing the Sim2Real Gap via Friction-Aware Reinforcement Learning for Underactuated Spherical Dynamics**|Fang Wan et.al.|-|[2604.24916](http://arxiv.org/abs/2604.24916)|null|
-|**2026-04-03**|**Learning Locomotion on Complex Terrain for Quadrupedal Robots with Foot Position Maps and Stability Rewards**|Matthew Hwang et.al.|-|[2604.02744](http://arxiv.org/abs/2604.02744)|null|
+|**2026-04-03**|**Learning Locomotion on Complex Terrain for Quadrupedal Robots with Foot Position Maps and Stability Rewards**|Matthew Hwang et.al.|0|[2604.02744](http://arxiv.org/abs/2604.02744)|null|
 |**2026-03-17**|**SLowRL: Safe Low-Rank Adaptation Reinforcement Learning for Locomotion**|Elham Daneshmand et.al.|-|[2603.17092](http://arxiv.org/abs/2603.17092)|null|
 |**2026-05-11**|**MOBIUS: A Multi-Modal Bipedal Robot that can Walk, Crawl, Climb, and Roll**|Alexander Schperberg et.al.|-|[2511.01774](http://arxiv.org/abs/2511.01774)|null|
 |**2026-07-15**|**Pretraining in Actor-Critic Reinforcement Learning for Locomotion**|Jiale Fan et.al.|-|[2510.12363](http://arxiv.org/abs/2510.12363)|null|
@@ -417,7 +417,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.18135">Isaac Sim-to-Real: Reinforcement Learning based Locomotion for Quadrupeds</a></h3>
-<p class="paper-meta">2026-07-20 &middot; Jordan Dowdy, Jean Chagas Vaz</p>
+<p class="paper-meta">2026-07-20 &middot; Jordan Dowdy, Jean Chagas Vaz &middot; 3 citations</p>
 <p class="paper-abstract">Learning-based approaches to locomotion have risen in popularity in recent years, showing the capability for complex legged locomotion and whole-body control. Reinforcement learning (RL), the primary learning-based approach for locomotion, often utilizes a high-performance simulation tool, providing a controlled and efficient training and development environment. However, policies that perform well in simulation frequently encounter unexpected challenges when deployed on a physical system, known as the sim-to-real gap. This work presents a robust RL locomotion framework capable of whole-body control. The proposed RL framework utilizes Nvidia&#x27;s new set of simulation tools, Isaac Sim, and its companion RL framework, Isaac Lab, for training, achieving a zero-shot sim-to-real policy. The performance of our policy is validated on physical hardware using the Unitree Go1, with experimental results showing similar velocity tracking performance to the quadruped&#x27;s integrated controller, with a greater ability to recover from large disturbances, and achieve linear velocities of 2.0 m/s and angular velocities of 1.8 rad/s.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.18135">PDF</a></p>
 </div>
@@ -447,7 +447,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2604.02744">Learning Locomotion on Complex Terrain for Quadrupedal Robots with Foot Position Maps and Stability Rewards</a></h3>
-<p class="paper-meta">2026-04-03 &middot; Matthew Hwang, Yubin Liu, Ryo Hakoda, Takeshi Oishi</p>
+<p class="paper-meta">2026-04-03 &middot; Matthew Hwang, Yubin Liu, Ryo Hakoda, Takeshi Oishi &middot; 0 citations</p>
 <p class="paper-abstract">Quadrupedal locomotion over complex terrain has been a long-standing research topic in robotics. While recent reinforcement learning-based locomotion methods improve generalizability and foot-placement precision, they rely on implicit inference of foot positions from joint angles, lacking the explicit precision and stability guarantees of optimization-based approaches. To address this, we introduce a foot position map integrated into the heightmap, and a dynamic locomotion-stability reward within an attention-based framework to achieve locomotion on complex terrain. We validate our method extensively on terrains seen during training as well as out-of-domain (OOD) terrains. Our results demonstrate that the proposed method enables precise and stable movement, resulting in improved locomotion success rates on both in-domain and OOD terrains.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2604.02744">PDF</a></p>
 </div>
@@ -521,12 +521,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-08-03**|**DriftWorld: Fast World Modeling through Drifting**|Susie Lu et.al.|-|[2607.15065](http://arxiv.org/abs/2607.15065)|null|
 |**2026-07-07**|**RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation**|Haoyu Zhao et.al.|-|[2607.06559](http://arxiv.org/abs/2607.06559)|null|
 |**2026-07-06**|**KAM-WM: Kinematic Affordance Maps from Latent World Models for Robot Manipulation**|Xinyu Shao et.al.|-|[2607.04652](http://arxiv.org/abs/2607.04652)|null|
-|**2026-07-05**|**Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models**|Riccardo O. Feingold et.al.|-|[2607.04546](http://arxiv.org/abs/2607.04546)|null|
+|**2026-07-05**|**Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models**|Riccardo O. Feingold et.al.|0|[2607.04546](http://arxiv.org/abs/2607.04546)|null|
 |**2026-07-02**|**GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation**| GigaWorld Team et.al.|-|[2607.02642](http://arxiv.org/abs/2607.02642)|null|
 |**2026-07-02**|**DVG-WM: Disentangled Video Generation Enables Efficient Embodied World Model for Robotic Manipulation**|Ziyu Shan et.al.|-|[2606.32028](http://arxiv.org/abs/2606.32028)|null|
 |**2026-06-25**|**PhysiFormer: Learning to Simulate Mechanics in World Space**|Yiming Chen et.al.|-|[2606.27364](http://arxiv.org/abs/2606.27364)|null|
-|**2026-07-03**|**In-Context World Modeling for Robotic Control**|Siyin Wang et.al.|-|[2606.26025](http://arxiv.org/abs/2606.26025)|null|
-|**2026-06-17**|**ImageWAM: Do World Action Models Really Need Video Generation, or Just Image Editing?**|Yuyang Zhang et.al.|-|[2606.19531](http://arxiv.org/abs/2606.19531)|null|
+|**2026-07-03**|**In-Context World Modeling for Robotic Control**|Siyin Wang et.al.|0|[2606.26025](http://arxiv.org/abs/2606.26025)|null|
+|**2026-06-17**|**ImageWAM: Do World Action Models Really Need Video Generation, or Just Image Editing?**|Yuyang Zhang et.al.|9|[2606.19531](http://arxiv.org/abs/2606.19531)|null|
 |**2026-06-11**|**FlowMo-WM: A World Model with Object Momentum and Hidden Ambient Drift**|Yitao Jiang et.al.|-|[2606.13817](http://arxiv.org/abs/2606.13817)|null|
 |**2026-06-16**|**WEAVER, Better, Faster, Longer: An Effective World Model for Robotic Manipulation**|Arnav Kumar Jain et.al.|-|[2606.13672](http://arxiv.org/abs/2606.13672)|null|
 |**2026-06-05**|**Blockchain Infrastructure for Intelligent Cyber--Physical--Social Systems:Post-Quantum Security, Interoperability, and Trustworthy Data Economies in the Era of Embodied AI**|Song Guo et.al.|1|[2606.06895](http://arxiv.org/abs/2606.06895)|null|
@@ -586,7 +586,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.04546">Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models</a></h3>
-<p class="paper-meta">2026-07-05 &middot; Riccardo O. Feingold, Davide Liconti, Chenyu Yang, Robert K. Katzschmann</p>
+<p class="paper-meta">2026-07-05 &middot; Riccardo O. Feingold, Davide Liconti, Chenyu Yang, Robert K. Katzschmann &middot; 0 citations</p>
 <p class="paper-abstract">Action-conditioned world models allow robots to predict the future consequences of candidate actions without additional physical interaction, supporting policy evaluation, planning, and data augmentation. We present Mask2Real-WM, a two-stage action-conditioned world model for dexterous manipulation that decouples pixel prediction into a dynamics model and a rendering model. The dynamics model predicts future segmentation masks from past masks and 23-DoF action sequences. The rendering model maps the predicted masks to photorealistic RGB using a ControlNet-augmented Stable Video Diffusion backbone. The smaller sim-to-real gap in segmentation space enables the dynamics model to benefit from large-scale pretraining on over 50 h of synthetic simulation data, followed by fine-tuning on fewer than 2.5 h of real demonstrations. Experiments on a dexterous pick-and-place benchmark show that mask conditioning and simulation pretraining are both required for per-DoF action controllability across all 23 degrees of freedom. In contrast, monolithic baselines capture broad hand and end-effector trajectories but do not reliably reflect fine-grained, per-joint action effects.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.04546">PDF</a></p>
 </div>
@@ -610,13 +610,13 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2606.26025">In-Context World Modeling for Robotic Control</a></h3>
-<p class="paper-meta">2026-07-03 &middot; Siyin Wang, Junhao Shi, Senyu Fei, Zhaoyang Fu, Li Ji, Jingjing Gong, Xipeng Qiu</p>
+<p class="paper-meta">2026-07-03 &middot; Siyin Wang, Junhao Shi, Senyu Fei, Zhaoyang Fu, Li Ji, Jingjing Gong, Xipeng Qiu &middot; 0 citations</p>
 <p class="paper-abstract">Modern Vision-Language-Action (VLA) models often fail to generalize to novel setups, such as altered camera viewpoints or robot morphologies, because they are typically conditioned only on current observations and language instructions. By ignoring the underlying system configuration as a variable, these models implicitly assume a fixed execution context encountered during training, necessitating data-intensive fine-tuning for any new environment. In this work, we introduce In-Context World Modeling (ICWM), a framework that treats system identification as an in-context adaptation problem. ICWM enables robot policies to autonomously infer essential system variables from a short history of self-generated, task-agnostic interactions. Unlike traditional In-Context Learning that uses demonstrations to specify what task to perform, ICWM leverages the context window to understand how the system operates. By processing these interactions before task execution, the model implicitly captures the world dynamics of the current system, enabling adaptation to novel configurations without parameter updates. Extensive experiments in simulation and on real-world robot platforms demonstrate that ICWM significantly outperforms standard VLA baselines on novel camera viewpoints.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2606.26025">PDF</a></p>
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2606.19531">ImageWAM: Do World Action Models Really Need Video Generation, or Just Image Editing?</a></h3>
-<p class="paper-meta">2026-06-17 &middot; Yuyang Zhang, Wenyao Zhang, Zekun Qi, He Zhang, Haitao Lin, Jingbo Zhang, Yao Mu, Xiaokang Yang, Wenjun Zeng, Xin Jin</p>
+<p class="paper-meta">2026-06-17 &middot; Yuyang Zhang, Wenyao Zhang, Zekun Qi, He Zhang, Haitao Lin, Jingbo Zhang, Yao Mu, Xiaokang Yang, Wenjun Zeng, Xin Jin &middot; 9 citations</p>
 <p class="paper-abstract">World Action Models (WAMs) commonly rely on video generation to bridge visual world modeling and robot control. However, video-based WAMs face three coupled limitations: dense multi-frame future tokens make inference costly, full video prediction spends capacity on action-irrelevant temporal and appearance details, and long-horizon future imagination may introduce errors that mislead action prediction. These issues raise a simple question: Does world action model really need video generation? We propose ImageWAM, a simple WAM framework that repurposes pretrained image editing models for robot action prediction. In contrast to video generation, image editing provides a better-matched prior: it only needs to model a target-frame transformation, focuses on action-relevant current-to-target visual differences, and grounds task instructions to localized visual changes through edit pretraining. In practice, ImageWAM does not decode the target frame at inference time; instead, it conditions a flow-matching action expert on the KV caches produced by image-editing denoising, using them as a compact world-action context. ImageWAM outperforms standard VLA baselines and matching competitive WAMs without additional policy pretraining across different simulator and real-world experiments. It also reduces FLOPs to 1/6 and latency to 1/4 of video-based WAMs. Attention analysis further shows that editing caches focus on task-relevant change regions, supporting image editing as an effective alternative to video-based world-action modeling.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2606.19531">PDF</a></p>
 </div>
@@ -663,7 +663,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-07-13**|**A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation**|Yunhai Feng et.al.|-|[2607.11874](http://arxiv.org/abs/2607.11874)|null|
 |**2026-07-07**|**Athena-WBC: Capability-Aligned Policy Experts for Long-Tail Humanoid Whole-Body Control**|Yuan Jiang et.al.|-|[2607.04837](http://arxiv.org/abs/2607.04837)|null|
 |**2026-07-19**|**ReactiveBFM: Reactive Closed-Loop Motion Planning Towards Universal Humanoid Whole-Body Control**|Xiao Chen et.al.|-|[2606.30362](http://arxiv.org/abs/2606.30362)|null|
-|**2026-06-15**|**VENOM: Versatile Embodied Network for Omni-bodied Motion tracking**|Siddharth Padmanabhan et.al.|-|[2606.16696](http://arxiv.org/abs/2606.16696)|null|
+|**2026-06-15**|**VENOM: Versatile Embodied Network for Omni-bodied Motion tracking**|Siddharth Padmanabhan et.al.|0|[2606.16696](http://arxiv.org/abs/2606.16696)|null|
 |**2026-06-09**|**A Spiking Neural Architecture for Coordinating Arm and Locomotor Control**|Lea Steffen et.al.|-|[2606.11034](http://arxiv.org/abs/2606.11034)|null|
 |**2026-06-09**|**OMG: Omni-Modal Motion Generation for Generalist Humanoid Control**|Siqiao Huang et.al.|-|[2606.10340](http://arxiv.org/abs/2606.10340)|null|
 |**2026-06-09**|**HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers**|Lizhi Yang et.al.|-|[2606.06493](http://arxiv.org/abs/2606.06493)|null|
@@ -672,7 +672,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-04-18**|**Leveraging VR Robot Games to Facilitate Data Collection for Embodied Intelligence Tasks**|Yihan Zhang et.al.|-|[2604.16903](http://arxiv.org/abs/2604.16903)|null|
 |**2026-04-17**|**CLAW: Composable Language-Annotated Whole-body Motion Generation**|Jianuo Cao et.al.|-|[2604.11251](http://arxiv.org/abs/2604.11251)|**[link](https://github.com/JianuoCao/CLAW)**|
 |**2026-03-25**|**SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating**|Hanbyel Cho et.al.|-|[2603.23983](http://arxiv.org/abs/2603.23983)|null|
-|**2026-04-30**|**Make Tracking Easy: Neural Motion Retargeting for Humanoid Whole-body Control**|Qingrui Zhao et.al.|-|[2603.22201](http://arxiv.org/abs/2603.22201)|null|
+|**2026-04-30**|**Make Tracking Easy: Neural Motion Retargeting for Humanoid Whole-body Control**|Qingrui Zhao et.al.|9|[2603.22201](http://arxiv.org/abs/2603.22201)|null|
 |**2026-03-05**|**PhysiFlow: Physics-Aware Humanoid Whole-Body VLA via Multi-Brain Latent Flow Matching and Robust Tracking**|Weikai Qin et.al.|-|[2603.05410](http://arxiv.org/abs/2603.05410)|null|
 
 </div>
@@ -710,7 +710,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2606.16696">VENOM: Versatile Embodied Network for Omni-bodied Motion tracking</a></h3>
-<p class="paper-meta">2026-06-15 &middot; Siddharth Padmanabhan, Kazuki Miyazawa, Takato Horii</p>
+<p class="paper-meta">2026-06-15 &middot; Siddharth Padmanabhan, Kazuki Miyazawa, Takato Horii &middot; 0 citations</p>
 <p class="paper-abstract">Achieving expert-level expressive full-body motion tracking across multiple humanoids solely from demonstration data remains a challenging and relatively an underexplored problem in humanoid robot learning. Cross-embodiment motion tracking policies are mostly trained by decoupling the control problem into upper and lower body control. This work proposes VENOM, a cross-embodiment full-body motion tracking model for humanoids in simulation. VENOM is a GPT-based motion tracker trained on multiple humanoid data that can track the entire body without the requirement to split into upper and lower body control. We curate a multi-humanoid motion tracking dataset called the VENOM dataset that contains states, actions, and rewards and train VENOM and the baselines on this dataset. In this letter, we evaluate VENOM&#x27;s performance against baselines and show that we can achieve a stable motion tracker across different humanoids more capable than an MLP trained on multiple humanoid data with supervised learning alone, and also show that despite lack of reward feedback, VENOM closely matches the tracking capability of experts that were trained using asymmetric-actor critic reinforcement learning.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2606.16696">PDF</a></p>
 </div>
@@ -764,7 +764,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2603.22201">Make Tracking Easy: Neural Motion Retargeting for Humanoid Whole-body Control</a></h3>
-<p class="paper-meta">2026-04-30 &middot; Qingrui Zhao, Kaiyue Yang, Xiyu Wang, Shiqi Zhao, Yi Lu, Xinfang Zhang, Qiu Shen, Xiao-Xiao Long, Xun Cao</p>
+<p class="paper-meta">2026-04-30 &middot; Qingrui Zhao, Kaiyue Yang, Xiyu Wang, Shiqi Zhao, Yi Lu, Xinfang Zhang, Qiu Shen, Xiao-Xiao Long, Xun Cao &middot; 9 citations</p>
 <p class="paper-abstract">Humanoid robots require diverse motor skills to integrate into complex environments, but bridging the kinematic and dynamic embodiment gap from human data remains a major bottleneck. We demonstrate through Hessian analysis that traditional optimization-based retargeting is inherently non-convex and prone to local optima, leading to physical artifacts like joint jumps and self-penetration. To address this, we reformulate the targeting problem as learning data distribution rather than optimizing optimal solutions, where we propose NMR, a Neural Motion Retargeting framework that transforms static geometric mapping into a dynamics-aware learned process. We first propose Clustered-Expert Physics Refinement (CEPR), a hierarchical data pipeline that leverages VAE-based motion clustering to group heterogeneous movements into latent motifs. This strategy significantly reduces the computational overhead of massively parallel reinforcement learning experts, which project and repair noisy human demonstrations onto the robot&#x27;s feasible motion manifold. The resulting high-fidelity data supervises a non-autoregressive CNN-Transformer architecture that reasons over global temporal context to suppress reconstruction noise and bypass geometric traps. Experiments on the Unitree G1 humanoid across diverse dynamic tasks (e.g., martial arts, dancing) show that NMR eliminates joint jumps and significantly reduces self-collisions compared to state-of-the-art baselines. Furthermore, NMR-generated references accelerate the convergence of downstream whole-body control policies, establishing a scalable path for bridging the human-robot embodiment gap.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2603.22201">PDF</a></p>
 </div>
