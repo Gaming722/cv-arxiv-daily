@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.08.18
+## Updated on 2026.08.19
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -223,6 +223,8 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-17**|**FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences**|Omar Rayyan et.al.|-|[2608.17027](http://arxiv.org/abs/2608.17027)|null|
+|**2026-08-17**|**HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL**|Langzhe Gu et.al.|-|[2608.16837](http://arxiv.org/abs/2608.16837)|null|
 |**2026-08-12**|**Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL**|Martin Schuck et.al.|-|[2608.12063](http://arxiv.org/abs/2608.12063)|null|
 |**2026-08-07**|**LUCID: Latent-Skill Unified Control via Imagined Dynamics for Long-Horizon Humanoid Loco-Manipulation**|Cheng Guo et.al.|-|[2608.07746](http://arxiv.org/abs/2608.07746)|null|
 |**2026-08-09**|**$ω$ -0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation**|Zhe Li et.al.|-|[2608.06375](http://arxiv.org/abs/2608.06375)|null|
@@ -249,6 +251,18 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.17027">FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences</a></h3>
+<p class="paper-meta">2026-08-17 &middot; Omar Rayyan, Zhi Li, Max Argus, Yuxin Jiang, Chang Yu, Chenfanfu Jiang, Yuchen Cui</p>
+<p class="paper-abstract">Visual loco-manipulation policies that can generalize to novel scenes and objects have long been a goal of robotics research. However, today&#x27;s data-hungry algorithms make collecting sufficient demonstrations a struggle for tabletop manipulation, and even more so for humanoids that must also walk and balance. Learning from simulated data and transferring that behavior to the real world, as is commonly done in locomotion, sidesteps this struggle, so we replicate that recipe for loco-manipulation. In doing so, we find that cloning synthetic demonstrations results in a low performance ceiling no matter the amount of training data. Reinforcement learning breaks through it, and refining the cloned policy with Flow-GRPO on a single sparse reward yields performance that synthetic behavior cloning cannot match. Together, these stages form our end-to-end sim-to-real pipeline spanning more than 150,000 scenes, which we use to train FetchMan. We evaluate it on FetchMan-Bench, a simulation benchmark we release, and deploy it zero-shot on a real Unitree G1, where our single-object reach-and-pick policy walks to and grasps a target across unseen scenes at 73.3% success. Finally, we extend this recipe to multi-object training, a first step toward loco-manipulation generalist policies at this data scale.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.17027">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.16837">HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL</a></h3>
+<p class="paper-meta">2026-08-17 &middot; Langzhe Gu, Chengkai Hou, Meng Li, Xinhua Wang, Jiaming Liu, Xinyuan Lv, Bowei Zhang, Shuanghao Bai, Guangrun Li, Jingyang He, Gaole Dai, Ziluo Ding, Zhiyuan Xu, Kuan Cheng, Jian Tang, Zhengping Che, Shanghang Zhang</p>
+<p class="paper-abstract">Humanoid robots hold great promise as general-purpose agents in human-centered environments, yet generalist vision-language-action (VLA) foundation models are not readily applicable to humanoid whole-body loco-manipulation. The high dimensionality and interdependence of humanoid motions make it challenging for conventional single-stage VLA architectures to coordinate locomotion, waist posture, and dual-arm manipulation effectively. Moreover, policies trained through offline behavior cloning can remain suboptimal during real-world deployment. Although online reinforcement learning can refine policies through real-world interaction, directly tuning large VLA backbones demands excessive computation and may introduce safety risks during real-robot exploration. To address these bottlenecks, we introduce HAF (Humanoid Adaptation Framework), a two-part framework consisting of HAF-VLA and HAF-Steer that transfers off-the-shelf generalist VLA foundation models to humanoid whole-body loco-manipulation. HAF-VLA is a hierarchical action-flow generator built on a pretrained flow-matching VLA. It splits full-body action denoising into three sequential stages with stage embeddings and cross-stage KV caches that retain kinematic dependencies, avoiding incoherent whole-body actions from one-shot generation. On top of the frozen HAF-VLA, HAF-Steer is a latent offline-to-online RL pipeline that leverages flow-matching invertibility and DCT-based dimensionality reduction to restrict RL optimization to a compact noise subspace and train a regularized SAC policy. This avoids updating the large VLA backbone and enables efficient real-world policy refinement. Evaluated on seven real-world humanoid loco-manipulation tasks, HAF surpasses vanilla single-stage VLA baselines and improves whole-body coordination and task performance. Project website: https://grange007.github.io/HAF .</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.16837">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.12063">Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL</a></h3>
 <p class="paper-meta">2026-08-12 &middot; Martin Schuck, Maks Sorokin, Simone Manni, Duy Ta, Angela P. Schoellig, Marco Hutter, Simon Le Cleac&#x27;H, Jan Brüdigam</p>
