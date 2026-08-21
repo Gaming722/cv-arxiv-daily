@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.08.20
+## Updated on 2026.08.21
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -223,6 +223,8 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-20**|**Video2DoorTraversal: Push Door Traversal via Simulated Door Twins**|Xincheng Tang et.al.|-|[2608.20251](http://arxiv.org/abs/2608.20251)|null|
+|**2026-08-19**|**Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control**|Chaoyi Pan et.al.|-|[2608.19443](http://arxiv.org/abs/2608.19443)|null|
 |**2026-08-17**|**FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences**|Omar Rayyan et.al.|-|[2608.17027](http://arxiv.org/abs/2608.17027)|null|
 |**2026-08-17**|**HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL**|Langzhe Gu et.al.|-|[2608.16837](http://arxiv.org/abs/2608.16837)|null|
 |**2026-08-12**|**Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL**|Martin Schuck et.al.|-|[2608.12063](http://arxiv.org/abs/2608.12063)|null|
@@ -251,6 +253,18 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.20251">Video2DoorTraversal: Push Door Traversal via Simulated Door Twins</a></h3>
+<p class="paper-meta">2026-08-20 &middot; Xincheng Tang, Yiji Chen, Youhan Xie, Wanyu Li, Zhengjie Shu, Lai Jiang, Wenkang Hu, Yitong Li, Jinchuang Zhang, Xibin Song, Ruigang Yang</p>
+<p class="paper-abstract">Door opening and traversal is a long-horizon loco-manipulation task that requires precise handle interaction and coordinated base-arm control. We present Video2DoorTraversal, a single-video real-to-sim-to-real framework for wheel-legged mobile manipulators. Given one RGB video of a real door, DoorTwin reconstructs an instance-aligned, articulated, and simulation-ready door twin with realistic geometry and appearance. A simulation-in-the-loop agent converts the recovered articulation into a parameterized skill program and iteratively refines failed rollouts to generate physically executable demonstrations. These demonstrations are used to train ArticuACT, a dual-depth policy that predicts coordinated base, arm, and gripper commands using robot-centric camera conditioning and interaction-aware supervision. With all perception and policy inference running onboard, the system achieves a 96.57% average success rate across five real doors and an 80.95% zero-shot success rate on structurally similar unseen doors, while completing the full approach, opening, and traversal sequence in approximately 13s on average. Project Page: https://video2doortraversal.github.io/.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.20251">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.19443">Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control</a></h3>
+<p class="paper-meta">2026-08-19 &middot; Chaoyi Pan, Zeji Yi, John Zhang, Zachary Manchester, Guannan Qu, Guanya Shi</p>
+<p class="paper-abstract">Thanks to its parallelizability and flexibility, sampling-based Model Predictive Control (MPC) has become widely popular for controlling real-world robotic systems. However, for high-dimensional and open-loop unstable dynamical systems, the required number of samples to improve the control sequence will grow exponentially with the horizon, leading to poor sample efficiency and numerical instability. This paper investigates the instability of shooting methods in sampling-based MPC and shows that the optimal sampling proposal distribution can be realized by sampling with an optimized feedback policy. We refer to this algorithm as Feedback Sampling MPC (FS-MPC). FS-MPC involves a hybrid sampling design which balances local and global search based on the system stability and the available computation budget. Our theoretical analysis shows that our hybrid sampling approach achieves faster convergence than standard MPPI and better optimality than standard feedback sampling. Empirically, in diverse contact-rich control tasks like humanoid loco-manipulation and dexterous manipulation, we show that FS-MPC successfully tackles dynamically unstable tasks where standard sample-based approaches struggle, and strictly outperforms feedback policies alone. Finally, we validate our method on humanoid robot locomotion and manipulation tasks in the real world.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.19443">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.17027">FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences</a></h3>
 <p class="paper-meta">2026-08-17 &middot; Omar Rayyan, Zhi Li, Max Argus, Yuxin Jiang, Chang Yu, Chenfanfu Jiang, Yuchen Cui</p>
