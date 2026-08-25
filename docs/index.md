@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.08.24
+## Updated on 2026.08.25
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -251,6 +251,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-23**|**DreamMimic: Learning Visuomotor Whole-Body Loco-Manipulation via World Model**|Jie Yin et.al.|-|[2608.22278](http://arxiv.org/abs/2608.22278)|**[link](https://github.com/DreamMimic/DreamMimic)**|
 |**2026-08-20**|**Video2DoorTraversal: Push Door Traversal via Simulated Door Twins**|Xincheng Tang et.al.|-|[2608.20251](http://arxiv.org/abs/2608.20251)|null|
 |**2026-08-19**|**Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control**|Chaoyi Pan et.al.|-|[2608.19443](http://arxiv.org/abs/2608.19443)|null|
 |**2026-08-17**|**FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences**|Omar Rayyan et.al.|-|[2608.17027](http://arxiv.org/abs/2608.17027)|null|
@@ -281,6 +282,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.22278">DreamMimic: Learning Visuomotor Whole-Body Loco-Manipulation via World Model</a></h3>
+<p class="paper-meta">2026-08-23 &middot; Jie Yin, Xingyu Lai</p>
+<p class="paper-abstract">Vision-based whole-body loco-manipulation on humanoid robots is challenging due to partial observability, contact-rich dynamics, and the difficulty of learning long-horizon behaviors from high-dimensional visual inputs. We present \href{https://github.com/DreamMimic/DreamMimic}{DreamMimic}, a framework that distills privileged teacher policies into vision-based humanoid controllers via world-model-assisted distillation. Instead of using a Dreamer-style RSSM for planning, we repurpose it to learn predictive latent dynamics that serve as both a representation space and an action-conditioned multi-step supervision signal, while exposing compact predictive features to the student policy to reduce long-term drift. Beyond standard reconstruction objectives for proprioceptive and visual observations, we add auxiliary prediction heads for privileged state, contact, object state, and reward estimation. These heads provide additional supervision related to agent--object interaction and task progress, encouraging the latent representation to retain signals that are useful for contact-rich loco-manipulation. We further introduce Performance-Conditioned Guidance (PCG), a reward-driven adaptive distillation schedule that computes performance scores for both teacher and student to dynamically balance guidance and exploration. PCG prevents both premature teacher annealing and excessive teacher interference in challenging visual settings. Experiments on OMOMO and BEHAVE show improved tracking-based loco-manipulation performance over strong vision-based baselines, without exposing online privileged interaction states to the student at deployment. Qualitative simulations further examine morphology and simulator changes. These results suggest that world models can provide a useful mechanism for stabilizing visual policy distillation in contact-rich humanoid behaviors.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.22278">PDF</a> &middot; <a href="https://github.com/DreamMimic/DreamMimic">Code</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.20251">Video2DoorTraversal: Push Door Traversal via Simulated Door Twins</a></h3>
 <p class="paper-meta">2026-08-20 &middot; Xincheng Tang, Yiji Chen, Youhan Xie, Wanyu Li, Zhengjie Shu, Lai Jiang, Wenkang Hu, Yitong Li, Jinchuang Zhang, Xibin Song, Ruigang Yang</p>
@@ -454,7 +461,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-04-03**|**Learning Locomotion on Complex Terrain for Quadrupedal Robots with Foot Position Maps and Stability Rewards**|Matthew Hwang et.al.|-|[2604.02744](http://arxiv.org/abs/2604.02744)|null|
 |**2026-03-17**|**SLowRL: Safe Low-Rank Adaptation Reinforcement Learning for Locomotion**|Elham Daneshmand et.al.|-|[2603.17092](http://arxiv.org/abs/2603.17092)|null|
 |**2026-05-11**|**MOBIUS: A Multi-Modal Bipedal Robot that can Walk, Crawl, Climb, and Roll**|Alexander Schperberg et.al.|-|[2511.01774](http://arxiv.org/abs/2511.01774)|null|
-|**2026-07-15**|**Pretraining in Actor-Critic Reinforcement Learning for Locomotion**|Jiale Fan et.al.|0|[2510.12363](http://arxiv.org/abs/2510.12363)|null|
+|**2026-07-15**|**Pretraining in Actor-Critic Reinforcement Learning for Locomotion**|Jiale Fan et.al.|-|[2510.12363](http://arxiv.org/abs/2510.12363)|null|
 |**2025-12-04**|**PPL: Point Cloud Supervised Proprioceptive Locomotion Reinforcement Learning for Legged Robots in Crawl Spaces**|Bida Ma et.al.|-|[2508.09950](http://arxiv.org/abs/2508.09950)|null|
 |**2026-02-18**|**Robust Reinforcement Learning-Based Locomotion for Resource-Constrained Quadrupeds with Exteroceptive Sensing**|Davide Plozza et.al.|-|[2505.12537](http://arxiv.org/abs/2505.12537)|null|
 |**2025-04-14**|**GenTe: Generative Real-world Terrains for General Legged Robot Locomotion Control**|Hanwen Wan et.al.|-|[2504.09997](http://arxiv.org/abs/2504.09997)|null|
@@ -521,7 +528,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2510.12363">Pretraining in Actor-Critic Reinforcement Learning for Locomotion</a></h3>
-<p class="paper-meta">2026-07-15 &middot; Jiale Fan, Andrei Cramariuc, Tifanny Portela, Marco Hutter &middot; 0 citations</p>
+<p class="paper-meta">2026-07-15 &middot; Jiale Fan, Andrei Cramariuc, Tifanny Portela, Marco Hutter</p>
 <p class="paper-abstract">The pretraining-finetuning paradigm has facilitated numerous transformative advancements in artificial intelligence research in recent years. However, in the domain of reinforcement learning (RL) for robot locomotion, individual skills are often learned from scratch despite the high likelihood that some generalizable knowledge is shared across all task-specific policies belonging to the same robot embodiment. This work aims to define a paradigm for pretraining neural network models that encapsulate such knowledge and can subsequently serve as a basis for warm-starting the RL process in classic actor-critic algorithms, such as Proximal Policy Optimization (PPO). We begin with a task-agnostic exploration-based data collection algorithm to gather diverse, dynamic transition data, which is then used to train a Proprioceptive Inverse Dynamics Model (PIDM) through supervised learning. The pretrained weights are then loaded into both the actor and critic networks to warm-start the policy optimization of actual tasks. We systematically validated our proposed method with 9 distinct robot locomotion RL environments comprising 3 different robot embodiments, showing significant benefits of this initialization strategy. Our proposed approach on average improves sample efficiency by 36.2% and task performance by 4.3% compared to random initialization. We further present key ablation studies and empirical analyses that shed light on the mechanisms behind the effectiveness of this method.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2510.12363">PDF</a></p>
 </div>
@@ -569,16 +576,16 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
-|**2026-08-13**|**🏆 DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation**| DreamX Team et.al.|0|[2608.13489](http://arxiv.org/abs/2608.13489)|null|
+|**2026-08-13**|**DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation**| DreamX Team et.al.|-|[2608.13489](http://arxiv.org/abs/2608.13489)|null|
 |**2026-08-06**|**GeniWorld: A Generalizable Interactive World Model for Robotic Manipulation via Visual Actions**|Chenghao Gu et.al.|-|[2608.06332](http://arxiv.org/abs/2608.06332)|null|
 |**2026-07-24**|**Robot-Factored World Models via Robot Rendering**|Byungjun Kim et.al.|-|[2607.22535](http://arxiv.org/abs/2607.22535)|null|
 |**2026-07-24**|**ViTacWorld: Scaling Visuo-Tactile World Models for Contact-Rich Robot Manipulation**|Yunao Huang et.al.|-|[2607.22530](http://arxiv.org/abs/2607.22530)|null|
 |**2026-07-22**|**RoboInter1.5: A Holistic Intermediate Representation Suite for Embodied World Modeling and Robotic Manipulation**|Ziqin Wang et.al.|-|[2607.18709](http://arxiv.org/abs/2607.18709)|null|
-|**2026-08-03**|**DriftWorld: Fast World Modeling through Drifting**|Susie Lu et.al.|0|[2607.15065](http://arxiv.org/abs/2607.15065)|null|
+|**2026-08-03**|**DriftWorld: Fast World Modeling through Drifting**|Susie Lu et.al.|-|[2607.15065](http://arxiv.org/abs/2607.15065)|null|
 |**2026-07-07**|**RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation**|Haoyu Zhao et.al.|-|[2607.06559](http://arxiv.org/abs/2607.06559)|null|
 |**2026-07-06**|**KAM-WM: Kinematic Affordance Maps from Latent World Models for Robot Manipulation**|Xinyu Shao et.al.|-|[2607.04652](http://arxiv.org/abs/2607.04652)|null|
 |**2026-08-18**|**Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models**|Riccardo O. Feingold et.al.|-|[2607.04546](http://arxiv.org/abs/2607.04546)|null|
-|**2026-07-02**|**GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation**| GigaWorld Team et.al.|3|[2607.02642](http://arxiv.org/abs/2607.02642)|null|
+|**2026-07-02**|**GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation**| GigaWorld Team et.al.|-|[2607.02642](http://arxiv.org/abs/2607.02642)|null|
 |**2026-07-02**|**DVG-WM: Disentangled Video Generation Enables Efficient Embodied World Model for Robotic Manipulation**|Ziyu Shan et.al.|-|[2606.32028](http://arxiv.org/abs/2606.32028)|null|
 |**2026-06-25**|**PhysiFormer: Learning to Simulate Mechanics in World Space**|Yiming Chen et.al.|-|[2606.27364](http://arxiv.org/abs/2606.27364)|null|
 |**2026-07-03**|**In-Context World Modeling for Robotic Control**|Siyin Wang et.al.|-|[2606.26025](http://arxiv.org/abs/2606.26025)|null|
@@ -593,8 +600,8 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 <div class="view-cards">
 <div class="paper-card">
-<h3><a href="http://arxiv.org/abs/2608.13489">🏆 DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation</a></h3>
-<p class="paper-meta">2026-08-13 &middot;  DreamX Team, Rui Chen, Xiangxiang Chu, Geng Li, Jifan Li, Qingfeng Shi, Datao Tang, Jing Tang, Jun Wang, Pengfei Zhang &middot; 0 citations</p>
+<h3><a href="http://arxiv.org/abs/2608.13489">DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation</a></h3>
+<p class="paper-meta">2026-08-13 &middot;  DreamX Team, Rui Chen, Xiangxiang Chu, Geng Li, Jifan Li, Qingfeng Shi, Datao Tang, Jing Tang, Jun Wang, Pengfei Zhang</p>
 <p class="paper-abstract">We present \textbf{DreamX-Phi 1.0}, an action-conditioned video world model for robotic manipulation that, given an observed frame, a language instruction, and a prescribed action sequence comprising end-effector poses and gripper states, predicts the resulting future observations. Yet realism alone does not guarantee faithfulness: a convincing rollout can still move the wrong arm or lose the manipulated object. To ensure the prediction respects each arm&#x27;s commanded path, we inject per-arm $\mathrm{SE}(3)$ transformations into attention via \textbf{PRoPE-style geometric encoding}, preserving arm identity and rigid-motion structure. Action control alone does not fully constrain scene geometry or the evolution of small manipulated objects. We therefore add a lightweight \textbf{depth branch} for scene-level geometry and use \textbf{SAM3 masks} with a frozen \textbf{V-JEPA teacher} to maintain object consistency throughout grasping. We further distill the multi-step generator into a few-step student via distribution-matching distillation for efficient deployment. At the time of writing, \model{} achieves first place on Track~1 and second place on Track~2 of the WorldArena~2.0 Challenge. Our model and code will be publicly available.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2608.13489">PDF</a></p>
 </div>
@@ -624,7 +631,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.15065">DriftWorld: Fast World Modeling through Drifting</a></h3>
-<p class="paper-meta">2026-08-03 &middot; Susie Lu, Haonan Chen, Weirui Ye, Yilun Du &middot; 0 citations</p>
+<p class="paper-meta">2026-08-03 &middot; Susie Lu, Haonan Chen, Weirui Ye, Yilun Du</p>
 <p class="paper-abstract">Predictive world models enable robots to plan by imagining the outcomes of their actions, but their value for control hinges on generating many rollouts quickly. This creates a bottleneck for diffusion-based world models: multistep sampling makes each rollout expensive, limiting large-scale action search at inference time. We introduce DriftWorld, an action-conditioned world model based on drifting generative models. Rather than denoising iteratively at inference, DriftWorld learns an action-conditioned drift during training, allowing it to generate future frames from the current observation and a candidate action sequence in a single forward pass at 30+ fps, which is 17x faster on average than diffusion based baselines. We evaluate DriftWorld on standard vision-based robotic manipulation benchmarks, including Bridge-V2, RT-1, Language Table, Push-T, and Robomimic. By producing rollouts that are both accurate and fast, DriftWorld achieves state-of-the-art decision-making performance with far less inference time than diffusion-based world model baselines. Beyond online control, DriftWorld can also serve as an offline simulator for ranking real-world robot policies, with rollout-based scores correlating with ground truth at up to 0.99. These results show that drifting models are a strong fit for robot world modeling, where fast, high-quality imagination directly supports planning and policy evaluation.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.15065">PDF</a></p>
 </div>
@@ -648,7 +655,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.02642">GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation</a></h3>
-<p class="paper-meta">2026-07-02 &middot;  GigaWorld Team, Angyuan Ma, Boyuan Wang, Bohan Li, Chaojun Ni, Guo Li, Guan Huang, Guosheng Zhao, Hao Li, Hengtao Li, Jingyu Liu, Jiwen Lu, Qiuping Deng, Tingdong Yu, Xuancheng Xu, Xinyu Zhou, Xiuwei Xu, Xinze Chen, Xiaofeng Wang, Xiaoyu Tian, Yang Wang, Yifan Chang, Yukun Zhou, Yun Ye, Zhenyu Wu, Zhanqian Wu, Zheng Zhu &middot; 3 citations</p>
+<p class="paper-meta">2026-07-02 &middot;  GigaWorld Team, Angyuan Ma, Boyuan Wang, Bohan Li, Chaojun Ni, Guo Li, Guan Huang, Guosheng Zhao, Hao Li, Hengtao Li, Jingyu Liu, Jiwen Lu, Qiuping Deng, Tingdong Yu, Xuancheng Xu, Xinyu Zhou, Xiuwei Xu, Xinze Chen, Xiaofeng Wang, Xiaoyu Tian, Yang Wang, Yifan Chang, Yukun Zhou, Yun Ye, Zhenyu Wu, Zhanqian Wu, Zheng Zhu</p>
 <p class="paper-abstract">Evaluating embodied robot foundation models remains a critical bottleneck; unlike large language models efficiently assessed via digital benchmarks, robotic policies require slow, costly real-world rollouts limited by hardware and human supervision, which has driven interest in world models as surrogate policy evaluators, yet the key properties that make a world model reliable for policy assessment remain poorly understood. This work presents a systematic study of world models for robotic policy evaluation and introduces WMBench, a benchmark constructed from real-robot teleoperation data and matched policy rollouts covering diverse manipulation tasks to enable controlled comparisons across model families, action encodings, rollout horizons, and evaluation metrics. Using WMBench, we analyze 7 video world models, 4 action representation schemes, and over 324,000 simulated policy rollouts paired with real robot executions, further enriching our analysis with large-scale community submissions from the CVPR 2026 GigaBrain Challenge, curated synthetic trajectories, and a training videos spanning more than 12,000 hours. Our experiments deliver three core insights: evaluator quality is dominated by long-horizon, action-faithful rollout consistency rather than short-term visual realism; pretraining gains stem not only from data scale but from balancing general world knowledge with robot-specific controllability; and architectural choices including action encoding, memory design, and evaluator-focused post-training strongly determine alignment with real-world robot behavior. Drawing on these results, we derive a practical design roadmap and realize it in \textit{GigaWorld-1}, a world model specially optimized for policy evaluation, and we fully release our code, models, datasets, and toolkits to advance scalable evaluation research for embodied foundation models.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.02642">PDF</a></p>
 </div>
@@ -714,13 +721,13 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
-|**2026-08-18**|**GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction**|Ziyang Cheng et.al.|-|[2608.18234](http://arxiv.org/abs/2608.18234)|null|
+|**2026-08-23**|**GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction**|Ziyang Cheng et.al.|-|[2608.18234](http://arxiv.org/abs/2608.18234)|null|
 |**2026-08-01**|**Light-Loco-Parkour: Versatile Perceptive Whole-Body Locomotion via Multi-Skill Distillation**|Hongming Chen et.al.|-|[2608.02653](http://arxiv.org/abs/2608.02653)|null|
 |**2026-07-15**|**Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control**|J. M. A. Marcelo et.al.|-|[2607.14182](http://arxiv.org/abs/2607.14182)|null|
 |**2026-07-13**|**A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation**|Yunhai Feng et.al.|-|[2607.11874](http://arxiv.org/abs/2607.11874)|null|
-|**2026-07-07**|**Athena-WBC: Capability-Aligned Policy Experts for Long-Tail Humanoid Whole-Body Control**|Yuan Jiang et.al.|-|[2607.04837](http://arxiv.org/abs/2607.04837)|null|
+|**2026-08-24**|**Athena-WBC: Capability-Aligned Policy Experts for Long-Tail Humanoid Whole-Body Control**|Yuan Jiang et.al.|-|[2607.04837](http://arxiv.org/abs/2607.04837)|null|
 |**2026-07-19**|**ReactiveBFM: Reactive Closed-Loop Motion Planning Towards Universal Humanoid Whole-Body Control**|Xiao Chen et.al.|-|[2606.30362](http://arxiv.org/abs/2606.30362)|null|
-|**2026-06-15**|**VENOM: Versatile Embodied Network for Omni-bodied Motion tracking**|Siddharth Padmanabhan et.al.|0|[2606.16696](http://arxiv.org/abs/2606.16696)|null|
+|**2026-06-15**|**VENOM: Versatile Embodied Network for Omni-bodied Motion tracking**|Siddharth Padmanabhan et.al.|-|[2606.16696](http://arxiv.org/abs/2606.16696)|null|
 |**2026-06-09**|**A Spiking Neural Architecture for Coordinating Arm and Locomotor Control**|Lea Steffen et.al.|-|[2606.11034](http://arxiv.org/abs/2606.11034)|null|
 |**2026-06-09**|**OMG: Omni-Modal Motion Generation for Generalist Humanoid Control**|Siqiao Huang et.al.|-|[2606.10340](http://arxiv.org/abs/2606.10340)|null|
 |**2026-06-09**|**HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers**|Lizhi Yang et.al.|-|[2606.06493](http://arxiv.org/abs/2606.06493)|null|
@@ -737,7 +744,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 <div class="view-cards">
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.18234">GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction</a></h3>
-<p class="paper-meta">2026-08-18 &middot; Ziyang Cheng, Tianshu Tang, Jinxin Lan, Xinze Chen, Yuhan Gong, Zhichao Liu, Changzhong Wu, Yahao Mao, Zongyan Deng, Mingxuan Ma, Huasen Xi, Yilong Liu, Yutong Wu, Xiaofeng Wang, Yang Wang, Yun Ye, Guan Huang, Xiaojie Jin, Zheng Zhu, Jiwen Lu</p>
+<p class="paper-meta">2026-08-23 &middot; Ziyang Cheng, Tianshu Tang, Jinxin Lan, Xinze Chen, Yuhan Gong, Zhichao Liu, Changzhong Wu, Yahao Mao, Zongyan Deng, Mingxuan Ma, Huasen Xi, Yilong Liu, Yutong Wu, Xiaofeng Wang, Yang Wang, Yun Ye, Guan Huang, Xiaojie Jin, Zheng Zhu, Jiwen Lu</p>
 <p class="paper-abstract">Whole-body motion tracking policies turn a humanoid into a robust control interface: the teleoperator---or an upstream model---only supplies a coarse movement intent, while the low-level policy keeps the robot balanced and physically feasible. Existing trackers deliver this interface only on flat ground: trained in empty scenes, they never learn how contact with terrain and objects reshapes their dynamics, and they attempt to teach the policy to balance under any command by continually enlarging the reference-motion corpus, which stops working once feasible behaviors become environment-dependent. We present GigaBrain-WBC-0.5, the first Behavior World Model (BWM) for humanoid whole-body control. Rather than a purely reactive tracker, we train a causal Transformer to jointly predict its next action, next state, and the distribution over its next latent behavior command, so the network that acts also models how the environment shapes what it can do next. An automatic terrain-annotation pipeline recovers full 3D contact geometry from retargeted motion, enabling terrain annotation at the scale of existing motion datasets. The predicted distribution is reused at deployment to detect implausible commands online and retract them onto learned behaviors, so the robot attempts tasks in a &quot;best-effort&quot; manner. The result is a unified policy that takes real-time command, interacts with environment, and stays robust to implausible commands, falls, and disturbances. GigaBrain-WBC-0.5 achieves the highest success rate across all four regimes among three large-scale tracker baselines: 81.3% on terrain interaction (4.3x the strongest baseline), 83.1% under implausible commands, and 99.3% fall recovery (16.8x the strongest baseline). Hardware trials show robust interaction under missing supports and disturbances; the Unitree G1 checkpoint transfers to the Maker L01 robot with simple fine-tuning.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2608.18234">PDF</a></p>
 </div>
@@ -761,7 +768,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.04837">Athena-WBC: Capability-Aligned Policy Experts for Long-Tail Humanoid Whole-Body Control</a></h3>
-<p class="paper-meta">2026-07-07 &middot; Yuan Jiang, Ningyuan Zhang, Xicun Yang, Yuzhi Jiang, Jie Chen</p>
+<p class="paper-meta">2026-08-24 &middot; Yuan Jiang, Ningyuan Zhang, Xicun Yang, Yuzhi Jiang, Jie Chen</p>
 <p class="paper-abstract">Large-scale humanoid motion-tracking controllers are commonly improved by reallocating training effort: difficult motions are sampled more often, isolated into smaller subsets, or assigned to specialized experts. We show that this view is incomplete. In strong whole-body-control baselines, a residual set of feasible training clips remains unsolved even under targeted training, especially for high-dynamic transitions and balance-critical motions. These failures arise not only from insufficient exposure, but from a mismatch between the motion demands and the effective capability induced by the default training recipe. We propose Athena-WBC, a compact teacher-student pipeline with capability-aligned policy experts for long-tail humanoid whole-body control. Dynamic experts use a tracking-focused, constraint-aware objective that removes conservative effort and temporal-control penalties while preserving physical feasibility constraints; balance experts use a gravity curriculum to improve early-training survivability. The resulting privileged teachers are motion-routed for DAgger distillation and then compressed into a single controller with deployable observations followed by RL fine-tuning. Experiments on a full-size humanoid show improved recovery of training-set long-tail motions and better held-out tracking than a strong SONIC-recipe baseline, using only a small number of experts.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.04837">PDF</a></p>
 </div>
@@ -773,7 +780,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2606.16696">VENOM: Versatile Embodied Network for Omni-bodied Motion tracking</a></h3>
-<p class="paper-meta">2026-06-15 &middot; Siddharth Padmanabhan, Kazuki Miyazawa, Takato Horii &middot; 0 citations</p>
+<p class="paper-meta">2026-06-15 &middot; Siddharth Padmanabhan, Kazuki Miyazawa, Takato Horii</p>
 <p class="paper-abstract">Achieving expert-level expressive full-body motion tracking across multiple humanoids solely from demonstration data remains a challenging and relatively an underexplored problem in humanoid robot learning. Cross-embodiment motion tracking policies are mostly trained by decoupling the control problem into upper and lower body control. This work proposes VENOM, a cross-embodiment full-body motion tracking model for humanoids in simulation. VENOM is a GPT-based motion tracker trained on multiple humanoid data that can track the entire body without the requirement to split into upper and lower body control. We curate a multi-humanoid motion tracking dataset called the VENOM dataset that contains states, actions, and rewards and train VENOM and the baselines on this dataset. In this letter, we evaluate VENOM&#x27;s performance against baselines and show that we can achieve a stable motion tracker across different humanoids more capable than an MLP trained on multiple humanoid data with supervised learning alone, and also show that despite lack of reward feedback, VENOM closely matches the tracking capability of experts that were trained using asymmetric-actor critic reinforcement learning.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2606.16696">PDF</a></p>
 </div>
@@ -846,18 +853,18 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
 |**2026-08-04**|**Learning Context-Aware Motion Priors for Humanoid Control**|Yunyang Mo et.al.|-|[2608.03234](http://arxiv.org/abs/2608.03234)|null|
-|**2026-07-30**|**PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball**|Lizhi Yang et.al.|0|[2607.28623](http://arxiv.org/abs/2607.28623)|null|
+|**2026-07-30**|**PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball**|Lizhi Yang et.al.|-|[2607.28623](http://arxiv.org/abs/2607.28623)|null|
 |**2026-07-12**|**Learning Roller-Skating Motions of Humanoid Robots Based on Adversarial Motion Priors**|Yunkang Cheng et.al.|-|[2607.10815](http://arxiv.org/abs/2607.10815)|null|
 |**2026-06-28**|**GPC: Large-Scale Generative Pretraining for Transferable Motor Control**|Yi Shi et.al.|-|[2606.29148](http://arxiv.org/abs/2606.29148)|null|
 |**2026-06-26**|**CWI: Composite Humanoid Whole-Body Imitation System for Loco-manipulation**|Wenqi Ge et.al.|-|[2606.27676](http://arxiv.org/abs/2606.27676)|null|
-|**2026-06-24**|**MPC-Injection: Biasing Off-Policy Locomotion RL Toward Controller-Induced Behavior Basins**|Roy Xing et.al.|0|[2606.26392](http://arxiv.org/abs/2606.26392)|null|
+|**2026-06-24**|**MPC-Injection: Biasing Off-Policy Locomotion RL Toward Controller-Induced Behavior Basins**|Roy Xing et.al.|-|[2606.26392](http://arxiv.org/abs/2606.26392)|null|
 |**2026-05-29**|**SWIM: Single-Instance Whole-Body Imitation for swiMming**|Binglun Wang et.al.|-|[2605.31120](http://arxiv.org/abs/2605.31120)|null|
 |**2026-05-18**|**Unified Walking, Running, and Recovery for Humanoids via State-Dependent Adversarial Motion Priors**|Yidan Lu et.al.|-|[2605.18611](http://arxiv.org/abs/2605.18611)|null|
 |**2026-04-21**|**Multi-Gait Learning for Humanoid Robots Using Reinforcement Learning with Selective Adversarial Motion Prior**|Yuanye Wu et.al.|-|[2604.19102](http://arxiv.org/abs/2604.19102)|null|
-|**2026-04-07**|**Neural Assistive Impulses: Synthesizing Exaggerated Motions for Physics-based Characters**|Zhiquan Wang et.al.|0|[2604.05394](http://arxiv.org/abs/2604.05394)|null|
+|**2026-04-07**|**Neural Assistive Impulses: Synthesizing Exaggerated Motions for Physics-based Characters**|Zhiquan Wang et.al.|-|[2604.05394](http://arxiv.org/abs/2604.05394)|null|
 |**2026-03-27**|**Partial Motion Imitation for Learning Cart Pushing with Legged Manipulators**|Mili Das et.al.|-|[2603.26659](http://arxiv.org/abs/2603.26659)|null|
 |**2026-03-09**|**TeamHOI: Learning a Unified Policy for Cooperative Human-Object Interactions with Any Team Size**|Stefan Lionar et.al.|-|[2603.07988](http://arxiv.org/abs/2603.07988)|null|
-|**2026-03-01**|**Spherical Latent Motion Prior for Physics-Based Simulated Humanoid Control**|Jing Tan et.al.|1|[2603.01294](http://arxiv.org/abs/2603.01294)|null|
+|**2026-03-01**|**Spherical Latent Motion Prior for Physics-Based Simulated Humanoid Control**|Jing Tan et.al.|-|[2603.01294](http://arxiv.org/abs/2603.01294)|null|
 |**2026-04-02**|**EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents**|Wenjia Wang et.al.|-|[2602.23205](http://arxiv.org/abs/2602.23205)|null|
 |**2026-02-20**|**CLOT: Closed-Loop Global Motion Tracking for Whole-Body Humanoid Teleoperation**|Tengjie Zhu et.al.|-|[2602.15060](http://arxiv.org/abs/2602.15060)|null|
 |**2026-05-21**|**HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control**|Jinrui Han et.al.|-|[2602.03205](http://arxiv.org/abs/2602.03205)|null|
@@ -874,7 +881,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.28623">PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball</a></h3>
-<p class="paper-meta">2026-07-30 &middot; Lizhi Yang, Junheng Li, Aaron D. Ames &middot; 0 citations</p>
+<p class="paper-meta">2026-07-30 &middot; Lizhi Yang, Junheng Li, Aaron D. Ames</p>
 <p class="paper-abstract">We present PAC-MAN, a perception-aware CBF-RL framework that couples control-barrier safety with deployment-realistic onboard sensing for whole-body humanoid dodgeball. The deployed policy sees the ball only as segmentation-masked depth from a head-mounted camera, while training-time CBF guidance represents clearance to every body link, and an adversarial motion prior regularizes the resulting evasive reflexes. We evaluate on a controlled any-link contact benchmark with seeded throws in two regimes: single throws and a deployment loop in which the robot walks back to its station and recovers between throws. On this benchmark, the policy comes within a few points of a privileged state oracle: a fixed onboard camera alone is adequate for evasion. We find that usable barrier structure depends on perceptual observability: Joint-CBF gives the best performance with accurate ball states, degrades under fixed-camera observations when used only as training guidance, and recovers with a ball-tracking gimbal or privileged runtime filter. We therefore deploy a lightweight Link-CBF policy zero-shot on the Unitree G1 in the real world, where it tolerates imperfect perception, succeeds on 95% of throws, and uses semantic segmentation to dodge different balls.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.28623">PDF</a></p>
 </div>
@@ -898,7 +905,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2606.26392">MPC-Injection: Biasing Off-Policy Locomotion RL Toward Controller-Induced Behavior Basins</a></h3>
-<p class="paper-meta">2026-06-24 &middot; Roy Xing, Seyoung Ree, Brian Plancher &middot; 0 citations</p>
+<p class="paper-meta">2026-06-24 &middot; Roy Xing, Seyoung Ree, Brian Plancher</p>
 <p class="paper-abstract">Reinforcement learning (RL) for locomotion frequently converges to locally optimal but undeployable behaviors, such as vibrating limbs or scooting on the torso, that maximize return without producing a usable gait. We present MPC-Injection, a low-overhead method that steers RL toward a designer-preferred gait by inserting transitions into the replay buffer from a model predictive controller solving the same Markov decision process. Unlike reward shaping, MPC-Injection does not require redesigning the task reward, and unlike adversarial imitation learning, it adds no discriminator, no kinematic retargeting, and no auxiliary objective. Instead, the controller&#x27;s preferred behavior is transferred to the policy purely through the replay state distribution. On a 2D walker in simulation and with sim-to-real evaluation on a Go2 quadruped, we show that MPC-Injection drives the policy into the controller&#x27;s behavior basin using a one to two-term task reward, producing gaits qualitatively comparable to those of reward shaping with twenty-one tuned terms and of adversarial motion priors without their discriminator and retargeting overhead. We further analyze how the injected transitions bias actor-critic updates toward controller-visited states, allowing the policy to learn behaviors that pure RL may fail to reach under simple reward functions.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2606.26392">PDF</a></p>
 </div>
@@ -922,7 +929,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2604.05394">Neural Assistive Impulses: Synthesizing Exaggerated Motions for Physics-based Characters</a></h3>
-<p class="paper-meta">2026-04-07 &middot; Zhiquan Wang, Bedrich Benes &middot; 0 citations</p>
+<p class="paper-meta">2026-04-07 &middot; Zhiquan Wang, Bedrich Benes</p>
 <p class="paper-abstract">Physics-based character animation has become a fundamental approach for synthesizing realistic, physically plausible motions. While current data-driven deep reinforcement learning (DRL) methods can synthesize complex skills, they struggle to reproduce exaggerated, stylized motions, such as instantaneous dashes or mid-air trajectory changes, which are required in animation but violate standard physical laws. The primary limitation stems from modeling the character as an underactuated floating-base system, in which internal joint torques and momentum conservation strictly govern motion. Direct attempts to enforce such motions via external wrenches often lead to training instability, as velocity discontinuities produce sparse, high-magnitude force spikes that prevent policy convergence. We propose Assistive Impulse Neural Control, a framework that reformulates external assistance in impulse space rather than force space to ensure numerical stability. We decompose the assistive signal into an analytic high-frequency component derived from Inverse Dynamics and a learned low-frequency residual correction, governed by a hybrid neural policy. We demonstrate that our method enables robust tracking of highly agile, dynamically infeasible maneuvers that were previously intractable for physics-based methods.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2604.05394">PDF</a></p>
 </div>
@@ -940,7 +947,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2603.01294">Spherical Latent Motion Prior for Physics-Based Simulated Humanoid Control</a></h3>
-<p class="paper-meta">2026-03-01 &middot; Jing Tan, Weisheng Xu, Xiangrui Jiang, Jiaxi Zhang, Kun Yang, Kai Wu, Jiaqi Xiong, Shiting Chen, Yangfan Li, Yixiao Feng, Yuetong Fang, Yujia Zou, Yiqun Song, Renjing Xu &middot; 1 citations</p>
+<p class="paper-meta">2026-03-01 &middot; Jing Tan, Weisheng Xu, Xiangrui Jiang, Jiaxi Zhang, Kun Yang, Kai Wu, Jiaqi Xiong, Shiting Chen, Yangfan Li, Yixiao Feng, Yuetong Fang, Yujia Zou, Yiqun Song, Renjing Xu</p>
 <p class="paper-abstract">Learning motion priors for physics-based humanoid control is an active research topic. Existing approaches mainly include variational autoencoders (VAE) and adversarial motion priors (AMP). VAE introduces information loss, and random latent sampling may sometimes produce invalid behaviors. AMP suffers from mode collapse and struggles to capture diverse motion skills. We present the Spherical Latent Motion Prior (SLMP), a two-stage method for learning motion priors. In the first stage, we train a high-quality motion tracking controller. In the second stage, we distill the tracking controller into a spherical latent space. A combination of distillation, a discriminator, and a discriminator-guided local semantic consistency constraint shapes a structured latent action space, allowing stable random sampling without information loss. To evaluate SLMP, we collect a two-hour human combat motion capture dataset and show that SLMP preserves fine motion detail without information loss, and random sampling yields semantically valid and stable behaviors. When applied to a two-agent physics-based combat task, SLMP produces human-like and physically plausible combat behaviors only using simple rule-based rewards. Furthermore, SLMP generalizes across different humanoid robot morphologies, demonstrating its transferability beyond a single simulated avatar.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2603.01294">PDF</a></p>
 </div>
