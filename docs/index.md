@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.08.26
+## Updated on 2026.08.27
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -43,6 +43,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-25**|**CARO: Contact-Agnostic Residual Observation for Zero-Shot Robust Quadruped Locomotion**|Zihan Yang et.al.|-|[2608.24217](http://arxiv.org/abs/2608.24217)|null|
 |**2026-08-20**|**Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space**|Zeren Luo et.al.|-|[2608.19977](http://arxiv.org/abs/2608.19977)|null|
 |**2026-08-20**|**MILD: Tractable Terrain Modeling for Learning Improved Bipedal Locomotion on Deformable Surfaces**|Zeren Luo et.al.|-|[2608.19955](http://arxiv.org/abs/2608.19955)|null|
 |**2026-08-17**|**Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain**|Rocky Liu et.al.|-|[2608.16164](http://arxiv.org/abs/2608.16164)|null|
@@ -52,7 +53,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-08-07**|**Spatiotemporal Agility: Time-Constrained Reinforcement Learning for Vision-Guided Dynamic Quadrupedal Interception**|Yidong Zhu et.al.|-|[2608.06907](http://arxiv.org/abs/2608.06907)|null|
 |**2026-08-06**|**PathCover: A Fast Convex Decomposition along a Path via Randomized Iterative Space Partitioning (RISP) on Point Clouds**|Kunal S. Narkhede et.al.|-|[2608.05586](http://arxiv.org/abs/2608.05586)|null|
 |**2026-08-03**|**Open-DiffLoco: Open-Source Differentiable Learning for Deployable Blind Quadruped Locomotion**|Martin Opat et.al.|-|[2608.02069](http://arxiv.org/abs/2608.02069)|null|
-|**2026-07-31**|**Advances, challenges, and opportunities for legged robots**|Jonas Frey et.al.|0|[2607.28952](http://arxiv.org/abs/2607.28952)|null|
+|**2026-07-31**|**Advances, challenges, and opportunities for legged robots**|Jonas Frey et.al.|-|[2607.28952](http://arxiv.org/abs/2607.28952)|null|
 |**2026-07-27**|**Learning Reusable Hybrid Motion Priors for Humanoid Locomotion from Motion Imitation**|Valerio Belli et.al.|-|[2607.24083](http://arxiv.org/abs/2607.24083)|null|
 |**2026-07-26**|**PRISM: Polynomial Representations for Interaction-Structured Motor Control**|Seung Hyun Lee et.al.|-|[2607.23473](http://arxiv.org/abs/2607.23473)|null|
 |**2026-07-25**|**Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline**|Qing Yang et.al.|-|[2607.22997](http://arxiv.org/abs/2607.22997)|null|
@@ -75,6 +76,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.24217">CARO: Contact-Agnostic Residual Observation for Zero-Shot Robust Quadruped Locomotion</a></h3>
+<p class="paper-meta">2026-08-25 &middot; Zihan Yang, Shixuan Han, Kexin Guo, Xiang Yu</p>
+<p class="paper-abstract">We propose CARO, a contact-agnostic residual observation framework for policy adaptation. CARO embeds a fixed-base Euler--Lagrange model into the reinforcement learning control loop and constructs a torque-level residual observation without requiring torque sensors, explicit contact estimation, or vision-based measurements of the floating-base position and linear velocity. A disturbance observer extracts a structured signal representing dynamics mismatch, while the policy learns to exploit this feedback for online adaptation. CARO is trained under the same terrain, command, and domain-randomization conditions as the nominal policy, without specialized disturbance curricula or additional adaptation supervision. Nevertheless, it achieves substantially improved zero-shot robustness in simulation and sim-to-real transfer tasks involving out-of-distribution payloads, center-of-mass shifts, terrain geometries, abrupt dynamics changes, and elevated-platform landings.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.24217">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.19977">Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space</a></h3>
 <p class="paper-meta">2026-08-20 &middot; Zeren Luo, Jiahui Zhang, Yimin Han, Ji Ma, Minghao Lu, Ioannis Havoutis, Peng Lu</p>
@@ -131,7 +138,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2607.28952">Advances, challenges, and opportunities for legged robots</a></h3>
-<p class="paper-meta">2026-07-31 &middot; Jonas Frey, Matías Mattamala, Hae-Won Park, Mayank Mittal, Georg Martius, Maike Osborne, Robert Sparrow, Marco Hutter &middot; 0 citations</p>
+<p class="paper-meta">2026-07-31 &middot; Jonas Frey, Matías Mattamala, Hae-Won Park, Mayank Mittal, Georg Martius, Maike Osborne, Robert Sparrow, Marco Hutter</p>
 <p class="paper-abstract">Humanoid and quadrupedal robots have the potential to revolutionize the way we work, interact, and coexist with intelligent machines. To understand their effects on society and how they can enable scientific discovery, we assess the current capabilities of these systems along hardware, locomotion, autonomy, data, and applications. We identify recent advances and key open challenges that must be overcome to enable widespread adoption and new use cases for legged robots. Last, we provide an outlook on the future of legged robots, exploring their ethical considerations, economic potential, policy implications, and broader societal effects.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2607.28952">PDF</a></p>
 </div>
@@ -251,6 +258,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-26**|**LAC: Linear and Angular Compliance for Humanoid Whole-body Control**|Yang Liu et.al.|-|[2608.25405](http://arxiv.org/abs/2608.25405)|null|
 |**2026-08-23**|**DreamMimic: Learning Visuomotor Whole-Body Loco-Manipulation via World Model**|Jie Yin et.al.|-|[2608.22278](http://arxiv.org/abs/2608.22278)|**[link](https://github.com/DreamMimic/DreamMimic)**|
 |**2026-08-20**|**Video2DoorTraversal: Push Door Traversal via Simulated Door Twins**|Xincheng Tang et.al.|-|[2608.20251](http://arxiv.org/abs/2608.20251)|null|
 |**2026-08-19**|**Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control**|Chaoyi Pan et.al.|-|[2608.19443](http://arxiv.org/abs/2608.19443)|null|
@@ -282,6 +290,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.25405">LAC: Linear and Angular Compliance for Humanoid Whole-body Control</a></h3>
+<p class="paper-meta">2026-08-26 &middot; Yang Liu, Zhongkai Gu, Wei Zhu, Mitsuhiro Hayashibe</p>
+<p class="paper-abstract">Real-world humanoid tasks involve physical interaction with objects and humans, yet current controllers either reject external forces as disturbances or restrict compliance to limited body links while ignoring angular effects. We present LAC, a general whole-body controller that simultaneously realizes commanded Linear and Angular Compliance for wrenches applied to the upper body. First, we synthesize whole-body compliant responses into a large-scale augmented dataset. Sampled force and couple events are imposed on contact frames extracted from human interaction data. At each contact link, the external force and a virtual torque from the passively yielding kinematic chain drive a virtual admittance under the commanded stiffness. Subsequently, teacher-student reinforcement learning trains a single policy to track the compliant motions under external wrenches. Finally, extensive simulation and real-world experiments demonstrate whole-body compliant responses to wrenches across the upper body, monotonic modulation over the full range of both stiffness commands, and applicability to teleoperated loco-manipulation tasks. Project website: https://lac-humanoid.github.io/</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.25405">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.22278">DreamMimic: Learning Visuomotor Whole-Body Loco-Manipulation via World Model</a></h3>
 <p class="paper-meta">2026-08-23 &middot; Jie Yin, Xingyu Lai</p>
@@ -576,6 +590,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-26**|**GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation**|Yuqing Jiang et.al.|-|[2608.25659](http://arxiv.org/abs/2608.25659)|null|
 |**2026-08-25**|**TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks**|Zhi Cao et.al.|-|[2608.24101](http://arxiv.org/abs/2608.24101)|null|
 |**2026-08-13**|**DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation**| DreamX Team et.al.|-|[2608.13489](http://arxiv.org/abs/2608.13489)|null|
 |**2026-08-06**|**GeniWorld: A Generalizable Interactive World Model for Robotic Manipulation via Visual Actions**|Chenghao Gu et.al.|-|[2608.06332](http://arxiv.org/abs/2608.06332)|null|
@@ -600,6 +615,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.25659">GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation</a></h3>
+<p class="paper-meta">2026-08-26 &middot; Yuqing Jiang, Zijian Zhang, Weitao Zhou, Jiawei Wang, Junjie He, Lei Yang, Haifang Qing, Si Liu, Ding Zhao, Ping Luo, Haibao Yu</p>
+<p class="paper-abstract">Vision-Language-Action (VLA) policies have advanced language-conditioned robotic manipulation, yet action-imitation objectives provide only weak supervision for metric 3D structure and short-horizon physical evolution. Geometry-enhanced policies mainly improve current-scene grounding, whereas predictive policies often model future dynamics in RGB or latent spaces and may incur substantial deployment cost. GaussianDream demonstrates that training-time current Gaussian reconstruction and future Gaussian prediction provide effective 3D supervision, but its dense VGGT/TGE-based prefix jointly carries state, dynamics, and action-conditioning information. We present \textbf{\methodname}, a compact, policy-native extension that inserts \textbf{World State Tokens} and \textbf{World Prediction Tokens} directly into the VLA backbone. A training-only \textbf{World Representation Head} decodes these tokens into a Current World and coupled Future Prediction over shared Gaussian primitives, while static--dynamic factorization preserves persistent structure and focuses residual motion on interaction-relevant regions. At inference, the head, renderer, auxiliary objectives, and VGGT/TGE pathway are removed, leaving only 20 world tokens without online Gaussian decoding or rollout. \method achieves \textbf{98.6\%} on LIBERO and \textbf{87.8\%} on LIBERO-Plus, with clear gains under Camera and Layout shifts. Real-robot experiments further improve average success from 29.2\% to 52.5\% over reproduced $π_{0.5}$ while maintaining efficient closed-loop control.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.25659">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.24101">TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks</a></h3>
 <p class="paper-meta">2026-08-25 &middot; Zhi Cao, Howard Ji, Kevin Zhang, Kuangzhi Ge, Li Fei-Fei, Jiajun Wu, Huang Huang</p>
@@ -728,6 +749,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-26**|**LAC: Linear and Angular Compliance for Humanoid Whole-body Control**|Yang Liu et.al.|-|[2608.25405](http://arxiv.org/abs/2608.25405)|null|
 |**2026-08-23**|**GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction**|Ziyang Cheng et.al.|-|[2608.18234](http://arxiv.org/abs/2608.18234)|null|
 |**2026-08-01**|**Light-Loco-Parkour: Versatile Perceptive Whole-Body Locomotion via Multi-Skill Distillation**|Hongming Chen et.al.|-|[2608.02653](http://arxiv.org/abs/2608.02653)|null|
 |**2026-07-15**|**Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control**|J. M. A. Marcelo et.al.|-|[2607.14182](http://arxiv.org/abs/2607.14182)|null|
@@ -749,6 +771,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.25405">LAC: Linear and Angular Compliance for Humanoid Whole-body Control</a></h3>
+<p class="paper-meta">2026-08-26 &middot; Yang Liu, Zhongkai Gu, Wei Zhu, Mitsuhiro Hayashibe</p>
+<p class="paper-abstract">Real-world humanoid tasks involve physical interaction with objects and humans, yet current controllers either reject external forces as disturbances or restrict compliance to limited body links while ignoring angular effects. We present LAC, a general whole-body controller that simultaneously realizes commanded Linear and Angular Compliance for wrenches applied to the upper body. First, we synthesize whole-body compliant responses into a large-scale augmented dataset. Sampled force and couple events are imposed on contact frames extracted from human interaction data. At each contact link, the external force and a virtual torque from the passively yielding kinematic chain drive a virtual admittance under the commanded stiffness. Subsequently, teacher-student reinforcement learning trains a single policy to track the compliant motions under external wrenches. Finally, extensive simulation and real-world experiments demonstrate whole-body compliant responses to wrenches across the upper body, monotonic modulation over the full range of both stiffness commands, and applicability to teleoperated loco-manipulation tasks. Project website: https://lac-humanoid.github.io/</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.25405">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.18234">GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction</a></h3>
 <p class="paper-meta">2026-08-23 &middot; Ziyang Cheng, Tianshu Tang, Jinxin Lan, Xinze Chen, Yuhan Gong, Zhichao Liu, Changzhong Wu, Yahao Mao, Zongyan Deng, Mingxuan Ma, Huasen Xi, Yilong Liu, Yutong Wu, Xiaofeng Wang, Yang Wang, Yun Ye, Guan Huang, Xiaojie Jin, Zheng Zhu, Jiwen Lu</p>
