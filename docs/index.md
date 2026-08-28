@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.08.27
+## Updated on 2026.08.28
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -43,6 +43,8 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-27**|**SOLO: Stable Omni-terrain Long-Horizon Perceptive Humanoid Locomotion**|Pihai Sun et.al.|-|[2608.26583](http://arxiv.org/abs/2608.26583)|null|
+|**2026-08-27**|**Closing the Loop on the Poppy Humanoid: Bipedal Locomotion with Linear-Quadratic Control and Learned Cost Functions**|Xulin Chen et.al.|-|[2608.26505](http://arxiv.org/abs/2608.26505)|null|
 |**2026-08-25**|**CARO: Contact-Agnostic Residual Observation for Zero-Shot Robust Quadruped Locomotion**|Zihan Yang et.al.|-|[2608.24217](http://arxiv.org/abs/2608.24217)|null|
 |**2026-08-20**|**Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space**|Zeren Luo et.al.|-|[2608.19977](http://arxiv.org/abs/2608.19977)|null|
 |**2026-08-20**|**MILD: Tractable Terrain Modeling for Learning Improved Bipedal Locomotion on Deformable Surfaces**|Zeren Luo et.al.|-|[2608.19955](http://arxiv.org/abs/2608.19955)|null|
@@ -76,6 +78,18 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.26583">SOLO: Stable Omni-terrain Long-Horizon Perceptive Humanoid Locomotion</a></h3>
+<p class="paper-meta">2026-08-27 &middot; Pihai Sun, Gang Han, Jingkai Sun, Jiahao Ma, Zeran Su, Zelin Tao, Peiran Liu, Shuai Shi, Wei Cui, Zifan Wang, Jialin Yu, Wen Zhao, Kangning Yin, Jiaxu Wang, Jiahang Cao, Lingfeng Zhang, Hao Cheng, Jian Tang, Yijie Guo, Qiang Zhang</p>
+<p class="paper-abstract">Humans traverse complex terrain over long distances without losing balance, whereas perceptive humanoid policies become fragile as perception and control errors accumulate. We present SOLO, a unified framework addressing two compounding causes of this long-horizon fragility: dense terrain reconstruction smooths action-critical details, and pointwise imitation lacks temporal credit assignment. Its Query Reconstructor (QR) uses Fourier-encoded cell queries to retrieve spatially specific evidence from depth-proprioception tokens, preserving sharp terrain boundaries. Trajectory-Aware MSE (TA-MSE) Distillation adds next-state teacher-student disagreement to the PPO reward, enabling Generalized Advantage Estimation to propagate future disagreement penalties to preceding actions. In simulation, QR reduces height-map L1 error by factors of 3.3-4.0, while TA-MSE surpasses PPO and MSE+PPO in curriculum progression. On stress-test terrains, SOLO achieves 97.5% mean traversal success and 96% stepping-stone success, versus 75.0-75.6% and 0-3% for dense-reconstructor variants. Deployed zero-shot with only a chest-mounted depth camera and proprioception, SOLO completes a continuous 1.5-km outdoor route and an indoor mixed-terrain course. Project page: https://sunpihai-up.github.io/solo/</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.26583">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.26505">Closing the Loop on the Poppy Humanoid: Bipedal Locomotion with Linear-Quadratic Control and Learned Cost Functions</a></h3>
+<p class="paper-meta">2026-08-27 &middot; Xulin Chen, Borui He, Ruipeng Liu, Naveed Tahir, Zhenyu Gan, Garrett E. Katz</p>
+<p class="paper-abstract">The Poppy Humanoid is an open-source, low-cost robot suitable for research and education in artificial intelligence. However, we are unaware of any published methodology that achieves reliable, unassisted bipedal locomotion on the standard Poppy hardware. This paper contributes a functional closed-loop walking controller for Poppy, based on the linear-quadratic regulator (LQR) framework for trajectory tracking. Starting with data collected from open-loop playback of a nominal walking trajectory, our proposed method learns a quadratic cost function for an LQR controller that substantially improves the reliability of the motion. The closed-loop controller is validated empirically, demonstrating statistically significant improvements in walking performance compared to open-loop trajectory playback.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.26505">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.24217">CARO: Contact-Agnostic Residual Observation for Zero-Shot Robust Quadruped Locomotion</a></h3>
 <p class="paper-meta">2026-08-25 &middot; Zihan Yang, Shixuan Han, Kexin Guo, Xiang Yu</p>
@@ -258,6 +272,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-27**|**Tensegrity Continuum Robots Enable Task-Adaptive Morphologies for Cooperative Behaviors**|Mahmud Hasan Saikot et.al.|-|[2608.27221](http://arxiv.org/abs/2608.27221)|null|
 |**2026-08-26**|**LAC: Linear and Angular Compliance for Humanoid Whole-body Control**|Yang Liu et.al.|-|[2608.25405](http://arxiv.org/abs/2608.25405)|null|
 |**2026-08-23**|**DreamMimic: Learning Visuomotor Whole-Body Loco-Manipulation via World Model**|Jie Yin et.al.|-|[2608.22278](http://arxiv.org/abs/2608.22278)|**[link](https://github.com/DreamMimic/DreamMimic)**|
 |**2026-08-20**|**Video2DoorTraversal: Push Door Traversal via Simulated Door Twins**|Xincheng Tang et.al.|-|[2608.20251](http://arxiv.org/abs/2608.20251)|null|
@@ -290,6 +305,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.27221">Tensegrity Continuum Robots Enable Task-Adaptive Morphologies for Cooperative Behaviors</a></h3>
+<p class="paper-meta">2026-08-27 &middot; Mahmud Hasan Saikot, Sydney Spiegel, Sudheera Akalanka Kariyawasam, Andrew Stefka, Josh Chrisler, Jianguo Zhao</p>
+<p class="paper-abstract">Robots that can change their morphologies and behaviors for different tasks and environments hold great promise for adaptable, multifunctional systems. Modular reconfigurable robots (MRRs) can achieve such functionalities by docking and rearranging individual units, but most rely on rigid modules that lack structural compliance, resulting in limited capabilities. Continuum robots offer compliance through flexible backbones, yet they cannot self-reconfigure into task-adaptive multi-robot configurations. Here, we introduce an MRR that unifies the advantages of both architectures by combining a tensegrity-based compliant body with claw-based connection mechanisms. Each robot can manipulate and locomote independently, and multiple robots can self-reconfigure into different morphologies (e.g., chains, loops, branches) for cooperative manipulation and locomotion. We demonstrate the robots&#x27; capability across diverse tasks and environments, including coordinated object manipulation and transport, multimodal locomotion, and loco-manipulation in real-world scenarios. These results lay a foundation for adaptable and multifunctional robotic collectives, with broad potential applications in manufacturing, space exploration, and search-and-rescue operations.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.27221">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.25405">LAC: Linear and Angular Compliance for Humanoid Whole-body Control</a></h3>
 <p class="paper-meta">2026-08-26 &middot; Yang Liu, Zhongkai Gu, Wei Zhu, Mitsuhiro Hayashibe</p>
@@ -590,6 +611,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-08-26**|**WALL-SS: Scaling Long-horizon World Models via Next-Scale Autoregression**|Maeve Zhang et.al.|-|[2608.26239](http://arxiv.org/abs/2608.26239)|null|
 |**2026-08-26**|**GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation**|Yuqing Jiang et.al.|-|[2608.25659](http://arxiv.org/abs/2608.25659)|null|
 |**2026-08-25**|**TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks**|Zhi Cao et.al.|-|[2608.24101](http://arxiv.org/abs/2608.24101)|null|
 |**2026-08-13**|**DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation**| DreamX Team et.al.|-|[2608.13489](http://arxiv.org/abs/2608.13489)|null|
@@ -615,6 +637,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2608.26239">WALL-SS: Scaling Long-horizon World Models via Next-Scale Autoregression</a></h3>
+<p class="paper-meta">2026-08-26 &middot; Maeve Zhang, Rain Sun, Xiang Wang, Cyril Zhang, Shalfun Li, Meng Cao, Howard Lu, Ethan Chen, Harry Jhou, KZ Zheng, Lights Shi, Regis Cheng,  Lorenzin, Robert Wang, Victor Yao, Gody Li, Elise Mon, Yohann Tang, Ryan Yu, PS Zhang, Vincent Chen, Hang Su, Roy Gan, Hao Wang, Qian Wang</p>
+<p class="paper-abstract">Generative world models provide robots with predictive models of how the world evolves under interaction, with growing potential for simulation, planning, policy evaluation, and robot learning. Beyond clip-level future prediction, a unified generative formulation should relate actions to consequences, support flexible horizons and continuous interaction, and enable reward-driven optimization. We introduce WALL-SS, a world model that generates visual futures through Scale-wise autoregressive Scaling, enabling action-controllable and long-horizon robotic simulation. WALL-SS represents embodied trajectories as causal sequences of temporally interleaved observations and actions, making action-dependent state transitions explicit while naturally supporting variable-length generation, streaming extension through reusable causal states, and direct optimization through sequence probabilities. To make this formulation effective over long horizons, we generate each future observation in a coarse-to-fine manner and develop three complementary components within the same hierarchy. Action-conditioned next-scale prediction injects scale-aligned action representations to improve action-future coupling and model both successful and failed behaviors. Scale-compressed long-horizon memory retains recent interactions at fine resolution while compressing distant observations and actions, with scale-wise dream forcing enhancing robustness to self-generated context. Finally, on-policy alignment optimizes autoregressive visual dynamics with action-following and long-term consistency rewards while preserving the pretrained visual distribution. Experiments show that WALL-SS improves action following and trajectory accuracy, supports coherent minute-long streaming rollout under bounded memory, and consistently benefits from on-policy alignment in reducing action drift and long-horizon inconsistency.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2608.26239">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.25659">GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation</a></h3>
 <p class="paper-meta">2026-08-26 &middot; Yuqing Jiang, Zijian Zhang, Weitao Zhou, Jiawei Wang, Junjie He, Lei Yang, Haifang Qing, Si Liu, Ding Zhao, Ping Luo, Haibao Yu</p>
