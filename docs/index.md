@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.09.01
+## Updated on 2026.09.02
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -279,6 +279,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-01**|**A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots**|Duncan Calvert et.al.|-|[2609.01518](http://arxiv.org/abs/2609.01518)|null|
 |**2026-08-30**|**Blind Dexterity: Whole-Body Humanoid Manipulation via Pure Proprioception**|Aditya Bhatt et.al.|-|[2608.29487](http://arxiv.org/abs/2608.29487)|null|
 |**2026-08-28**|**Stay Seated: Learning Omnidirectional Humanoid Locomotion on a Passive Mobile Chair with Casters**|Kango Yanagida et.al.|-|[2608.28090](http://arxiv.org/abs/2608.28090)|null|
 |**2026-08-27**|**Tensegrity Continuum Robots Enable Task-Adaptive Morphologies for Cooperative Behaviors**|Mahmud Hasan Saikot et.al.|-|[2608.27221](http://arxiv.org/abs/2608.27221)|null|
@@ -314,6 +315,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.01518">A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots</a></h3>
+<p class="paper-meta">2026-09-01 &middot; Duncan Calvert, Luigi Penco, Dexton Anderson, Tomasz Bialek, Arghya Chatterjee, Beomyeong Park, Robert Griffin</p>
+<p class="paper-abstract">There is tremendous value in humanoid robots taking on physically demanding, hazardous, and repetitive work in spaces built for humans. However, a useful robot for these spaces must coordinate locomotion, whole-body motion, perception, contact, and operator supervision. We present a robot-local, runtime-editable behavior authoring and runtime system that addresses these challenges. We argue that behavior architecture can be a primary enabler of capability, speed, and reliability, and that runtime editability enables fast behavior creation, adaptation, extension, and combination.   Our behavior architecture combines object-centric Affordance Templates, a tree structure that provides organization and logic, and runtime-editable perception through a behavior scene and primitive scene actions. Our operator interface remains continuously synchronized to the robot for runtime authoring, monitoring, and repair. Action primitives execute through a whole-body controller that supports concurrent body motions and walking.   Demonstrations of our system cover six task variants on Unitree H1-2 and Alex. We execute a push door traversal in 34 seconds and sort six balls by color in 45 seconds under human disturbance. Timed authoring sessions show scratch creation of new loco-manipulation behaviors and adaptation of existing ones in hours. Comparison against the literature finds our approach to be competitive with recent learned systems.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.01518">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.29487">Blind Dexterity: Whole-Body Humanoid Manipulation via Pure Proprioception</a></h3>
 <p class="paper-meta">2026-08-30 &middot; Aditya Bhatt, Oleg Kaidanov, Puze Liu, Jan Peters</p>
@@ -805,6 +812,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-01**|**ADAPT: Agile Diffusion Action Priors for Robust and Steerable Online Text-Driven Humanoid Control**|Yan Wu et.al.|-|[2609.00677](http://arxiv.org/abs/2609.00677)|null|
 |**2026-08-26**|**LAC: Linear and Angular Compliance for Humanoid Whole-body Control**|Yang Liu et.al.|-|[2608.25405](http://arxiv.org/abs/2608.25405)|null|
 |**2026-08-23**|**GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction**|Ziyang Cheng et.al.|-|[2608.18234](http://arxiv.org/abs/2608.18234)|null|
 |**2026-08-01**|**Light-Loco-Parkour: Versatile Perceptive Whole-Body Locomotion via Multi-Skill Distillation**|Hongming Chen et.al.|-|[2608.02653](http://arxiv.org/abs/2608.02653)|null|
@@ -827,6 +835,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.00677">ADAPT: Agile Diffusion Action Priors for Robust and Steerable Online Text-Driven Humanoid Control</a></h3>
+<p class="paper-meta">2026-09-01 &middot; Yan Wu, Chenhao Li, Kaifeng Zhao, Gen Li, Marco Hutter, Siyu Tang</p>
+<p class="paper-abstract">We present ADAPT, an end-to-end framework for interactive, text-conditioned humanoid whole-body control. Unlike dominant text-to-motion pipelines that generate kinematic motions for a separate tracker, ADAPT solves language control with an end-to-end closed-loop control framework, where the robot must continuously respond to changing commands while maintaining balance, natural motion, and smooth transitions. ADAPT learns a diffusion-based action prior from text-labeled humanoid state-action trajectories, enabling diverse motion skills to be directly executed from language commands. To improve long-horizon robustness and smooth prompt switching, we train a lightweight residual reinforcement learning policy on top of the frozen diffusion controller. We further show that the same diffusion policy can be reused as a steerable text-conditioned motion prior for downstream task adaptation. Experiments demonstrate robust language-grounded skill execution, smooth interactive transitions, and style-preserving downstream control.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.00677">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.25405">LAC: Linear and Angular Compliance for Humanoid Whole-body Control</a></h3>
 <p class="paper-meta">2026-08-26 &middot; Yang Liu, Zhongkai Gu, Wei Zhu, Mitsuhiro Hayashibe</p>
