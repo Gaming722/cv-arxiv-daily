@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.09.08
+## Updated on 2026.09.09
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -43,6 +43,11 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-07**|**A Multimodal Label Forecasting Method for Aperiodic Visuo-Motor Time Series**|Borui He et.al.|-|[2609.07930](http://arxiv.org/abs/2609.07930)|null|
+|**2026-09-07**|**Open-Set Ego-Noise Separation for Legged-Robot Audition via Annotation-Free Adaptation and Pretrained-Model Transfer**|Koki Shoda et.al.|-|[2609.07440](http://arxiv.org/abs/2609.07440)|null|
+|**2026-09-07**|**From LLM-Generated Specifications to Learned Quadruped Locomotion**|Merve Atasever et.al.|-|[2609.07111](http://arxiv.org/abs/2609.07111)|null|
+|**2026-09-07**|**RoboDreamer: Anticipatory Humanoid Locomotion with Predictive State-Space Models**|Zhe Li et.al.|-|[2609.07096](http://arxiv.org/abs/2609.07096)|null|
+|**2026-09-07**|**Mind the Phase: Effective Rank and Representation Health in Legged Locomotion**|Felipe Tommaselli et.al.|-|[2609.06958](http://arxiv.org/abs/2609.06958)|null|
 |**2026-08-28**|**Stay Seated: Learning Omnidirectional Humanoid Locomotion on a Passive Mobile Chair with Casters**|Kango Yanagida et.al.|-|[2608.28090](http://arxiv.org/abs/2608.28090)|null|
 |**2026-08-31**|**SOLO: Stable Omni-terrain Long-Horizon Perceptive Humanoid Locomotion**|Pihai Sun et.al.|-|[2608.26583](http://arxiv.org/abs/2608.26583)|null|
 |**2026-08-27**|**Closing the Loop on the Poppy Humanoid: Bipedal Locomotion with Linear-Quadratic Control and Learned Cost Functions**|Xulin Chen et.al.|-|[2608.26505](http://arxiv.org/abs/2608.26505)|null|
@@ -79,6 +84,36 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.07930">A Multimodal Label Forecasting Method for Aperiodic Visuo-Motor Time Series</a></h3>
+<p class="paper-meta">2026-09-07 &middot; Borui He, Garrett E Katz</p>
+<p class="paper-abstract">Deep learning models have been increasingly applied to Time Series Forecasting (TSF) in recent years. Transformer-based and MLP-based models have both been used effectively on many real-world TSF regression benchmarks, and there is ongoing debate as to which family of methods is best. While these benchmarks have drawn much attention, it is also worth noting that many current datasets and methods assume approximate periodicity in the time series. In this work, we focus on a new TSF task without periodicity: anticipating falls during humanoid locomotion, on the basis of egocentric vision and proprioception. When the locomotion trajectories are sufficiently diverse, periodicity is violated. We contribute two new benchmark datasets (one from simulation, one from real hardware), showing that periodicity is violated and recent deep TSF methods struggle on these benchmarks. We also propose a novel deep learning architecture that exploits both endogenous and exogenous variables and a training process that rigorously enforces i.i.d sampling of training examples. Our results show statistically significant improvement over prior art in multiple experimental conditions, by 12.73% or more on the real data and 10.40% or more on the simulation data. Code and datasets will be available upon acceptance.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.07930">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.07440">Open-Set Ego-Noise Separation for Legged-Robot Audition via Annotation-Free Adaptation and Pretrained-Model Transfer</a></h3>
+<p class="paper-meta">2026-09-07 &middot; Koki Shoda, Jun Younes Louhi Kasahara, Aoba Koyanagi, Qi An, Atsushi Yamashita</p>
+<p class="paper-abstract">This paper proposes an open-set ego-noise separation framework for legged-robot audition via annotation-free adaptation and pretrained-model transfer. The framework removes robot-specific ego-noise while preserving environmental sounds whose classes are not specified in advance. Acoustic sensing provides cues about a robot&#x27;s surroundings beyond the visual field, but walking-induced ego-noise from footstep impacts, joint-backlash rattling, and motor noise severely contaminates the recordings. The framework first uses RecurGraph to select ego-noise-dominant clips from the unlabeled recordings by aggregating clip embeddings into an embedding centroid and propagating scores over an audio-embedding graph. The selected clips are mixed with diverse environmental sounds from a large-scale sound-event dataset to provide paired mixture--target supervision for open-set separation. Transfer-DiT then adapts a general-purpose zero-shot neural separator to achieve high-fidelity open-set ego-noise separation for the target robot. Experiments with bipedal and quadrupedal robots show reliable clip selection and improvements in separation quality and downstream task performance over baseline separators. These results demonstrate the feasibility of annotation-free adaptation without separately recorded ego-noise-only data or manual clip-level annotations.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.07440">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.07111">From LLM-Generated Specifications to Learned Quadruped Locomotion</a></h3>
+<p class="paper-meta">2026-09-07 &middot; Merve Atasever, Keyan Azbijari, Cagan Bakirci, Alfredo Reina Corona, Tolga Izdas, Richard Yang, Erdem Biyik, Jyotirmoy V. Deshmukh</p>
+<p class="paper-abstract">Quadruped robot locomotion policies are often trained using reinforcement learning, which in turn relies heavily on hand-crafted reward functions. Designing reward functions requires substantial manual engineering, and it is often unclear which local rewards will induce the desired global behavior. Shaped rewards from formal specifications in languages like Signal Temporal Logic (STL) can make rewards more interpretable, but writing STL specifications itself still requires domain expertise. We study whether large language models (LLMs) can fill this gap by generating Parametric Signal Temporal Logic (PSTL) specifications that are subsequently used for policy learning. Given a natural language locomotion objective and a constrained specification grammar, GPT-5.5 and Qwen 3.6 independently propose STL templates for command tracking, safety, and gait structure. We instantiate the parameters of the generated PSTL templates using expert trajectories and retain only specifications that are consistent with demonstrated expert behavior. The resulting specifications are then transformed into smooth, finite-history reward functions and used to train a quadruped locomotion policy with Proximal Policy Optimization (PPO) in MuJoCo XLA (MJX). We evaluate both \emph{gait-aware} and \emph{gait-agnostic} settings. The former specifies walking-trot, trot, and bound regimes, while the latter allows contact patterns to emerge from the task objective. We compare against hand-engineered rewards, Text2Reward-style LLM-generated reward code, and an expert-switching oracle. Gait-aware Qwen 3.6 specifications achieved 100\% survival and command success across all tested speeds (0.3--2.1 m/s) and matched the target gait at high speeds, whereas Text2Reward achieved 0\% for both metrics at $\geq 1.9$ m/s. Videos: https://stl-locomotion.github.io/</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.07111">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.07096">RoboDreamer: Anticipatory Humanoid Locomotion with Predictive State-Space Models</a></h3>
+<p class="paper-meta">2026-09-07 &middot; Zhe Li, Yangyang Wei, Xichen Yuan, Zhenzhe Zhang, Weihao Yuan, Shanghang Zhang, Jianfei Yang</p>
+<p class="paper-abstract">Humanoid locomotion requires control policies that remain stable under imperfect sensing while exploiting temporal context for consistent motion. We present RoboDreamer, a two-stage teacher--student framework that combines next-observation consistency with randomized continuous temporal masking. A teacher is first trained on clean observations, and a student is then distilled under masked recent observations, encouraging the policy to infer missing current information from history. At inference, the same masking interface is reused for implicit closed-loop action refinement and optional multi-step action chunking. Mamba is used as the temporal backbone, while matched ablations show that masking/distillation provides a substantial part of the gain and Mamba contributes additional tracking improvements with real-time latency. Experiments in IsaacLab, MuJoCo, and on a Unitree G1 demonstrate robust motion tracking under observation masking and successful real-world deployment.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.07096">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.06958">Mind the Phase: Effective Rank and Representation Health in Legged Locomotion</a></h3>
+<p class="paper-meta">2026-09-07 &middot; Felipe Tommaselli, Thiago H. Segreto, Juliano D. Negri, Ricardo V. Godoy, Marcelo Becker</p>
+<p class="paper-abstract">Reinforcement learning has become the leading paradigm in legged locomotion, enabling complex behaviors from backflips to parkour through massively parallel simulation. Under PPO&#x27;s non-stationarity, shallow networks remain the de facto architecture, supported by carefully staged curricula and environments, yet the representations these policies learn stay poorly understood, leaving no training-time signal of how they will behave on hardware. In this work, we empirically study locomotion policies through the effective rank of the policy Jacobian and show that conditioning rank on the gait phase exposes architectural structure that global rank averages away. In particular, we find that standard architectural choices, namely layer normalization and residual connections, allocate roughly two more dimensions of effective rank to swing than to stance, which is fully absent in vanilla MLPs. Building on this, we propose a simple recipe that turns these representational signatures into smoother, more reliable sim-to-real transfer. In practice, this results in roughly 3x lower joint jitter that holds from simulation onto a physical Spot, suggesting that representation health is an effective training-time lens to track sim-to-real smoothness.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.06958">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.28090">Stay Seated: Learning Omnidirectional Humanoid Locomotion on a Passive Mobile Chair with Casters</a></h3>
 <p class="paper-meta">2026-08-28 &middot; Kango Yanagida, Kazuki Miyazawa, Takato Horii</p>
@@ -279,6 +314,9 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-08**|**Visible-Reachable Workspace for Perception-Aware Humanoid Design**|Boxi Xia et.al.|-|[2609.08905](http://arxiv.org/abs/2609.08905)|null|
+|**2026-09-07**|**SPOT: Spatial Perception-Oriented Long-Horizon Humanoid Teleoperation**|Lixing Fang et.al.|-|[2609.07933](http://arxiv.org/abs/2609.07933)|null|
+|**2026-09-05**|**GLoRI: Closed-Loop Whole-Body Tracking with Global-Local Reference Interaction for Humanoid Loco-Manipulation**|Qingyao Xu et.al.|-|[2609.05994](http://arxiv.org/abs/2609.05994)|null|
 |**2026-09-04**|**FWBC-VLA: Force-Aware Whole-Body Compensation for Contact-Rich Loco-Manipulation**|Yutian Zhang et.al.|-|[2609.03889](http://arxiv.org/abs/2609.03889)|null|
 |**2026-09-01**|**A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots**|Duncan Calvert et.al.|-|[2609.01518](http://arxiv.org/abs/2609.01518)|null|
 |**2026-08-30**|**Blind Dexterity: Whole-Body Humanoid Manipulation via Pure Proprioception**|Aditya Bhatt et.al.|-|[2608.29487](http://arxiv.org/abs/2608.29487)|null|
@@ -316,6 +354,24 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.08905">Visible-Reachable Workspace for Perception-Aware Humanoid Design</a></h3>
+<p class="paper-meta">2026-09-08 &middot; Boxi Xia, Zijiang Yang, Ryan Shin, Bokuan Li, Eric Wun-Hao Lu, Jacob Lee, Jiaxun Liu, Boyuan Chen</p>
+<p class="paper-abstract">Workspace analysis measures where a robot can place its end effector. For visually guided manipulation, reachability alone is insufficient: a kinematically reachable target may not be visible in the specific pose required to reach it. The robot must then redirect its sensing or move its body to acquire a view, turning a perception limitation into additional motion. Existing humanoids largely inherit this limitation when copying human form factors. We introduce the visible-reachable workspace (VRW), a design-stage measure that conditions visibility on feasible reaching configurations and extends it to concurrent visibility of spatially separated work regions. We apply VRW by building a 31-DoF humanoid with independently actuated RGB-D cameras. On the same robot, camera articulation increases visible-reachable coverage from 38% to 97%. With actuated camera layouts, a second camera raises pairwise coverage from 0.45 to 0.95, while a third changes it only to 0.97. In a controlled two-target reach-and-grasp benchmark, our dual-actuated design reduces mean completion time by 17% and mechanical energy by 19% relative to the same robot with its cameras fixed. Hardware experiments demonstrate simultaneous observation and manipulation of front/back and left/right target pairs without torso reorientation. The results suggest that reachability becomes a more informative design quantity for perception-driven humanoid manipulation when it is evaluated together with the sensing configurations that make the reachable space observable. We will open-source all software and the humanoid hardware design. Our website is https://generalroboticslab.com/DukeHumanoidv2</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.08905">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.07933">SPOT: Spatial Perception-Oriented Long-Horizon Humanoid Teleoperation</a></h3>
+<p class="paper-meta">2026-09-07 &middot; Lixing Fang, Ziyan Xiong, Sunli Chen, Zhiyang Dou, Chuang Gan</p>
+<p class="paper-abstract">High-quality demonstration data is becoming a central bottleneck for training general-purpose humanoid robots. While recent humanoid teleoperation systems have made substantial progress in retargeting human motion to robot motion, long-horizon loco-manipulation requires another capability: operators must maintain task-relevant spatial awareness over time, e.g., object locations, surrounding environments, the robot&#x27;s pose. We call the extent of this awareness the operator&#x27;s perceptual horizon. However, existing methods often shorten this: narrow views miss peripheral events, robot-mounted cameras become unstable during locomotion, and coupled head-view control makes looking around interfere with robot motion. We present SPOT, a Spatial Perception-Oriented VR Teleoperation system for collecting long-horizon humanoid demonstration data by providing extended perceptual horizon. SPOT combines a robot-mounted binocular fisheye camera, a wide-field stereoscopic display, viewpoint-decoupled free-looking, and visual stabilization to provide a robot-centric view that is wide, stable, and actively inspectable. Unlike conventional egocentric interfaces, SPOT decouples visual exploration from robot actuation: the egocentric stereo observation is rendered on a virtual hemisphere around the operator, so natural head rotations change where the operator looks within the wide-field view rather than commanding the robot head, camera, or torso. We evaluate SPOT on perception-critical humanoid data-collection tasks spanning drop recovery, peripheral retrieval, large-workspace bimanual manipulation, fine alignment, and dynamic interaction. SPOT improves efficiency, accuracy, and recovery speed, demonstrating its effectiveness for user-friendly and scalable long-horizon humanoid data collection.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.07933">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.05994">GLoRI: Closed-Loop Whole-Body Tracking with Global-Local Reference Interaction for Humanoid Loco-Manipulation</a></h3>
+<p class="paper-meta">2026-09-05 &middot; Qingyao Xu, Sheng Yin, Zibo Zhou, Ya Zhang, Siheng Chen, Yue Hu</p>
+<p class="paper-abstract">Humanoid loco-manipulation requires accurate whole-body motion tracking in the world frame for physical interaction. While local references preserve motion structure, they lack explicit constraints on absolute spatial placement, leading to accumulated global errors. Existing globally aware approaches augment teleoperation policies with global observations but do not explicitly integrate global correction with local motion guidance, limiting autonomous tracking accuracy. We present GLoRI, a closed-loop whole-body controller that integrates structured global reference and feedback with local motion guidance. Its GLoRI-Net uses Global-Local Cross Attention(GLCA) to refine local keypoint features with global target and pose-difference features, preserving motion structure while correcting world-frame placement. GLoRI achieves 100% completion and a g-MPJPE of 6.44cm on held-out HuMoTo motions. This accuracy remains robust under direct Isaac Gym-to-MuJoCo transfer without fine-tuning, demonstrating strong generalization. Furthermore, such accuracy and generalization enable autonomous loco-manipulation with a single policy on a real Unitree G1 interacting with diverse unseen objects, extending beyond prior systems that primarily rely on teleoperation or focus on single-object interactions.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.05994">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.03889">FWBC-VLA: Force-Aware Whole-Body Compensation for Contact-Rich Loco-Manipulation</a></h3>
 <p class="paper-meta">2026-09-04 &middot; Yutian Zhang, Siyuan Ma, Liwen Yang, Yang Li, Ce Hao, Haozhen Chi, Dong Wei, Qiaojun Yu, Dibo Hou</p>
@@ -646,6 +702,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-08**|**CALIPER: Clean Scenes Cannot Rank Physical Inference in Pretrained Visual Representations**|Aman Mehta et.al.|-|[2609.08250](http://arxiv.org/abs/2609.08250)|null|
 |**2026-09-03**|**GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation**|Yupeng Zheng et.al.|-|[2609.04193](http://arxiv.org/abs/2609.04193)|null|
 |**2026-08-29**|**Hydra: A Navigation World Action Model with Discrete Latent Planning and Continuous Flow-Matching Execution**|Mohammad Nazeri et.al.|-|[2608.28995](http://arxiv.org/abs/2608.28995)|null|
 |**2026-08-26**|**WALL-SS: Scaling Long-horizon World Models via Next-Scale Autoregression**|Maeve Zhang et.al.|-|[2608.26239](http://arxiv.org/abs/2608.26239)|null|
@@ -674,6 +731,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.08250">CALIPER: Clean Scenes Cannot Rank Physical Inference in Pretrained Visual Representations</a></h3>
+<p class="paper-meta">2026-09-08 &middot; Aman Mehta, Riya Baviskar</p>
+<p class="paper-abstract">How far a pushed object slides depends on its mass and friction, which no single image reveals. Pretrained visual encoders are increasingly used as the perception front end of world models for manipulation, and their physical competence is assessed with perturbation benchmarks and linear probes, almost always in a clean, fixed-camera scene. We show that these assessments cannot distinguish an encoder that infers physics from one that does not. CALIPER (calibrate, then predict) is a direct test: an object of unknown mass and friction is struck twice at known speeds, a third strike is shown only up to the moment of contact, and a linear readout on frozen features must predict how far the object slides. Swapping in another object&#x27;s calibration clips checks that the evidence is actually used. Across 2,000 simulated episodes and eight representations, from V-JEPA 2 to a randomly initialised ViT and raw pixels, calibration adds +0.50 R^2 and the swap removes it. Yet in the clean scene every representation lands within 0.02 R^2 of the ceiling set by true simulator state, because a fixed camera exposes the object&#x27;s displacement directly in pixel coordinates. Resampling camera, lighting, and clutter for every clip spreads the same representations across 0.50 R^2; when the readout chooses a push speed for a goal distance, V-JEPA 2 misses by 4 mm and the random ViT by 20 mm, no better than ignoring the object. Linear probes track none of this: a change in frame aggregation moves a probe more than pretraining does, and erasing the probed mass direction from the same representation costs nothing in one scene and 0.35 R^2 in the other. Whether a benchmark can rank models is an empirical property, and we give three checks that establish it.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.08250">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.04193">GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation</a></h3>
 <p class="paper-meta">2026-09-03 &middot; Yupeng Zheng, Xiang Li, Songen Gu, Yuhang Zheng, Shuai Tian, Weize Li, Linbo Wang, Chaoyue Li, Qichao Zhang, Haoran Li, Zhongpu Xia, Ya-Qin Zhang, Shuicheng Yan, Dongbin Zhao</p>
@@ -971,6 +1034,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-06**|**SkillX: Unified Multi-Skill Policy Learning for Humanoid Soccer**|Zhangchen Ye et.al.|-|[2609.06718](http://arxiv.org/abs/2609.06718)|null|
 |**2026-08-04**|**Learning Context-Aware Motion Priors for Humanoid Control**|Yunyang Mo et.al.|-|[2608.03234](http://arxiv.org/abs/2608.03234)|null|
 |**2026-07-30**|**PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball**|Lizhi Yang et.al.|-|[2607.28623](http://arxiv.org/abs/2607.28623)|null|
 |**2026-07-12**|**Learning Roller-Skating Motions of Humanoid Robots Based on Adversarial Motion Priors**|Yunkang Cheng et.al.|-|[2607.10815](http://arxiv.org/abs/2607.10815)|null|
@@ -992,6 +1056,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.06718">SkillX: Unified Multi-Skill Policy Learning for Humanoid Soccer</a></h3>
+<p class="paper-meta">2026-09-06 &middot; Zhangchen Ye, Enxuan Ruan, Yifei Bao, Runhan Huang, Jiankun Yang, Jiakang Jin, Yixiao Huo, Pengyuan Wang, Yinan Han, Huaxing Huang, Wenhao Cui, Yiming Li, Xiaoyu Tian</p>
+<p class="paper-abstract">Humanoid soccer is a challenging testbed for dynamic whole-body control, requiring robots to coordinate balance, locomotion, object interaction, and skill switching over long horizons. Existing humanoid sports methods often rely on task-specific multi-stage pipelines, making it difficult to jointly learn and compose multiple object-interactive skills within a single deployable policy. To address this, we present SkillX, a unified reinforcement learning framework that learns and composes multiple atomic soccer skills through a single command-conditioned policy. SkillX integrates three core designs: skill-specific adversarial motion priors, skill-specific critics, and an object-aware temporal encoder, enabling the robot to execute atomic skills and transition among them such as dribbling, trapping, and shooting. Experiments in simulation and on a real Noetix E1 humanoid demonstrate robust multi-skill execution, long-horizon skill composition, and successful sim-to-real deployment.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.06718">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2608.03234">Learning Context-Aware Motion Priors for Humanoid Control</a></h3>
 <p class="paper-meta">2026-08-04 &middot; Yunyang Mo, Yi Gu, Yangchen Zhou, Hanyang Cao, Renjing Xu</p>
