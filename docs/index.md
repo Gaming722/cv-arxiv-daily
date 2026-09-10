@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.09.09
+## Updated on 2026.09.10
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -43,6 +43,9 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-09**|**Learning Terrain-Adaptive Humanoid Locomotion on Granular Terrain**|Junnosuke Kamohara et.al.|-|[2609.10286](http://arxiv.org/abs/2609.10286)|null|
+|**2026-09-09**|**Frame-Coded Legged Locomotion over Noisy Terrain**|Lav R. Varshney et.al.|-|[2609.10273](http://arxiv.org/abs/2609.10273)|null|
+|**2026-09-06**|**Design and Attitude Control of an Underwater Quadruped Robot**|Davide Molinaroli et.al.|-|[2609.09217](http://arxiv.org/abs/2609.09217)|null|
 |**2026-09-07**|**A Multimodal Label Forecasting Method for Aperiodic Visuo-Motor Time Series**|Borui He et.al.|-|[2609.07930](http://arxiv.org/abs/2609.07930)|null|
 |**2026-09-07**|**Open-Set Ego-Noise Separation for Legged-Robot Audition via Annotation-Free Adaptation and Pretrained-Model Transfer**|Koki Shoda et.al.|-|[2609.07440](http://arxiv.org/abs/2609.07440)|null|
 |**2026-09-07**|**From LLM-Generated Specifications to Learned Quadruped Locomotion**|Merve Atasever et.al.|-|[2609.07111](http://arxiv.org/abs/2609.07111)|null|
@@ -84,6 +87,24 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.10286">Learning Terrain-Adaptive Humanoid Locomotion on Granular Terrain</a></h3>
+<p class="paper-meta">2026-09-09 &middot; Junnosuke Kamohara, Feiyang Wu, Andy Ningan Zong, Daniel I. Goldman, Yashwanth Nakka, Seth Hutchinson, Ye Zhao</p>
+<p class="paper-abstract">Humanoid locomotion on granular terrain remains a significant challenge due to its complex foot-terrain interaction dynamics that are difficult to model. Existing approaches either ignore granular contact dynamics or incorporate simplified normal force models with heuristic tangential components. In this work, we present a physics-grounded granular contact model based on three-dimensional resistive force theory (3D RFT) and efficiently simulate granular terrain for reinforcement learning (RL) training. Unlike traditional rigid contact models and simplified granular contact models with ad-hoc heuristics, our contact solver produces physically accurate granular intrusion dynamics without resorting to heuristics. It captures realistic penetration and tangential drag during training, enabling the policy to learn behaviors that transfer reliably to real-world granular terrain where rigid contact models fail. To adapt to varying terrain conditions, we train a terrain-adaptive locomotion controller via teacher-student RL, using a variational autoencoder to encode terrain information into a compact latent representation. Simulation studies using material point method (MPM) with NVIDIA Newton demonstrate that our method generalizes to unseen granular terrains, achieves a significantly higher success rate than baselines, and demonstrates zero-shot terrain identification and adaptation. We further validate our approach through extensive hardware experiments across diverse real-world granular terrains including basalt, dry sand, and beach sand. To the best of our knowledge, this is the first demonstration of agile humanoid locomotion on real-world granular terrain. Project page: https://humanoid-gm-locomotion.github.io/HUMANOID-GM/</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.10286">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.10273">Frame-Coded Legged Locomotion over Noisy Terrain</a></h3>
+<p class="paper-meta">2026-09-09 &middot; Lav R. Varshney</p>
+<p class="paper-abstract">Open-loop multilegged locomotion over rough terrain has been interpreted as matter transport over a noisy channel: leg-ground interactions are discrete basic active contacts, terrain deletes or perturbs those contacts, and spatial redundancy concentrates the resulting thrust and arrival time. That construction is repetition-like because every module carries the same scalar locomotion task. It consequently provides neither a positive task rate nor a decoder that changes with the surviving contact set. Here we formulate locomotion instead as a quantized finite-frame expansion with erasures. A d-dimensional body-level command is mapped into N&gt;d heterogeneous local contact commands. Rough terrain erases or corrupts frame coefficients, while a contact-gated compliant morphology physically realizes the weighted active-subframe decoder. For a linear-Gaussian model, mechanical equilibrium is exactly the posterior mean, tangent stiffness is posterior precision, and mechanical compliance is posterior covariance. Equal-norm Parseval frames are shown to be minimax optimal against one missing contact, two-contact robustness is governed by frame coherence, and a harmonic frame gives a directly realizable gait family. For independently surviving contacts of probability q, random Gaussian gait frames admit exact reconstruction at every analog dimension rate R&lt;q, with a binomial reliability exponent, whereas recovery of arbitrary commands is impossible for R&gt;q. Residual contact noise yields an asymptotic per-mode amplification 1/(q-R) and a vanishing mechanical stiffness margin at the threshold. An information-locomotion inequality and an exact incremental-redundancy rule direct the next gait component toward the softest task-relevant unresolved mode. The resulting analog frame-coding theorem establishes a finite relative redundancy and converse as part of a fundamental limit theory of legged locomotion.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.10273">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.09217">Design and Attitude Control of an Underwater Quadruped Robot</a></h3>
+<p class="paper-meta">2026-09-06 &middot; Davide Molinaroli, Mohit Singh, Kostas Alexis</p>
+<p class="paper-abstract">Legged robots are versatile on land, but their use in underwater environments remains limited. Extending quadruped locomotion to water enables amphibious mobility with applications in inspection, environmental monitoring and disaster response. This paper presents the design, modeling, and experimental validation of a reproducible underwater quadruped robot. The robot is built around custom waterproof motor housings machined from polyoxymethylene plastic, which use off-the-shelf O-rings and dynamic shaft seals. A simplified model is derived to describe the dynamics of this underwater legged system, capturing how drag forces on spherical end effectors transmit torque to the floating base. Building on this model, a closed-loop attitude controller is developed using an error formulation defined on the special orthogonal group SO(3). The controller is evaluated both in simulation and experimentally in a water tank, where the robot tracks desired orientation setpoints in roll, pitch and yaw.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.09217">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.07930">A Multimodal Label Forecasting Method for Aperiodic Visuo-Motor Time Series</a></h3>
 <p class="paper-meta">2026-09-07 &middot; Borui He, Garrett E Katz</p>
@@ -314,6 +335,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-09**|**ViBe: Visual Behavior Adaptation for Perceptive Humanoid Whole-Body Control**|Lokesh Krishna et.al.|-|[2609.09918](http://arxiv.org/abs/2609.09918)|null|
 |**2026-09-08**|**Visible-Reachable Workspace for Perception-Aware Humanoid Design**|Boxi Xia et.al.|-|[2609.08905](http://arxiv.org/abs/2609.08905)|null|
 |**2026-09-07**|**SPOT: Spatial Perception-Oriented Long-Horizon Humanoid Teleoperation**|Lixing Fang et.al.|-|[2609.07933](http://arxiv.org/abs/2609.07933)|null|
 |**2026-09-05**|**GLoRI: Closed-Loop Whole-Body Tracking with Global-Local Reference Interaction for Humanoid Loco-Manipulation**|Qingyao Xu et.al.|-|[2609.05994](http://arxiv.org/abs/2609.05994)|null|
@@ -354,6 +376,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.09918">ViBe: Visual Behavior Adaptation for Perceptive Humanoid Whole-Body Control</a></h3>
+<p class="paper-meta">2026-09-09 &middot; Lokesh Krishna, Sarvesh Venkatesan, An Zhang, Quan Nguyen</p>
+<p class="paper-abstract">Motion tracking provides a scalable recipe for humanoid whole-body control. By design, the resulting trackers lack exteroceptive feedback hence reacting to the environment remains the responsibility of a higher-level planner. Existing perceptive controllers train geometry-only encoders from scratch, trading semantics for sim-to-real ease, and typically rely on teacher-student distillation for a task of interest. We present ViBe, a post-training framework for adapting motion trackers to perceptive control tasks. We leverage pre-trained visual encoders with a multi-query extractor module to learn task-relevant perceptive feedback. This feedback is grafted onto the tracker&#x27;s input via low-rank adapters, enabling parameter-efficient fine-tuning. Given a task reward and a reference dataset, this modular controller can be adapted directly via policy optimization. Across four tasks, ViBe shows zero-shot sim-to-real transfer spanning perceptive walking on curbs and parkour, Repose Cube, omni-object loco-manipulation, and dodgeball, with visually robust performance across outdoor, low-light, and RGB distractor conditions. Finally, we solve a goal-oriented Repose Cube task with a deliberately simple planner, demonstrating the efficacy of perceptive controllers, adapted by our approach.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.09918">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.08905">Visible-Reachable Workspace for Perception-Aware Humanoid Design</a></h3>
 <p class="paper-meta">2026-09-08 &middot; Boxi Xia, Zijiang Yang, Ryan Shin, Bokuan Li, Eric Wun-Hao Lu, Jacob Lee, Jiaxun Liu, Boyuan Chen</p>
@@ -889,6 +917,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-09**|**ViBe: Visual Behavior Adaptation for Perceptive Humanoid Whole-Body Control**|Lokesh Krishna et.al.|-|[2609.09918](http://arxiv.org/abs/2609.09918)|null|
 |**2026-09-01**|**ADAPT: Agile Diffusion Action Priors for Robust and Steerable Online Text-Driven Humanoid Control**|Yan Wu et.al.|-|[2609.00677](http://arxiv.org/abs/2609.00677)|null|
 |**2026-08-26**|**LAC: Linear and Angular Compliance for Humanoid Whole-body Control**|Yang Liu et.al.|-|[2608.25405](http://arxiv.org/abs/2608.25405)|null|
 |**2026-08-23**|**GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction**|Ziyang Cheng et.al.|-|[2608.18234](http://arxiv.org/abs/2608.18234)|null|
@@ -912,6 +941,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.09918">ViBe: Visual Behavior Adaptation for Perceptive Humanoid Whole-Body Control</a></h3>
+<p class="paper-meta">2026-09-09 &middot; Lokesh Krishna, Sarvesh Venkatesan, An Zhang, Quan Nguyen</p>
+<p class="paper-abstract">Motion tracking provides a scalable recipe for humanoid whole-body control. By design, the resulting trackers lack exteroceptive feedback hence reacting to the environment remains the responsibility of a higher-level planner. Existing perceptive controllers train geometry-only encoders from scratch, trading semantics for sim-to-real ease, and typically rely on teacher-student distillation for a task of interest. We present ViBe, a post-training framework for adapting motion trackers to perceptive control tasks. We leverage pre-trained visual encoders with a multi-query extractor module to learn task-relevant perceptive feedback. This feedback is grafted onto the tracker&#x27;s input via low-rank adapters, enabling parameter-efficient fine-tuning. Given a task reward and a reference dataset, this modular controller can be adapted directly via policy optimization. Across four tasks, ViBe shows zero-shot sim-to-real transfer spanning perceptive walking on curbs and parkour, Repose Cube, omni-object loco-manipulation, and dodgeball, with visually robust performance across outdoor, low-light, and RGB distractor conditions. Finally, we solve a goal-oriented Repose Cube task with a deliberately simple planner, demonstrating the efficacy of perceptive controllers, adapted by our approach.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.09918">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.00677">ADAPT: Agile Diffusion Action Priors for Robust and Steerable Online Text-Driven Humanoid Control</a></h3>
 <p class="paper-meta">2026-09-01 &middot; Yan Wu, Chenhao Li, Kaifeng Zhao, Gen Li, Marco Hutter, Siyu Tang</p>
