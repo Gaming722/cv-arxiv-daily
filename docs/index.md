@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.09.10
+## Updated on 2026.09.11
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -43,6 +43,8 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-10**|**CAP: Continuously Adaptive Perception-Blind Humanoid Locomotion via Learned Denoising**|Hongjin Chen et.al.|-|[2609.11553](http://arxiv.org/abs/2609.11553)|null|
+|**2026-09-10**|**Gait-Dependent Effects on Quadruped Locomotion for Load-Carrying using Passive Mechanism**|Giovanni B. Dessy et.al.|-|[2609.11059](http://arxiv.org/abs/2609.11059)|null|
 |**2026-09-09**|**Learning Terrain-Adaptive Humanoid Locomotion on Granular Terrain**|Junnosuke Kamohara et.al.|-|[2609.10286](http://arxiv.org/abs/2609.10286)|null|
 |**2026-09-09**|**Frame-Coded Legged Locomotion over Noisy Terrain**|Lav R. Varshney et.al.|-|[2609.10273](http://arxiv.org/abs/2609.10273)|null|
 |**2026-09-06**|**Design and Attitude Control of an Underwater Quadruped Robot**|Davide Molinaroli et.al.|-|[2609.09217](http://arxiv.org/abs/2609.09217)|null|
@@ -87,6 +89,18 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.11553">CAP: Continuously Adaptive Perception-Blind Humanoid Locomotion via Learned Denoising</a></h3>
+<p class="paper-meta">2026-09-10 &middot; Hongjin Chen, Zijun Xu, Shihao Ma, Yi Zhao, Xilai Liu, Ke Ma, Wei Zhang, Chunyang Xie, Pengfei Li, Jieru Zhao, Wenchao Ding</p>
+<p class="paper-abstract">Humanoid locomotion across complex terrain demands forward-looking exteroception to anticipate obstacles, yet this signal is unreliable in real-world deployment, failing partially and intermittently. Existing perceptive policies often assume that depth observations remain clean and in-distribution, while recent attempts to unify perceptive and blind control typically route or switch between separate sub-policies, leaving recoverable information in partially corrupted depth unexploited. We instead propose CAP, a single-stage humanoid locomotion policy that recovers this signal with a perceptive world-model encoder trained as a learned denoiser to reconstruct clean depth from a corrupted input, together with a co-active proprioceptive variational encoder that supplies depth-free body-state information. A coupled training recipe pairs a depth-noise curriculum on the world-model input with world-model feature dropout on the policy-facing latent, exposing the policy to failures across the entire perception-quality spectrum. In simulation, CAP matches or improves upon perceptive baselines when depth remains informative, and degrades more smoothly than a binary-switching baseline as perception worsens. On the Unitree G1, controlled trials and indoor-outdoor deployments demonstrate perception-robust locomotion under intermittent occlusion, real-sensor corruption, and outdoor depth artifacts.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.11553">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.11059">Gait-Dependent Effects on Quadruped Locomotion for Load-Carrying using Passive Mechanism</a></h3>
+<p class="paper-meta">2026-09-10 &middot; Giovanni B. Dessy, Claudio Semini, Victor Barasuol</p>
+<p class="paper-abstract">Passive mechanical interfaces offer a lightweight alternative to actuated manipulators for quadruped payload carrying, but their impedance directly couples the payload dynamics with the locomotion pattern. This paper analyzes how passive-arm stiffness-damping selection affects payload-carrying locomotion under different gait and payload conditions. We compare damped and underdamped passive-arm impedance configurations in simulation during flat-ground locomotion. For crawl gaits, where the support polygon remains well defined, the results show that underdamped impedance increases passive-joint oscillations and can reduce the ZMP margin with respect to the support polygon. Trot is retained as a dynamic excitation case for the passive arm, but it is not used for direct ZMP-margin stability comparison. The results are summarized in gait-payload-stiffness-damping maps, where ZMP-margin reduction is evaluated for crawl gaits and trot is retained only as a passive-arm excitation case.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.11059">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.10286">Learning Terrain-Adaptive Humanoid Locomotion on Granular Terrain</a></h3>
 <p class="paper-meta">2026-09-09 &middot; Junnosuke Kamohara, Feiyang Wu, Andy Ningan Zong, Daniel I. Goldman, Yashwanth Nakka, Seth Hutchinson, Ye Zhao</p>
@@ -335,6 +349,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-10**|**Morphology-Aware Human Motion Retargeting for Wheeled-Humanoid Loco-Manipulation**|Chenbo Xia et.al.|-|[2609.11357](http://arxiv.org/abs/2609.11357)|null|
 |**2026-09-09**|**ViBe: Visual Behavior Adaptation for Perceptive Humanoid Whole-Body Control**|Lokesh Krishna et.al.|-|[2609.09918](http://arxiv.org/abs/2609.09918)|null|
 |**2026-09-08**|**Visible-Reachable Workspace for Perception-Aware Humanoid Design**|Boxi Xia et.al.|-|[2609.08905](http://arxiv.org/abs/2609.08905)|null|
 |**2026-09-07**|**SPOT: Spatial Perception-Oriented Long-Horizon Humanoid Teleoperation**|Lixing Fang et.al.|-|[2609.07933](http://arxiv.org/abs/2609.07933)|null|
@@ -376,6 +391,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.11357">Morphology-Aware Human Motion Retargeting for Wheeled-Humanoid Loco-Manipulation</a></h3>
+<p class="paper-meta">2026-09-10 &middot; Chenbo Xia, Chao Ye</p>
+<p class="paper-abstract">Human-to-humanoid retargeting has largely been studied on legged platforms, while comparatively few wheeled-humanoid systems support coupled locomotion and manipulation from general human motion. Building on GMR&#x27;s configurable general-motion retargeting and BeyondMimic&#x27;s physically simulated R1 Pro learning framework, we present a reproducible pipeline that converts multi-dataset SMPLX motion into executable loco-manipulation behavior for the Galaxea R1 Pro wheeled humanoid. The robot has a planar three-wheel base, a serial torso, and two arms but no leg joints, so human lower-body motion must be redistributed across base motion and torso posture without sacrificing manipulation-relevant arm geometry. Our pipeline combines canonical body-shape preprocessing, planar-base normalization, morphology-aware differential inverse kinematics, shoulder-rooted hierarchical arm retargeting, and continuous torso substitution for bending and squatting. A reference-twist-driven planning layer then decodes planar base motion into continuous three-wheel steering and rolling commands subject to hysteresis, kinematic continuity, acceleration, and actuator-rate limits. Finally, a 21-dimensional BaseDecode policy is trained in Isaac Lab with directional joint-limit scaling, focused upper-body tracking, and a staged wheel-contact reward. The resulting system provides a complete bridge from human motion data to physically trackable wheeled-humanoid loco-manipulation rather than a visualization-only retargeter; quantitative policy comparisons remain scheduled for a later revision.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.11357">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.09918">ViBe: Visual Behavior Adaptation for Perceptive Humanoid Whole-Body Control</a></h3>
 <p class="paper-meta">2026-09-09 &middot; Lokesh Krishna, Sarvesh Venkatesan, An Zhang, Quan Nguyen</p>
