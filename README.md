@@ -1,4 +1,4 @@
-## Updated on 2026.09.14
+## Updated on 2026.09.15
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 <details>
@@ -17,7 +17,11 @@
 
 |Publish Date|Title|Authors|Citations|PDF|Code|
 |---|---|---|---|---|---|
-|**2026-09-10**|**CAP: Continuously Adaptive Perception-Blind Humanoid Locomotion via Learned Denoising**|Hongjin Chen et.al.|0|[2609.11553](http://arxiv.org/abs/2609.11553)|null|
+|**2026-09-14**|**JEPLO: Joint-Embedding Predictive Learning for LiDAR-Based Legged Locomotion**|Qihao Yuan et.al.|-|[2609.15770](http://arxiv.org/abs/2609.15770)|**[link](https://github.com/ASIG-X/JEPLO)**|
+|**2026-09-13**|**EMoG: Emotion-Modulated Gait Generation for Expressive Humanoid Locomotion**|Yi Lu et.al.|-|[2609.14432](http://arxiv.org/abs/2609.14432)|null|
+|**2026-09-09**|**Breaking speed scaling in quadrupedal robots via Huygens' coupled-pendulum dynamics**|Yucheng Tao et.al.|-|[2609.13290](http://arxiv.org/abs/2609.13290)|null|
+|**2026-09-09**|**Extending the Speed Limit of Quadrupedal Locomotion via Refined Actuator Modeling and Adaptive Command Scheduling**|Yucheng Tao et.al.|-|[2609.13289](http://arxiv.org/abs/2609.13289)|null|
+|**2026-09-10**|**CAP: Continuously Adaptive Perception-Blind Humanoid Locomotion via Learned Denoising**|Hongjin Chen et.al.|-|[2609.11553](http://arxiv.org/abs/2609.11553)|null|
 |**2026-09-10**|**Gait-Dependent Effects on Quadruped Locomotion for Load-Carrying using Passive Mechanism**|Giovanni B. Dessy et.al.|-|[2609.11059](http://arxiv.org/abs/2609.11059)|null|
 |**2026-09-09**|**Learning Terrain-Adaptive Humanoid Locomotion on Granular Terrain**|Junnosuke Kamohara et.al.|-|[2609.10286](http://arxiv.org/abs/2609.10286)|null|
 |**2026-09-09**|**Frame-Coded Legged Locomotion over Noisy Terrain**|Lav R. Varshney et.al.|-|[2609.10273](http://arxiv.org/abs/2609.10273)|null|
@@ -25,8 +29,8 @@
 |**2026-09-07**|**A Multimodal Label Forecasting Method for Aperiodic Visuo-Motor Time Series**|Borui He et.al.|-|[2609.07930](http://arxiv.org/abs/2609.07930)|null|
 |**2026-09-07**|**Open-Set Ego-Noise Separation for Legged-Robot Audition via Annotation-Free Adaptation and Pretrained-Model Transfer**|Koki Shoda et.al.|-|[2609.07440](http://arxiv.org/abs/2609.07440)|null|
 |**2026-09-07**|**From LLM-Generated Specifications to Learned Quadruped Locomotion**|Merve Atasever et.al.|-|[2609.07111](http://arxiv.org/abs/2609.07111)|null|
-|**2026-09-07**|**RoboDreamer: Anticipatory Humanoid Locomotion with Predictive State-Space Models**|Zhe Li et.al.|-|[2609.07096](http://arxiv.org/abs/2609.07096)|null|
-|**2026-09-07**|**Mind the Phase: Effective Rank and Representation Health in Legged Locomotion**|Felipe Tommaselli et.al.|0|[2609.06958](http://arxiv.org/abs/2609.06958)|null|
+|**2026-09-10**|**RoboDreamer: Anticipatory Humanoid Locomotion with Predictive State-Space Models**|Zhe Li et.al.|-|[2609.07096](http://arxiv.org/abs/2609.07096)|null|
+|**2026-09-07**|**Mind the Phase: Effective Rank and Representation Health in Legged Locomotion**|Felipe Tommaselli et.al.|-|[2609.06958](http://arxiv.org/abs/2609.06958)|null|
 |**2026-08-28**|**Stay Seated: Learning Omnidirectional Humanoid Locomotion on a Passive Mobile Chair with Casters**|Kango Yanagida et.al.|-|[2608.28090](http://arxiv.org/abs/2608.28090)|null|
 |**2026-08-31**|**SOLO: Stable Omni-terrain Long-Horizon Perceptive Humanoid Locomotion**|Pihai Sun et.al.|-|[2608.26583](http://arxiv.org/abs/2608.26583)|null|
 |**2026-08-27**|**Closing the Loop on the Poppy Humanoid: Bipedal Locomotion with Linear-Quadratic Control and Learned Cost Functions**|Xulin Chen et.al.|-|[2608.26505](http://arxiv.org/abs/2608.26505)|null|
@@ -60,7 +64,7 @@
 |**2026-07-16**|**ADP: Adversarial Dynamics Priors for Physically Grounded Humanoid Locomotion**|Seokju Lee et.al.|-|[2607.03454](http://arxiv.org/abs/2607.03454)|null|
 |**2026-07-02**|**Multi-Rate Nonlinear Model Predictive Control for Wall-Supported Bipedal Locomotion of Quadrupedal Robots**|Taizoon Chunawala et.al.|0|[2607.01574](http://arxiv.org/abs/2607.01574)|null|
 
-<p align=right>(<a href=#updated-on-20260914>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260915>back to top</a>)</p>
 
 ## Loco-Manipulation
 
@@ -105,7 +109,7 @@
 |**2026-06-28**|**AnyBody: Free-Form Whole-Body Humanoid Control from Arbitrary Keypoint Guidance**|Shuning Li et.al.|-|[2606.29209](http://arxiv.org/abs/2606.29209)|null|
 |**2026-06-26**|**CWI: Composite Humanoid Whole-Body Imitation System for Loco-manipulation**|Wenqi Ge et.al.|-|[2606.27676](http://arxiv.org/abs/2606.27676)|null|
 
-<p align=right>(<a href=#updated-on-20260914>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260915>back to top</a>)</p>
 
 ## Reinforcement Learning for Legged Robots
 
@@ -128,7 +132,7 @@
 |**2025-02-23**|**Quadruped Robot Simulation Using Deep Reinforcement Learning -- A step towards locomotion policy**|Nabeel Ahmad Khan Jadoon et.al.|-|[2502.16401](http://arxiv.org/abs/2502.16401)|null|
 |**2024-08-28**|**Structural Optimization of Lightweight Bipedal Robot via SERL**|Yi Cheng et.al.|11|[2408.15632](http://arxiv.org/abs/2408.15632)|null|
 
-<p align=right>(<a href=#updated-on-20260914>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260915>back to top</a>)</p>
 
 ## World Models for Robotics
 
@@ -160,16 +164,17 @@
 |**2026-06-04**|**PiL-World: A Chunk-Wise World Model for VLA Policy-in-the-Loop Evaluation**|Chong Ma et.al.|-|[2606.05773](http://arxiv.org/abs/2606.05773)|null|
 |**2026-06-04**|**OSCAR: Omni-Embodiment Action-Conditioned World Model for Robotics**|Zhuoyuan Wu et.al.|-|[2606.04463](http://arxiv.org/abs/2606.04463)|null|
 
-<p align=right>(<a href=#updated-on-20260914>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260915>back to top</a>)</p>
 
 ## Humanoid Robots
 
 |Publish Date|Title|Authors|Citations|PDF|Code|
 |---|---|---|---|---|---|
+|**2026-09-14**|**X-WBC: A Cross-Embodiment Foundation Model for Humanoid Whole-Body Control**|Juntong Zhang et.al.|-|[2609.15213](http://arxiv.org/abs/2609.15213)|null|
 |**2026-09-09**|**ViBe: Visual Behavior Adaptation for Perceptive Humanoid Whole-Body Control**|Lokesh Krishna et.al.|-|[2609.09918](http://arxiv.org/abs/2609.09918)|null|
 |**2026-09-01**|**ADAPT: Agile Diffusion Action Priors for Robust and Steerable Online Text-Driven Humanoid Control**|Yan Wu et.al.|-|[2609.00677](http://arxiv.org/abs/2609.00677)|null|
-|**2026-08-26**|**LAC: Linear and Angular Compliance for Humanoid Whole-body Control**|Yang Liu et.al.|0|[2608.25405](http://arxiv.org/abs/2608.25405)|null|
-|**2026-08-23**|**GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction**|Ziyang Cheng et.al.|-|[2608.18234](http://arxiv.org/abs/2608.18234)|null|
+|**2026-08-26**|**LAC: Linear and Angular Compliance for Humanoid Whole-body Control**|Yang Liu et.al.|-|[2608.25405](http://arxiv.org/abs/2608.25405)|null|
+|**2026-09-11**|**GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction**|Ziyang Cheng et.al.|-|[2608.18234](http://arxiv.org/abs/2608.18234)|null|
 |**2026-08-01**|**Light-Loco-Parkour: Versatile Perceptive Whole-Body Locomotion via Multi-Skill Distillation**|Hongming Chen et.al.|-|[2608.02653](http://arxiv.org/abs/2608.02653)|null|
 |**2026-07-15**|**Semantic Audio-driven Understanding for Dynamic Humanoid Whole Body Control**|J. M. A. Marcelo et.al.|-|[2607.14182](http://arxiv.org/abs/2607.14182)|null|
 |**2026-07-13**|**A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation**|Yunhai Feng et.al.|-|[2607.11874](http://arxiv.org/abs/2607.11874)|null|
@@ -178,7 +183,7 @@
 |**2026-06-15**|**VENOM: Versatile Embodied Network for Omni-bodied Motion tracking**|Siddharth Padmanabhan et.al.|-|[2606.16696](http://arxiv.org/abs/2606.16696)|null|
 |**2026-06-09**|**A Spiking Neural Architecture for Coordinating Arm and Locomotor Control**|Lea Steffen et.al.|-|[2606.11034](http://arxiv.org/abs/2606.11034)|null|
 |**2026-06-09**|**OMG: Omni-Modal Motion Generation for Generalist Humanoid Control**|Siqiao Huang et.al.|-|[2606.10340](http://arxiv.org/abs/2606.10340)|null|
-|**2026-06-09**|**HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers**|Lizhi Yang et.al.|0|[2606.06493](http://arxiv.org/abs/2606.06493)|null|
+|**2026-06-09**|**HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers**|Lizhi Yang et.al.|-|[2606.06493](http://arxiv.org/abs/2606.06493)|null|
 |**2026-06-18**|**Any2Any: Efficient Cross-Embodiment Transfer for Humanoid Whole-Body Tracking**|Ming Yang et.al.|-|[2605.23733](http://arxiv.org/abs/2605.23733)|null|
 |**2026-06-30**|**Learn Weightlessness: Imitate Non-Self-Stabilizing Motions on Humanoid Robot**|Yucheng Xin et.al.|-|[2604.21351](http://arxiv.org/abs/2604.21351)|null|
 |**2026-04-18**|**Leveraging VR Robot Games to Facilitate Data Collection for Embodied Intelligence Tasks**|Yihan Zhang et.al.|-|[2604.16903](http://arxiv.org/abs/2604.16903)|null|
@@ -187,7 +192,7 @@
 |**2026-04-30**|**Make Tracking Easy: Neural Motion Retargeting for Humanoid Whole-body Control**|Qingrui Zhao et.al.|-|[2603.22201](http://arxiv.org/abs/2603.22201)|null|
 |**2026-03-05**|**PhysiFlow: Physics-Aware Humanoid Whole-Body VLA via Multi-Brain Latent Flow Matching and Robust Tracking**|Weikai Qin et.al.|1|[2603.05410](http://arxiv.org/abs/2603.05410)|null|
 
-<p align=right>(<a href=#updated-on-20260914>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260915>back to top</a>)</p>
 
 ## Character Control & Game RL
 
@@ -212,7 +217,7 @@
 |**2026-05-21**|**HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control**|Jinrui Han et.al.|5|[2602.03205](http://arxiv.org/abs/2602.03205)|null|
 |**2025-12-13**|**Sim2Real Reinforcement Learning for Soccer skills**|Jonathan Spraggett et.al.|-|[2512.12437](http://arxiv.org/abs/2512.12437)|null|
 
-<p align=right>(<a href=#updated-on-20260914>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20260915>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Gaming722/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Gaming722/cv-arxiv-daily/graphs/contributors
