@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.09.16
+## Updated on 2026.09.17
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -43,6 +43,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-16**|**Feedback-Modulated Harmonic Policies for Quadruped Locomotion**|Yixuan Jia et.al.|-|[2609.17946](http://arxiv.org/abs/2609.17946)|null|
 |**2026-09-15**|**Hamilton-Jacobi Reachability for Hybrid Systems: Unified Goal-Driven Control with Safety Guarantees**|Javier Borquez et.al.|-|[2609.17430](http://arxiv.org/abs/2609.17430)|null|
 |**2026-09-14**|**JEPLO: Joint-Embedding Predictive Learning for LiDAR-Based Legged Locomotion**|Qihao Yuan et.al.|-|[2609.15770](http://arxiv.org/abs/2609.15770)|**[link](https://github.com/ASIG-X/JEPLO)**|
 |**2026-09-13**|**EMoG: Emotion-Modulated Gait Generation for Expressive Humanoid Locomotion**|Yi Lu et.al.|-|[2609.14432](http://arxiv.org/abs/2609.14432)|null|
@@ -94,6 +95,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.17946">Feedback-Modulated Harmonic Policies for Quadruped Locomotion</a></h3>
+<p class="paper-meta">2026-09-16 &middot; Yixuan Jia, Steven Roche, Jonathan P. How</p>
+<p class="paper-abstract">Learned quadruped locomotion policies commonly map observations directly to joint-level actions, leaving the periodic structure of locomotion implicit in the policy. We investigate an alternative representation in which each joint trajectory is expressed as a command-conditioned Fourier series and modified online using feedback from the robot state. A context network generates the Fourier coefficients and the weights of a per-step feedback network, whose outputs adjust joint offsets, harmonic gains, frequency, and phase during execution. In simulation, we examine this explicit frequency structure alongside the hidden activations of an MLP policy that directly outputs joint targets. The harmonic waveforms change frequency and shape with commanded speed. Dynamic mode decomposition of selected MLP rollouts reveals dominant activation modes near the foot-height oscillation frequency and its second harmonic, showing periodic structure without an explicit Fourier generator. On a Unitree Go2, the simulation-trained harmonic controller records a provisional onboard-estimated peak speed of 3.67 meter per second and carries added loads up to 5.883 kilogram in separate trials.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.17946">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.17430">Hamilton-Jacobi Reachability for Hybrid Systems: Unified Goal-Driven Control with Safety Guarantees</a></h3>
 <p class="paper-meta">2026-09-15 &middot; Javier Borquez, Shuang Peng, Somil Bansal</p>
@@ -384,6 +391,10 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-16**|**Learning Holistic Whole-Body Loco-Manipulation with a Bipedal Mobile Manipulator**|Zhongyu Chen et.al.|-|[2609.18930](http://arxiv.org/abs/2609.18930)|null|
+|**2026-09-16**|**KINO: A Keyframe Interface for VLM Planning and Whole-Body Control in Humanoid Loco-Manipulation**|Sitong Chen et.al.|-|[2609.18869](http://arxiv.org/abs/2609.18869)|null|
+|**2026-09-16**|**WholeBodyWAM: Learning Whole-Body World Action Models with Scalable Motion Priors**|Bowei Zhang et.al.|-|[2609.18197](http://arxiv.org/abs/2609.18197)|null|
+|**2026-09-15**|**Adaptive-MHE : A Sampling-Based Adaptive MPC for Legged Loco-Manipulation via Moving Horizon Estimation**|Hossein Keshavarz et.al.|-|[2609.17832](http://arxiv.org/abs/2609.17832)|null|
 |**2026-09-15**|**Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions**|Liu Cao et.al.|-|[2609.16683](http://arxiv.org/abs/2609.16683)|null|
 |**2026-09-15**|**WholeBodyWAM: Generalizing Pre-trained World-Action Priors to Humanoid Loco-Manipulation via WBC-Grounded Coordination**|Zhuo Li et.al.|-|[2609.16644](http://arxiv.org/abs/2609.16644)|null|
 |**2026-09-12**|**Force-Aware Reinforcement Learning with Hybrid Sensorless Force Estimation for Wheeled-Legged Loco-Manipulation**|Xuanqi Zeng et.al.|-|[2609.13779](http://arxiv.org/abs/2609.13779)|null|
@@ -429,6 +440,30 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.18930">Learning Holistic Whole-Body Loco-Manipulation with a Bipedal Mobile Manipulator</a></h3>
+<p class="paper-meta">2026-09-16 &middot; Zhongyu Chen, Yuxuan Nai, Qian Chen, Yidong Zhu, Chen Jing, Qihan Wang, Xudong Li, Zhizhan Li, Leixin Chang, Liangjing Yang, Hua Chen</p>
+<p class="paper-abstract">Bipedal loco-manipulation enables robots to interact with objects beyond the nominal workspace of their arms by coordinating locomotion and manipulation. Realizing this capability requires a low-level whole-body controller that translates task-level manipulation goals into coordinated arm and leg motions while maintaining balance. We present a unified whole-body controller trained with reinforcement learning that directly maps 6-DoF end-effector targets to coordinated actions for the bipedal base and robotic arm. Given only an end-effector target, the learned controller autonomously coordinates reaching, postural adaptation, and stepping without explicit base-velocity or footstep commands. A reward-gating strategy regulates the trade-offs among end-effector tracking, locomotion, and balance during training, while a temporal context estimator combines windowed Transformer encoding, recurrent GRU memory, and auxiliary dynamics prediction to extract dynamics-relevant information from observation history. Real-robot experiments demonstrate that the same controller supports reaching, postural adaptation, and stepping under commands from VR teleoperation, a learned diffusion policy, and scripted trajectories, providing a common end-effector interface for diverse manipulation tasks.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.18930">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.18869">KINO: A Keyframe Interface for VLM Planning and Whole-Body Control in Humanoid Loco-Manipulation</a></h3>
+<p class="paper-meta">2026-09-16 &middot; Sitong Chen, Fatemeh Zargarbashi, Jin Cheng, Tianxu An, Stelian Coros</p>
+<p class="paper-abstract">Humanoid loco-manipulation requires robots to interpret task instructions and scene semantics while executing coordinated whole-body motions. We propose a hierarchical framework that uses motion keyframes as an intermediate representation between Vision-Language Model (VLM) planning and Reinforcement Learning (RL) control. Each keyframe specifies a target whole-body robot pose and, when applicable, an object pose. Given a language instruction, scene observations, and execution feedback, the VLM selects successive task-relevant keyframes from a predefined library. The selected keyframes are retargeted to the current scene to account for object poses and dimensions. A keyframe-conditioned whole-body policy then generates joint-level actions to reach these goals. We introduce a saliency-based keyframe sampling strategy for low-level policy training that improves end-to-end task success rate from 44% to 92% when using sparse VLM keyframes. We evaluate our framework on object pickup, transport, and placement tasks in simulation and on a Unitree G1 humanoid. The system successfully performs both one- and two-handed manipulation and generalises to placement locations beyond the training reference data.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.18869">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.18197">WholeBodyWAM: Learning Whole-Body World Action Models with Scalable Motion Priors</a></h3>
+<p class="paper-meta">2026-09-16 &middot; Bowei Zhang, Qiyao Zhang, Shuanghao Bai, Xinhua Wang, Meng Li, Yilei Wang, Leiwang Zhang, Jian Tang, Lu Zhou, Lei Sun, Zhengping Che</p>
+<p class="paper-abstract">Humanoid whole-body manipulation requires coordinated whole-body dynamics, yet large-scale trajectories from a target robot are expensive to collect and difficult to scale. In contrast, whole-body motion from human and humanoid sources is abundantly available, although such data cannot be directly used as embodiment-specific robot actions. This work asks whether these scalable motion resources can instead provide a transferable predictive prior for humanoid world-action modeling. We introduce WholeBodyWAM, a humanoid world-action model that learns whole-body dynamics from large-scale heterogeneous motion before target-robot training. We curate UniMotion-4K, a motion corpus spanning more than 4K hours from human videos, native 3D motion datasets, and heterogeneous humanoid platforms, and canonicalize these diverse sources into a unified motion space. A language-conditioned Motion Expert is then pretrained to predict future whole-body motion without target-robot action supervision. During robot post-training, the pretrained Motion Expert is integrated with Video and Action Experts through asymmetric Mixture-of-Transformers (MoT) attention, enabling predictive scene dynamics and whole-body motion to jointly inform embodiment-specific action generation. Experiments show that WholeBodyWAM consistently benefits from increased motion-pretraining scale, improves future-motion prediction and downstream task performance, and transfers effectively to real-world humanoid manipulation. Moreover, the pretrained motion prior substantially improves data efficiency under limited target-robot demonstrations.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.18197">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.17832">Adaptive-MHE : A Sampling-Based Adaptive MPC for Legged Loco-Manipulation via Moving Horizon Estimation</a></h3>
+<p class="paper-meta">2026-09-15 &middot; Hossein Keshavarz, Alejandro Ramirez-Serrano, Majid Khadiv</p>
+<p class="paper-abstract">Legged robots have demonstrated a remarkable ability to traverse various terrains, yet generating effective loco-manipulation behaviors remains challenging. A key difficulty is that object and terrain parameters are typically unknown to the robot, and mismatches between these parameters and their simulated counterparts introduce a sim-to-real gap that degrades control performance. Classical system identification (Sys-ID) methods often assume differentiable dynamics, an assumption that does not hold for contact-rich legged systems. Sampling-based Sys-ID avoids this restriction by directly matching simulated and recorded state trajectories through massively parallel rollouts, but existing approaches are typically applied offline and do not adapt as environmental conditions change. We present Adaptive-MHE an online sampling-based Sys-ID framework, based on moving horizon estimation (MHE), that estimates the physical parameters of objects and terrain in the environment (e.g., mass, friction) and couples this estimate with a sampling-based model predictive controller, enabling adaptive loco-manipulation in changing and uncertain environments. In simulation and hardware experiments, our framework consistently outperforms baselines and matches the performance of a controller with access to ground-truth parameters.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.17832">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.16683">Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions</a></h3>
 <p class="paper-meta">2026-09-15 &middot; Liu Cao, Xingze Wu, Jingzhi Cui, Botian Xu, Mingzhi Pei, Ruoqu Chen, Mengdi Xu</p>
