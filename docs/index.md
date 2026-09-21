@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.09.20
+## Updated on 2026.09.21
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -43,6 +43,11 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-18**|**Duty Factor Predicts Robust Constrained Quadrupedal Locomotion Across Gait Types**|James Zhu et.al.|-|[2609.22073](http://arxiv.org/abs/2609.22073)|null|
+|**2026-09-18**|**SABER: Learning Attention-based Semantic Affordance for Legged Locomotion**|Hari Prasanth Palanivelu et.al.|-|[2609.21572](http://arxiv.org/abs/2609.21572)|null|
+|**2026-09-18**|**FootQuery: Future-Touchdown-Guided Retrieval from Depth History for Perceptive Humanoid Locomotion**|Tao Dong et.al.|-|[2609.21447](http://arxiv.org/abs/2609.21447)|null|
+|**2026-09-18**|**When to Waddle: A Comparative Study of Bipedal Torso-Stabilization on Low-Friction Surfaces**|Naomi Oke et.al.|-|[2609.21185](http://arxiv.org/abs/2609.21185)|null|
+|**2026-09-17**|**Learning Scene-Aware Humanoid Locomotion through 3D Clutter from Immersive Human Demonstrations**|Beichen Wang et.al.|-|[2609.21107](http://arxiv.org/abs/2609.21107)|null|
 |**2026-09-17**|**OmniMimic: Dynamics-completed Motion Augmentation for Multi-style Omnidirectional Quadruped Locomotion**|Sheng Wu et.al.|-|[2609.20566](http://arxiv.org/abs/2609.20566)|null|
 |**2026-09-17**|**DR-MPC: Fast and Feasible Dynamics-Relaxed Model-Predictive Control for Legged Locomotion**|Run Wang et.al.|-|[2609.20035](http://arxiv.org/abs/2609.20035)|null|
 |**2026-09-16**|**Feedback-Modulated Harmonic Policies for Quadruped Locomotion**|Yixuan Jia et.al.|-|[2609.17946](http://arxiv.org/abs/2609.17946)|null|
@@ -52,7 +57,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-09-09**|**Breaking speed scaling in quadrupedal robots via Huygens' coupled-pendulum dynamics**|Yucheng Tao et.al.|-|[2609.13290](http://arxiv.org/abs/2609.13290)|null|
 |**2026-09-09**|**Extending the Speed Limit of Quadrupedal Locomotion via Refined Actuator Modeling and Adaptive Command Scheduling**|Yucheng Tao et.al.|-|[2609.13289](http://arxiv.org/abs/2609.13289)|null|
 |**2026-09-10**|**CAP: Continuously Adaptive Perception-Blind Humanoid Locomotion via Learned Denoising**|Hongjin Chen et.al.|-|[2609.11553](http://arxiv.org/abs/2609.11553)|null|
-|**2026-09-10**|**Gait-Dependent Effects on Quadruped Locomotion for Load-Carrying using Passive Mechanism**|Giovanni B. Dessy et.al.|-|[2609.11059](http://arxiv.org/abs/2609.11059)|null|
+|**2026-09-18**|**Gait-Dependent Effects on Quadruped Locomotion for Load-Carrying using Passive Mechanism**|Giovanni B. Dessy et.al.|-|[2609.11059](http://arxiv.org/abs/2609.11059)|null|
 |**2026-09-14**|**GM-Loco: Terrain-Adaptive Humanoid Locomotion on Granular Media**|Junnosuke Kamohara et.al.|-|[2609.10286](http://arxiv.org/abs/2609.10286)|null|
 |**2026-09-09**|**Frame-Coded Legged Locomotion over Noisy Terrain**|Lav R. Varshney et.al.|-|[2609.10273](http://arxiv.org/abs/2609.10273)|null|
 |**2026-09-06**|**Design and Attitude Control of an Underwater Quadruped Robot**|Davide Molinaroli et.al.|-|[2609.09217](http://arxiv.org/abs/2609.09217)|null|
@@ -97,6 +102,36 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.22073">Duty Factor Predicts Robust Constrained Quadrupedal Locomotion Across Gait Types</a></h3>
+<p class="paper-meta">2026-09-18 &middot; James Zhu, David Ologan, George Ortiz, Thomas Chun Fai Lee, Selvin Garcia Gonzalez, Ardalan Tajbakhsh, Pinhas Ben-Tzvi, Aaron M. Johnson</p>
+<p class="paper-abstract">Quadrupedal robots are increasingly deployed in environments where locomotion must remain robust to disturbances and constrained terrain. Gait type, such as walking or trotting, is commonly used to characterize quadrupedal locomotion. However, gait type does not uniquely define locomotion, as parameters such as duty factor, speed, and stance width can vary within a single gait type. In this work, we investigate the relationship between these gait parameters using three distinct quadrupedal locomotion control approaches. First, using whole body trajectory optimization with LQR feedback, we show that duty factor is a stronger predictor of local error convergence than nominal gait type. Second, we investigate duty factor selection with a learned locomotion controller, suggesting how duty factor may serve as a low-dimensional parameter for adapting locomotion robustness in narrow-terrain environments. Finally, we show that these trends persist under a centroidal model predictive control framework and validate them through narrow-terrain experiments on a physical quadruped. These results show that duty factor provides a simple and effective basis for understanding and selecting robust quadrupedal locomotion across gait types and control architectures.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.22073">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.21572">SABER: Learning Attention-based Semantic Affordance for Legged Locomotion</a></h3>
+<p class="paper-meta">2026-09-18 &middot; Hari Prasanth Palanivelu, Samuel Sze, Kennard Garrison Johannes, Albertus Hendrawan Adiwahono, Meng Yee,  Chuah</p>
+<p class="paper-abstract">Perceptive legged locomotion has advanced rapidly by integrating terrain geometry into learned policies, yet the integration of terrain meaning remains sparse: a pipe, a patch of grass, or a fragile box may be geometrically traversable while being inappropriate for contact. In industrial environments, where legged robots increasingly operate, a single misplaced step can damage fragile equipment, destabilize the robot, or endanger the site. To address this, we introduce SABER, a planner-free reinforcement-learning policy that jointly reasons about terrain geometry and semantic contact permission. The policy consumes a unified terrain-affordance map, where each cell encodes local 3D geometry and a semantic contact cost. We augment cross-attention with a learned, signed semantic bias: an additive term on the attention logits, gated by the contact cost, that reweights flagged cells by their distance from the nearest foot. A hazard therefore reshapes attention where it can still affect the next foothold, and its influence fades where it cannot. The resulting policy selects footholds on permitted support and keeps the leg clear of forbidden regions throughout the swing phase. We perform a systematic ablation that isolates the contribution of each architectural component; removing the semantic bias alone increases forbidden contacts by 55% while velocity tracking is unchanged. We validate the policy on a Unitree B2, demonstrating sim-to-real semantic contact selection across indoor and outdoor environments and four semantic obstacle classes.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.21572">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.21447">FootQuery: Future-Touchdown-Guided Retrieval from Depth History for Perceptive Humanoid Locomotion</a></h3>
+<p class="paper-meta">2026-09-18 &middot; Tao Dong, Jia Yu, Yuxuan Fan, Linna Zhao, Jiaqi Gong, Andong Yang, Chao Gao, Guyue Zhou</p>
+<p class="paper-abstract">Humanoid locomotion over complex terrain requires anticipating footholds that may no longer be visible at touchdown. Limited camera coverage and self-occlusion make it necessary to retrieve relevant terrain information from earlier observations. We present FootQuery, a perceptive locomotion framework that queries depth history using each foot&#x27;s predicted next touchdown. The policy predicts touchdown locations and uncertainty from proprioception and uses these distributions, together with per-foot features, to query sparsely sampled historical depth frames. During training, realized contacts are projected into historical images to supervise retrieval at the regions where those contacts were visible. The retrieved per-foot features are fused with global visual memory to generate control actions. A progressive force-assistance curriculum supports early exploration, while event-consistent tread-midline shaping encourages coordinated stair contacts. Deployment requires only proprioception and onboard depth images. In simulation, the complete framework outperforms its component ablations on the most challenging tested stairs, gaps, and platforms. Real-world experiments on a Unitree G1 demonstrate continuous traversal with a single policy across outdoor stairs and indoor routes combining stair ascent and descent, platforms, and gaps. These results support organizing visual history around anticipated contacts for perceptive humanoid locomotion.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.21447">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.21185">When to Waddle: A Comparative Study of Bipedal Torso-Stabilization on Low-Friction Surfaces</a></h3>
+<p class="paper-meta">2026-09-18 &middot; Naomi Oke, Ben Gu, George Ortiz, Stacy Ashlyn, Cordelia Pride, Sarah Bergbreiter, Aaron M. Johnson</p>
+<p class="paper-abstract">Low-friction surfaces challenge bipedal locomotion by limiting the contact forces available during stepping. Inspired by penguin waddling, we investigate how lateral torso motion and center of mass (COM) placement affect locomotion as surface friction changes. Using a five-actuator biped, we compare an upright-gait strategy with a penguin-inspired torso-over-stance-leg strategy across multiple COM placements in simulation and hardware. In the 3-D simulator MuJoCo, we sweep through sinusoidal leg and hip actuation parameters across four friction coefficients mu = 0.1, 0.3, 0.5, 0.7. In simulation, torso-over-stance-leg motion produces more successful controllers and higher forward speeds at low friction, with the highest speed occurring for the high-COM configuration. Hardware experiments show the same low-friction speed trend: at mu=0.12, torso-over-stance-leg motion increases forward speed and reduces cost of transport at both tested COM ratios, and the higher COM also improves both measures. The high-COM penguin configuration is the fastest and most energy efficient while maintaining low sideways foot motion. At mu=0.45, the COM trend reverses: the lower-COM configurations are faster and more energy efficient, while gait strategy has little effect on forward speed but still changes sideways foot motion. These results show that the effects of lateral torso motion and COM placement depend on the available friction, and that forward speed, energy use, and slip-related foot motion can be modulated with a penguin-inspired torso motion on hardware.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.21185">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.21107">Learning Scene-Aware Humanoid Locomotion through 3D Clutter from Immersive Human Demonstrations</a></h3>
+<p class="paper-meta">2026-09-17 &middot; Beichen Wang, Tong Xu, Daniel Kosukhin, Yuen-Hei Yeung, Yuanjie Lu, Xuesu Xiao</p>
+<p class="paper-abstract">While learning from human motions has enabled highly dynamic humanoid skills such as dancing and martial arts in obstacle-free space, traversal through densely cluttered environments remains underexplored. These spaces are three-dimensional and geometrically constrained, requiring scene-aware locomotion that tightly couples whole-body motion with scene geometry for obstacle avoidance. To address these challenges, we present Moving Through Clutter (MTC), a learning-from-demonstration framework for scene-aware humanoid locomotion. To bypass costly physical scene construction, MTC uses procedurally generated Virtual Reality environments for immersive data collection. To transform these human motions into training-ready humanoid motions, we propose a scene-aware motion retargeting algorithm that converts human demonstrations into humanoid trajectories while strictly enforcing robot-scene clearance to guarantee collision-free traversal. These reference trajectories are then used to train a scene-aware locomotion policy that deploys on a Unitree G1 humanoid. Evaluated on our proposed MTC-Challenge for multi-obstacle traversal, the policy demonstrates a 70.2% collision-free rate across diverse scenarios, successfully traversing complex environments through diverse whole-body skills, including crawling through low-clearance passages and squeezing through narrow gaps.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.21107">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.20566">OmniMimic: Dynamics-completed Motion Augmentation for Multi-style Omnidirectional Quadruped Locomotion</a></h3>
 <p class="paper-meta">2026-09-17 &middot; Sheng Wu, Guoqiang Zhao, Zhe Yang, Fei Teng, Zhikun Zhou, Yanlin Yang, Zheng Fang, Hong Zheng, Yaonan Wang, Kailun Yang</p>
@@ -153,7 +188,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.11059">Gait-Dependent Effects on Quadruped Locomotion for Load-Carrying using Passive Mechanism</a></h3>
-<p class="paper-meta">2026-09-10 &middot; Giovanni B. Dessy, Claudio Semini, Victor Barasuol</p>
+<p class="paper-meta">2026-09-18 &middot; Giovanni B. Dessy, Claudio Semini, Victor Barasuol</p>
 <p class="paper-abstract">Passive mechanical interfaces offer a lightweight alternative to actuated manipulators for quadruped payload carrying, but their impedance directly couples the payload dynamics with the locomotion pattern. This paper analyzes how passive-arm stiffness-damping selection affects payload-carrying locomotion under different gait and payload conditions. We compare damped and underdamped passive-arm impedance configurations in simulation during flat-ground locomotion. For crawl gaits, where the support polygon remains well defined, the results show that underdamped impedance increases passive-joint oscillations and can reduce the ZMP margin with respect to the support polygon. Trot is retained as a dynamic excitation case for the passive arm, but it is not used for direct ZMP-margin stability comparison. The results are summarized in gait-payload-stiffness-damping maps, where ZMP-margin reduction is evaluated for crawl gaits and trot is retained only as a passive-arm excitation case.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2609.11059">PDF</a></p>
 </div>
@@ -405,6 +440,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-18**|**Learning Distance-Conditioned Object Transport for Humanoid Loco-Manipulation from a Single Motion Clip**|Yuhyeon Hwang et.al.|-|[2609.21467](http://arxiv.org/abs/2609.21467)|null|
 |**2026-09-16**|**ViLoMan: Learning Visual-Proprioceptive Whole-Body Loco-Manipulation Skills for Humanoid Robots**|Zejie Tian et.al.|-|[2609.19340](http://arxiv.org/abs/2609.19340)|null|
 |**2026-09-16**|**Learning Holistic Whole-Body Loco-Manipulation with a Bipedal Mobile Manipulator**|Zhongyu Chen et.al.|-|[2609.18930](http://arxiv.org/abs/2609.18930)|null|
 |**2026-09-16**|**KINO: A Keyframe Interface for VLM Planning and Whole-Body Control in Humanoid Loco-Manipulation**|Sitong Chen et.al.|-|[2609.18869](http://arxiv.org/abs/2609.18869)|null|
@@ -455,6 +491,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.21467">Learning Distance-Conditioned Object Transport for Humanoid Loco-Manipulation from a Single Motion Clip</a></h3>
+<p class="paper-meta">2026-09-18 &middot; Yuhyeon Hwang, Daniel Sungho Jung, YongHyeok Seo, Mingi Jung, Chang Nho Cho, Jung-Hoon Hwang, Dongin Shin</p>
+<p class="paper-abstract">Motion tracking can reproduce humanoid loco-manipulation from a single retargeted motion clip, but a policy trained on a fixed reference primarily reproduces its demonstrated transport outcome. Although the source trajectory visits intermediate object displacements, transport termination is demonstrated only at its endpoint. We identify this mismatch as the termination-versus-passage gap: intermediate displacements are observed as passage states rather than termination-complete outcomes. We introduce Distance-Conditioned Reference Recomposition (DCRR), which relocates the demonstrated termination segment to intermediate transport states. A frozen tracking teacher replays the recomposed references under closed-loop dynamics, and the retained trajectories are relabeled by their achieved object placements and distilled into a reference-free policy. This procedure constructs distance-conditioned supervision from the interaction behavior encoded in the source motion. Across Carry, Kick-Push, Crouch-Push, and Drag, DCRR-BC produces command-dependent transport with an overall normalized distance mean absolute error (MAE) of 0.15, compared with 0.28 for source-only behavior cloning. RL fine-tuning further improves the command response and execution robustness in the training simulator and under sim-to-sim transfer. Finally, hardware experiments demonstrate transport-distance modulation across all four interaction modes.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.21467">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.19340">ViLoMan: Learning Visual-Proprioceptive Whole-Body Loco-Manipulation Skills for Humanoid Robots</a></h3>
 <p class="paper-meta">2026-09-16 &middot; Zejie Tian, Ruibing Hou, Bingpeng Ma, Börje F. Karlsson, Shiguang Shan</p>
@@ -870,6 +912,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-18**|**Benchmarking World Models for Continual Learning on Compositional Tasks**|Haoyu Zhou et.al.|-|[2609.22055](http://arxiv.org/abs/2609.22055)|null|
 |**2026-09-08**|**CALIPER: Clean Scenes Cannot Rank Physical Inference in Pretrained Visual Representations**|Aman Mehta et.al.|-|[2609.08250](http://arxiv.org/abs/2609.08250)|null|
 |**2026-09-03**|**GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation**|Yupeng Zheng et.al.|-|[2609.04193](http://arxiv.org/abs/2609.04193)|null|
 |**2026-08-29**|**Hydra: A Navigation World Action Model with Discrete Latent Planning and Continuous Flow-Matching Execution**|Mohammad Nazeri et.al.|-|[2608.28995](http://arxiv.org/abs/2608.28995)|null|
@@ -899,6 +942,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.22055">Benchmarking World Models for Continual Learning on Compositional Tasks</a></h3>
+<p class="paper-meta">2026-09-18 &middot; Haoyu Zhou, Joe Watson, Anson Lei, Ingmar Posner</p>
+<p class="paper-abstract">A desirable property of a world model is the ability to learn continually across tasks, adapting to new environments without forgetting what the agent has already learnt. In particular, the ability to retain and reuse knowledge obtained from prior experiences underpins an agent&#x27;s ability to efficiently adapt to novel environments, as the dynamics of the physical world can often be described in recurring mechanisms. However, the world model&#x27;s measure of adaptation entangles two abilities: the speed and capacity to learn unseen tasks, and the reuse of knowledge already acquired, since incoming tasks carry novel content alongside what recurs. In order to isolate knowledge reuse from prior experiences, we propose a compositional continual learning benchmark for world models in robot manipulation. Specifically, we design each task curriculum with compositional tasks that combine aspects of the tasks seen in the sequence. We further factorise this composition along the axes of action and perception to better understand how different input modalities bottleneck knowledge reuse. We evaluate state-of-the-art world models under canonical continual learning methods, alongside a modular world model whose dynamics backbone contains explicitly reusable components. Results show that modularity balances reuse against forgetting better than conventional methods, but none solve the problem fully, leaving clear room for continual world models built to reuse without forgetting. More details are available on our project website: https://object814.github.io/Compositional-Continual-Learning/.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.22055">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.08250">CALIPER: Clean Scenes Cannot Rank Physical Inference in Pretrained Visual Representations</a></h3>
 <p class="paper-meta">2026-09-08 &middot; Aman Mehta, Riya Baviskar</p>
@@ -1223,6 +1272,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-09-18**|**Beyond Kinematics: Benchmarking Simulation Fidelity for Muscle-Driven Imitation Learning**|Ayah G. Ahmad et.al.|-|[2609.21909](http://arxiv.org/abs/2609.21909)|null|
 |**2026-09-14**|**Flow-Matched Motion Priors: Online Optimal-Transport Rewards for Imitation Learning**|Yilin Zou et.al.|-|[2609.15631](http://arxiv.org/abs/2609.15631)|null|
 |**2026-09-11**|**SkillX: Unified Multi-Skill Policy Learning for Humanoid Soccer**|Zhangchen Ye et.al.|-|[2609.06718](http://arxiv.org/abs/2609.06718)|null|
 |**2026-08-04**|**Learning Context-Aware Motion Priors for Humanoid Control**|Yunyang Mo et.al.|-|[2608.03234](http://arxiv.org/abs/2608.03234)|null|
@@ -1246,6 +1296,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.21909">Beyond Kinematics: Benchmarking Simulation Fidelity for Muscle-Driven Imitation Learning</a></h3>
+<p class="paper-meta">2026-09-18 &middot; Ayah G. Ahmad, Claire E. Borden, Maegan Tucker</p>
+<p class="paper-abstract">In this work, we conduct a systematic comparison of two state-of-the-art motion-imitation reinforcement learning (MIRL) pipelines, one built on SCONE/HyFyDy and one built on MuJoCo/MyoSim. HyFyDy emphasizes physiological realism through detailed musculotendon modeling, while MuJoCo prioritizes computational efficiency and scalable policy learning. While recent work has demonstrated that both pipelines reproduce human kinematics with high fidelity, it remains unclear if they accurately capture the underlying neuromuscular behavior that produced the movement. This limitation is particularly important for robotic assistive-device design and control, where outcome measures such as muscle activation patterns and metabolic cost are often used as optimization targets. To conduct a systematic comparison, our work compares both pipelines using a common set of human motion-capture and electromyography (EMG) measurements. The results find that while both pipelines produce similar kinematics with relative accuracy, the muscle activations from HyFyDy are more aligned with the experimental EMG, as supported by the average pooled (RMSE, r) values for muscle activations from HyFyDy and MuJoCo: (0.164, 0.4) and (0.344, 0.11), respectively. While we conclude that the more advanced physiological realism of HyFyDy currently makes it more suitable for musculoskeletal modeling, both require further development to bring physiological realism to GPU-parallelizable simulation environments and advance robotic assistive device design.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.21909">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.15631">Flow-Matched Motion Priors: Online Optimal-Transport Rewards for Imitation Learning</a></h3>
 <p class="paper-meta">2026-09-14 &middot; Yilin Zou, Chenghua Liu, Chenglong Wu, Fanghua Jiang</p>
