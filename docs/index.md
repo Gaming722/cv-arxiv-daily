@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.09.23
+## Updated on 2026.09.24
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -44,6 +44,9 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
 |**2026-09-09**|**🏆 Breaking speed scaling in quadrupedal robots via Huygens' coupled-pendulum dynamics**|Yucheng Tao et.al.|0|[2609.13290](http://arxiv.org/abs/2609.13290)|null|
+|**2026-09-23**|**Amplify: A Lightweight Library for Reproducible Nonlinear Programming Problems in Robotics**|Nelson Rosa et.al.|-|[2609.28377](http://arxiv.org/abs/2609.28377)|null|
+|**2026-09-22**|**Learning Expressive Humanoid Locomotion from Monocular Runway Videos for Robot Fashion Shows**|Kyrylo Kolesnichenko et.al.|-|[2609.27003](http://arxiv.org/abs/2609.27003)|null|
+|**2026-09-22**|**Humanoid Locomotion with a Fly-Inspired Recurrent Controller**|Isabel Guan et.al.|-|[2609.27001](http://arxiv.org/abs/2609.27001)|null|
 |**2026-09-22**|**SG-CPG: Severity-Gated Central Pattern Generators for Adaptive Quadruped Locomotion under Continuous Actuator Degradation**|Adarsh Kumar Kosta et.al.|-|[2609.25687](http://arxiv.org/abs/2609.25687)|null|
 |**2026-09-21**|**Smoothness as a Constraint for Stable Humanoid Locomotion**|Utsav Panchal et.al.|-|[2609.24552](http://arxiv.org/abs/2609.24552)|null|
 |**2026-09-20**|**UniPoint: Unified Point-Level Sensor Fusion for Humanoid Locomotion Across Challenging Terrains**|Sicen Li et.al.|-|[2609.23666](http://arxiv.org/abs/2609.23666)|null|
@@ -110,6 +113,24 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 <p class="paper-meta">2026-09-09 &middot; Yucheng Tao, Yongbin Jin, Shaowen Cheng, Xianwei Liu, Yanyan Yuan, Yanhong Liang, Chengkai Su, Chaojie Fu, Guorong Lan, Wei Yang, Hongtao Wang &middot; 0 citations</p>
 <p class="paper-abstract">Achieving biological-level running speeds has largely been pursued through advances in control algorithms, which improve the utilization of existing hardware. However, the ultimate speed limits remain governed by the underlying force and torque requirements of rapid locomotion, which are typically addressed through increased actuator capacity. Inspired by Huygens&#x27; coupled pendulums, we demonstrate that superior locomotion can emerge from principled exploitation of intrinsic dynamics rather than brute-force hardware scaling. Inter-limb inertial coupling redistributes energy across the gait cycle and reduces peak joint torque required for rapid periodic motion, thereby expanding the achievable speed without proportional increases in actuator capability. Incorporating hardware parameters as additional design variables further extends this analysis into a co-optimization framework, enabling the systematic utilization of inertial coupling in robot design. Guided by this framework, a quadruped robot achieves a running speed of 10.74 m/s (Froude number 21.4) and completes a 100-meter sprint in 12.2 seconds, representing the first legged robot to surpass 10 m/s. These results establish inertial coupling as an underlying mechanism governing high-speed legged locomotion and highlight its role in reducing force requirements, offering new insights into the design of agile robotic systems.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2609.13290">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.28377">Amplify: A Lightweight Library for Reproducible Nonlinear Programming Problems in Robotics</a></h3>
+<p class="paper-meta">2026-09-23 &middot; Nelson Rosa</p>
+<p class="paper-abstract">Optimization problems (OPs) are key to solving many challenging research problems in robotics. However, reproducibility still remains a major issue. In this paper, we present Amplify, a lightweight nonlinear programming library aimed at reproducible results of robotic-related trajectory optimization problems. The minimalistic requirements for the 537-line library (80 characters per line) are an Internet connection, familiarity with the AMPL modeling language, and a text editor. Our primary contribution is the formulation of a library where trajectory optimization algorithms are represented directly within the optimization model. Specifically, we implement the algorithms used to compute the dynamics, trajectories, and reference motions as constraints of the OP in a declarative programming paradigm. We outline how our formulation of objectives, decisions variables, and constraints can be implemented in other transcription libraries that want to be lightweight and reproducible. We also compare the Amplify framework with 3 other libraries across examples of benchmark optimization problems across several fields, including bipedal locomotion and grasp planning.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.28377">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.27003">Learning Expressive Humanoid Locomotion from Monocular Runway Videos for Robot Fashion Shows</a></h3>
+<p class="paper-meta">2026-09-22 &middot; Kyrylo Kolesnichenko, Irvin Steve Cardenas, Jong-Hoon Kim</p>
+<p class="paper-abstract">Runway walking requires coordinated control of posture, stride, foot placement, and whole-body motion to effectively present clothing and convey a distinctive style. However, humanoid robots used in fashion shows typically rely on locomotion policies optimized primarily for stability and walking speed, limiting their ability to reproduce expressive, human-like runway motions. In this work, we present an end-to-end framework that transforms monocular runway videos into deployable humanoid locomotion policies through motion recovery, robot retargeting, motion correction, policy training, simulation-based evaluation, and physical deployment. We evaluate the proposed framework on the Booster K1 humanoid robot using runway-style catwalk motions. The learned policy completed every physical trial without falling, while reproducing the characteristic narrow foot placement and coordinated movement of the legs, torso, and arms. The results demonstrate that our proposed training framework enables the Booster K1 to perform stable and expressive catwalk motions, highlighting its potential for humanoid robotic applications in fashion shows and other performance-oriented scenarios.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.27003">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2609.27001">Humanoid Locomotion with a Fly-Inspired Recurrent Controller</a></h3>
+<p class="paper-meta">2026-09-22 &middot; Isabel Guan, Yuntian Zhao, Dingyuan Zhang, Shipeng Lyu</p>
+<p class="paper-abstract">We investigate humanoid locomotion with a fly-inspired recurrent controller and identify the pathways supporting its deployed behavior. The controller couples 3,609 continuous neural states to a simulated Unitree G1 through body-observation projections, a motor-neuron-labelled readout, and joint servos. We formulate this neural-body feedback system and evaluate a fixed checkpoint across seven terrain instances, three speeds, and three initial yaw offsets. It completes 61/63 conditions under a survival-and-forward-progress criterion; a privileged reference completes 62/63. At nominal yaw, resetting the recurrent motor state before every policy call changes success from 19/21 to 0/21. Conversely, depth and upstream-state substitutions at 252 recorded states leave actions unchanged, with zero measured descending output throughout the intact rollouts. Recorded trajectories and state-matched images connect these findings to sustained movement, lateral drift, and termination events. The study characterizes an embodied recurrent control system whose tested locomotion is supported by direct body-and-command input and carried motor state, providing a concrete basis for subsequent comparisons of circuit structure and control resources.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2609.27001">PDF</a></p>
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.25687">SG-CPG: Severity-Gated Central Pattern Generators for Adaptive Quadruped Locomotion under Continuous Actuator Degradation</a></h3>
