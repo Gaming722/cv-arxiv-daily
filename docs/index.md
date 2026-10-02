@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.10.01
+## Updated on 2026.10.02
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -44,6 +44,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
 |**2026-09-09**|**🏆 Breaking speed scaling in quadrupedal robots via Huygens' coupled-pendulum dynamics**|Yucheng Tao et.al.|0|[2609.13290](http://arxiv.org/abs/2609.13290)|null|
+|**2026-10-01**|**PROMO: Preference-conditioned Multi-Objective Reinforcement Learning for Quadrupedal Robots**|Amr Mousa et.al.|-|[2610.01260](http://arxiv.org/abs/2610.01260)|null|
 |**2026-09-27**|**Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement**|Pavel Bushuyeu et.al.|-|[2609.38216](http://arxiv.org/abs/2609.38216)|null|
 |**2026-09-29**|**Video2STL: Grounding VLM-Generated Temporal Specifications for Robot Learning**|Merve Atasever et.al.|-|[2609.37519](http://arxiv.org/abs/2609.37519)|null|
 |**2026-09-29**|**Predictive Safety Curricula for Robust Legged Locomotion**|Ivan Ovinnikov et.al.|-|[2609.37070](http://arxiv.org/abs/2609.37070)|null|
@@ -124,6 +125,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 <p class="paper-meta">2026-09-09 &middot; Yucheng Tao, Yongbin Jin, Shaowen Cheng, Xianwei Liu, Yanyan Yuan, Yanhong Liang, Chengkai Su, Chaojie Fu, Guorong Lan, Wei Yang, Hongtao Wang &middot; 0 citations</p>
 <p class="paper-abstract">Achieving biological-level running speeds has largely been pursued through advances in control algorithms, which improve the utilization of existing hardware. However, the ultimate speed limits remain governed by the underlying force and torque requirements of rapid locomotion, which are typically addressed through increased actuator capacity. Inspired by Huygens&#x27; coupled pendulums, we demonstrate that superior locomotion can emerge from principled exploitation of intrinsic dynamics rather than brute-force hardware scaling. Inter-limb inertial coupling redistributes energy across the gait cycle and reduces peak joint torque required for rapid periodic motion, thereby expanding the achievable speed without proportional increases in actuator capability. Incorporating hardware parameters as additional design variables further extends this analysis into a co-optimization framework, enabling the systematic utilization of inertial coupling in robot design. Guided by this framework, a quadruped robot achieves a running speed of 10.74 m/s (Froude number 21.4) and completes a 100-meter sprint in 12.2 seconds, representing the first legged robot to surpass 10 m/s. These results establish inertial coupling as an underlying mechanism governing high-speed legged locomotion and highlight its role in reducing force requirements, offering new insights into the design of agile robotic systems.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2609.13290">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.01260">PROMO: Preference-conditioned Multi-Objective Reinforcement Learning for Quadrupedal Robots</a></h3>
+<p class="paper-meta">2026-10-01 &middot; Amr Mousa, Rifny Rachman, Neil Karavis, Michele Caprio, Richard Allmendinger</p>
+<p class="paper-abstract">Quadrupedal locomotion requires balancing conflicting objectives such as command tracking, stability, and energy efficiency, yet conventional reinforcement learning (RL) hardcodes these priorities into a fixed scalar reward at training time. We present PROMO (Preference-Conditioned Multi-Objective Reinforcement Learning), a semantic multi-objective approach that makes this trade-off an explicit runtime input to a single locomotion policy. PROMO conditions the policy on deployment facing preferences while keeping embodiment-specific locomotion priors fixed, thereby separating operator intent from reward shaping terms required for viable gait generation. Compared with fixed-objective controllers, multi-objective baselines, and independently trained specialists, PROMO achieves objective specialization and robustness from a single deployable policy. Across 100 sampled preferences in simulation, 67 behaviors are non-dominated under exact Pareto dominance, with a mean preference-objective correlation of 0.843, demonstrating broad Pareto coverage and predictable preference response. The same policy transfers zero-shot to a Unitree Go2, where preference changes alone reduce specific energy by up to 30.4%, position error by 38.7%, and peak body-attitude deviation by 59.0% relative to the balanced preference. These results establish preference-conditioned multi-objective RL as a practical runtime interface for adaptive legged locomotion, extending its role beyond offline Pareto-set construction. Open-source code and videos are available at https://amrmousa.com/promo/.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.01260">PDF</a></p>
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.38216">Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement</a></h3>
@@ -559,6 +566,10 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-10-01**|**InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation**|Zhuo Lin et.al.|-|[2610.02196](http://arxiv.org/abs/2610.02196)|null|
+|**2026-10-01**|**ReCo: Response-Consistent Locomotion with Policy-Aware MPC for Legged Manipulation**|Kuankuan Sima et.al.|-|[2610.01612](http://arxiv.org/abs/2610.01612)|null|
+|**2026-10-01**|**MASkillBlender: Decentralized Whole-Body Coordination for Multi-Humanoid Loco-Manipulation via Skill Blending**|Yifan Hu et.al.|-|[2610.01102](http://arxiv.org/abs/2610.01102)|null|
+|**2026-09-30**|**Towards a General Humanoid Loco-Manipulation Model via Egocentric Whole-Body Human Data Pretraining**|Chongyang Xu et.al.|-|[2610.00438](http://arxiv.org/abs/2610.00438)|null|
 |**2026-09-30**|**CEER2: Directional and Tunable End-Effector and Root Compliance for Humanoid Loco-Manipulation**|Xinyuan Luo et.al.|-|[2609.38709](http://arxiv.org/abs/2609.38709)|null|
 |**2026-09-29**|**Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies**| Galbot Team et.al.|-|[2609.38537](http://arxiv.org/abs/2609.38537)|null|
 |**2026-09-29**|**Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation**|Zihan Wang et.al.|-|[2609.38172](http://arxiv.org/abs/2609.38172)|null|
@@ -635,6 +646,30 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.02196">InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation</a></h3>
+<p class="paper-meta">2026-10-01 &middot; Zhuo Lin, Sirui Xu, Liuyu Bian, Yu-Xiong Wang, Liang-Yan Gui</p>
+<p class="paper-abstract">We study test-time evolution for humanoid loco-manipulation: solving tasks that a controller was never trained for by repurposing its existing skills, improving from its own attempts, and retaining what it learns, without retraining. Our key insight is that a broad controller already holds much of the competence a new task needs, and that this competence becomes accessible through an interface between planning and control that is expressive enough to specify contact-rich, multi-stage interactions, yet executable and measurable enough that execution feedback can guide planning from experience. InterEvolve realizes this interface with two components. First, we develop an object-aware forward-backward (FB) behavioral foundation model, whose object residuals on a frozen body prior turn a new reward about the body or objects into loco-manipulation behavior at test time. Second, we specify tasks as reward programs: staged rewards with completion conditions and tunable constants. A large language model (LLM) agent revises the program structure in context, drawing on execution feedback and a skill library of verified programs, while a numerical optimizer tunes its constants. With every candidate verified across parallel simulation scenarios, the program explores new ways to induce, repurpose, and compose the controller&#x27;s existing motor competence for the task at hand, and thus improves over iterations. Experiments show that human-designed rewards leave much of the FB model&#x27;s loco-manipulation competence untapped, whereas the programs InterEvolve evolves release it, sometimes through novel strategies. It further produces behaviors for diverse tasks, complex scenes, and long-horizon compositions in simulation, and evolved skills run autonomously on a physical Unitree G1 from egocentric onboard perception.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.02196">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.01612">ReCo: Response-Consistent Locomotion with Policy-Aware MPC for Legged Manipulation</a></h3>
+<p class="paper-meta">2026-10-01 &middot; Kuankuan Sima, Yichao Gao, Chenxi Gu, Kefan Zhao, Lin Zhao</p>
+<p class="paper-abstract">Continuous legged manipulation requires accurate end-effector tracking while the base keeps walking. Combining reinforcement learning (RL) with model predictive control (MPC) suits this task: the learned policy provides robust locomotion, while MPC coordinates the base and arm to compensate for tracking errors. However, MPC can compensate only for base motion that it can predict, and a learned policy&#x27;s command response varies with gait phase, contact, and payload. We present ReCo, a framework that couples response-consistent locomotion with policy-aware MPC for legged manipulation. Response shaping trains the policy to respond to commands consistently and repeatably across randomized dynamics. An identified closed-loop response model then lets MPC jointly plan locomotion commands and arm motion. On the simulation benchmark, ReCo reduces position and orientation root-mean-square error (RMSE) by 28.7% and 27.4% relative to the best baseline for each metric. Real-world experiments demonstrate onboard continuous legged manipulation with coordinated base and arm motion.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.01612">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.01102">MASkillBlender: Decentralized Whole-Body Coordination for Multi-Humanoid Loco-Manipulation via Skill Blending</a></h3>
+<p class="paper-meta">2026-10-01 &middot; Yifan Hu, Luhang Hong, Mingkang Long, Danning Wang, Chengfeng Jia, Rong Su, Junjie Fu, Guanghui Wen</p>
+<p class="paper-abstract">Coordinated multi-humanoid loco-manipulation is promising yet challenging due to high-dimensional whole-body control, decentralized decision making, and scalability. While recent reinforcement learning methods have improved single-humanoid whole-body control, extending them to the multi-humanoid setting remains nontrivial and often requires substantial reward engineering or task-specific design. We propose MASkillBlender, a general multi-agent reinforcement learning framework to achieve decentralized multi-humanoid whole-body coordination. By learning a shared decentralized high-level policy over reusable pre-trained single-humanoid skills, MASkillBlender enables coordinated behaviors using only task-level rewards, without requiring task-specific motion references. To improve learning efficiency, we further introduce a permutation-based data augmentation strategy for homogeneous multi-humanoid systems, and theoretically show that the permuted samples preserve the policy-gradient direction of the original samples under the homogeneous Markov game formulation. We evaluate MASkillBlender on multiple multi-humanoid coordination tasks across two humanoid embodiments. Simulation results demonstrate that the proposed framework consistently achieves strong task performance and enables coordinated behaviors across different tasks and humanoid embodiments.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.01102">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.00438">Towards a General Humanoid Loco-Manipulation Model via Egocentric Whole-Body Human Data Pretraining</a></h3>
+<p class="paper-meta">2026-09-30 &middot; Chongyang Xu, Zhao Wu, Jin Chen, Yiming Jiang, Jinhui Ye, Yuming Jiang, Shifeng Zhang, Ziliang Feng, Mu Xu, Yilun Chen, Li Lu, Steven C. H. Hoi</p>
+<p class="paper-abstract">Humanoid whole-body manipulation has advanced rapidly, enabling policies to coordinate locomotion, posture, bimanual interaction, and dexterous hand movements. Meanwhile, egocentric human videos provide diverse examples of everyday interactions across objects and scenes, offering scalable supervision without robot operation. However, existing supervision from these videos provides limited coverage of whole-body movement and coordination with hand-object interaction, while obtaining such supervision through humanoid teleoperation is also costly and difficult to scale. We therefore explore how human experience can support scalable learning of humanoid loco-manipulation. To support this study, we introduce HumanVerse-500, a 500-hour dataset of diverse human loco-manipulation behaviors in open-world environments, collected with a lightweight wearable system that synchronizes egocentric video with body and hand motion. Building on this dataset, we develop $λ_0$, a whole-body humanoid vision-language-action policy, through three-stage training that first learns interaction from diverse egocentric datasets, then coordinates body and hand motion using HumanVerse-500, and finally adapts the policy to downstream tasks and robot embodiments. Across these stages, $λ_0$ learns a shared representation space for human experience transfer, while domain-specific interfaces handle differences between human and robot states and actions. We evaluate $λ_0$ on SIMPLE and 4 real-world loco-manipulation tasks, achieving state-of-the-art performance, and further analyze its scaling behavior, generalization, and training-stage contributions to understand how human data support downstream whole-body humanoid control. We will release our code, models, and data to support further research.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.00438">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.38709">CEER2: Directional and Tunable End-Effector and Root Compliance for Humanoid Loco-Manipulation</a></h3>
 <p class="paper-meta">2026-09-30 &middot; Xinyuan Luo, Chunyuan Yang, Boyuan Chen, Xianyi Cheng</p>
@@ -1206,9 +1241,9 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
-|**2026-09-30**|**Social-WM: Safety-Aware Latent World Models for Robot Social Navigation**|Zhihao Zheng et.al.|-|[2609.40177](http://arxiv.org/abs/2609.40177)|null|
+|**2026-10-01**|**Social-WM: Safety-Aware Latent World Models for Robot Social Navigation**|Zhihao Zheng et.al.|-|[2609.40177](http://arxiv.org/abs/2609.40177)|null|
 |**2026-09-29**|**Inferring Soil Friction Angle from Robot Foot-Ground Force Histories: A Bayesian Inverse Approach to Proprioceptive Soil Sensing**|Dawei Xu et.al.|-|[2609.36582](http://arxiv.org/abs/2609.36582)|null|
-|**2026-09-29**|**One from Infinity: Actualizing Futures from Pretrained World Models into Robot Actions**|Bang Du et.al.|-|[2609.36413](http://arxiv.org/abs/2609.36413)|null|
+|**2026-10-01**|**One from Infinity: Actualizing Futures from Pretrained World Models into Robot Actions**|Bang Du et.al.|-|[2609.36413](http://arxiv.org/abs/2609.36413)|null|
 |**2026-09-28**|**EMPIRIC: Experiment-Driven Learning of Residual World Models for Robot Planning**|Yichao Liang et.al.|-|[2609.35047](http://arxiv.org/abs/2609.35047)|null|
 |**2026-09-28**|**Dexterous Tactile World Model**|Ziyao Zeng et.al.|-|[2609.34286](http://arxiv.org/abs/2609.34286)|null|
 |**2026-09-27**|**Scope-WM: Scoped Computation for Efficient Visual World Models**|Chunzheng Li et.al.|-|[2609.33218](http://arxiv.org/abs/2609.33218)|**[link](https://github.com/ChunZheng2022/Scope-WM)**|
@@ -1247,7 +1282,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 <div class="view-cards">
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.40177">Social-WM: Safety-Aware Latent World Models for Robot Social Navigation</a></h3>
-<p class="paper-meta">2026-09-30 &middot; Zhihao Zheng, Mooi Choo Chuah</p>
+<p class="paper-meta">2026-10-01 &middot; Zhihao Zheng, Mooi Choo Chuah</p>
 <p class="paper-abstract">Safe social navigation requires a robot to anticipate not only the future consequences of its actions, but also whether a nominal action can actually be executed under surrounding physical and social constraints. We present Social-WM, an efficient latent world-model planning framework trained from egocentric RGB video sequences. Our key observation is that social-navigation experience contains a systematic discrepancy between the nominal action and the realizable action: a nominal forward action may be fully executed in free space, but needs to be constrained when heading towards a pedestrian or obstacle. Social-WM learns these safety-relevant consequences directly through action-conditioned future prediction, where the target is the actual observed future following each command. We further introduce a realizable inverse-dynamics objective that associates observed latent transitions with the action actually realized rather than the nominal one. At deployment, candidate actions are imagined through the latent world model, and the inverse dynamics model estimates their realizability; nominal--realizable discrepancy then provides a safety signal before execution. The learned dynamics and realizability model remain goal-independent and support both position- and image-goal navigation. On Social-HM3D, Social-WM achieves 63.77% success while reducing human collisions to 21.67%, and maintains strong performance under zero-shot transfer to Social-MP3D, without explicit pedestrian tracking, privileged human state, or online reinforcement learning.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2609.40177">PDF</a></p>
 </div>
@@ -1259,7 +1294,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.36413">One from Infinity: Actualizing Futures from Pretrained World Models into Robot Actions</a></h3>
-<p class="paper-meta">2026-09-29 &middot; Bang Du, Yichen Xie, Shuqi Zhao, Yuxin Chen, Menglin Wu, Masayoshi Tomizuka</p>
+<p class="paper-meta">2026-10-01 &middot; Bang Du, Yichen Xie, Shuqi Zhao, Yuxin Chen, Menglin Wu, Masayoshi Tomizuka</p>
 <p class="paper-abstract">A pretrained video world model admits many plausible futures for a scene, but a robot must realize the exact task-conditioned one. To turn world models into executable robot policies, existing methods fine-tune the heavy world model backbone using large-scale robot data and computational resources. Challenging this status quo, we argue that the expensive part has already been paid in the world model pretraining since the representation space of a video world model lays out the diverse potential futures. In this case, what remains is to select the future that accomplishes the task and to read out the actions that realize it. We formalize this task as actualization, which learns a task-conditioned selection and realization on top of a prior supplied by a frozen world model. This can be solved by a tiny actualizer model. We implement RoboActualizer with as few as 60M parameters on top of a frozen world model encoder. The actualizer is composed of two lightweight DiT experts that jointly predict future latents and actions by flow matching. The model can be trained entirely on a single GPU with 32 GB peak memory. With up to 100x fewer trainable parameters than existing WAMs and VLAs, RoboActualizer reaches great performance on simulation benchmarks including LIBERO, LIBERO-Plus, RoboTwin 2.0 and five tasks on two real-world platforms, with a low latency of 39 ms that allows real-time control.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2609.36413">PDF</a></p>
 </div>
@@ -1463,6 +1498,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-10-01**|**MASkillBlender: Decentralized Whole-Body Coordination for Multi-Humanoid Loco-Manipulation via Skill Blending**|Yifan Hu et.al.|-|[2610.01102](http://arxiv.org/abs/2610.01102)|null|
 |**2026-09-29**|**Learning Expressive and Compositional Motion Representation via Spectral Skills**|Feiyang Wu et.al.|-|[2609.37677](http://arxiv.org/abs/2609.37677)|null|
 |**2026-09-21**|**Smoothness as a Constraint for Stable Humanoid Locomotion**|Utsav Panchal et.al.|-|[2609.24552](http://arxiv.org/abs/2609.24552)|null|
 |**2026-09-30**|**Collision-Aware Humanoid Whole-Body Control under Imperfect Tracking Targets**|Mohitvishnu S. Gadde et.al.|-|[2609.16405](http://arxiv.org/abs/2609.16405)|null|
@@ -1491,6 +1527,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.01102">MASkillBlender: Decentralized Whole-Body Coordination for Multi-Humanoid Loco-Manipulation via Skill Blending</a></h3>
+<p class="paper-meta">2026-10-01 &middot; Yifan Hu, Luhang Hong, Mingkang Long, Danning Wang, Chengfeng Jia, Rong Su, Junjie Fu, Guanghui Wen</p>
+<p class="paper-abstract">Coordinated multi-humanoid loco-manipulation is promising yet challenging due to high-dimensional whole-body control, decentralized decision making, and scalability. While recent reinforcement learning methods have improved single-humanoid whole-body control, extending them to the multi-humanoid setting remains nontrivial and often requires substantial reward engineering or task-specific design. We propose MASkillBlender, a general multi-agent reinforcement learning framework to achieve decentralized multi-humanoid whole-body coordination. By learning a shared decentralized high-level policy over reusable pre-trained single-humanoid skills, MASkillBlender enables coordinated behaviors using only task-level rewards, without requiring task-specific motion references. To improve learning efficiency, we further introduce a permutation-based data augmentation strategy for homogeneous multi-humanoid systems, and theoretically show that the permuted samples preserve the policy-gradient direction of the original samples under the homogeneous Markov game formulation. We evaluate MASkillBlender on multiple multi-humanoid coordination tasks across two humanoid embodiments. Simulation results demonstrate that the proposed framework consistently achieves strong task performance and enables coordinated behaviors across different tasks and humanoid embodiments.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.01102">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.37677">Learning Expressive and Compositional Motion Representation via Spectral Skills</a></h3>
 <p class="paper-meta">2026-09-29 &middot; Feiyang Wu, Chenxiao Gao, Chen Yang, Ye Zhao, Bo Dai, Anqi Wu</p>
