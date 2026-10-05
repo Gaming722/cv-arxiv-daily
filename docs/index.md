@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.10.04
+## Updated on 2026.10.05
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -573,14 +573,14 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 |**2026-09-30**|**CEER2: Directional and Tunable End-Effector and Root Compliance for Humanoid Loco-Manipulation**|Xinyuan Luo et.al.|-|[2609.38709](http://arxiv.org/abs/2609.38709)|null|
 |**2026-09-29**|**Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies**| Galbot Team et.al.|-|[2609.38537](http://arxiv.org/abs/2609.38537)|null|
 |**2026-09-29**|**Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation**|Zihan Wang et.al.|-|[2609.38172](http://arxiv.org/abs/2609.38172)|null|
-|**2026-09-30**|**EgoAlign: Bridging the Human-Humanoid Gap for Long-Range Loco-Manipulation**|Yiming Jiang et.al.|-|[2609.38046](http://arxiv.org/abs/2609.38046)|null|
+|**2026-10-01**|**EgoAlign: Bridging the Human-Humanoid Gap for Long-Range Loco-Manipulation**|Yiming Jiang et.al.|-|[2609.38046](http://arxiv.org/abs/2609.38046)|null|
 |**2026-09-29**|**EgoHumanoid-V2: Human-to-Humanoid Transfer of Coordinated Whole-Body Skills for Loco-Manipulation**|Jin Chen et.al.|-|[2609.37181](http://arxiv.org/abs/2609.37181)|null|
 |**2026-09-29**|**OTRetarget: Joint Robot and Object Motion Retargeting via Optimal Transport**|Guillaume Besset et.al.|-|[2609.36602](http://arxiv.org/abs/2609.36602)|null|
 |**2026-09-29**|**EquivDP3: A SIM(3)-Invariant Point-Cloud Encoder for Data-Efficient Humanoid Loco-Manipulation**|Abu Hanif Muhammad Syarubany et.al.|-|[2609.36575](http://arxiv.org/abs/2609.36575)|null|
 |**2026-09-28**|**Humanoid Loco-Manipulation With Discrete VLA Model**|Wenxin Shao et.al.|-|[2609.35709](http://arxiv.org/abs/2609.35709)|null|
 |**2026-09-30**|**Uni-VLaT: Whole-Body Tactile Adaptation of VLA Policies for Humanoid Loco-Manipulation**|Zihao Wang et.al.|-|[2609.35450](http://arxiv.org/abs/2609.35450)|null|
 |**2026-09-28**|**DexWeave: Learning Dexterous Humanoid Loco-Manipulation from Human Demonstrations**|Naichuan Sun et.al.|-|[2609.34724](http://arxiv.org/abs/2609.34724)|null|
-|**2026-09-30**|**WB-WAM: Heterogeneous Body-Hand Pre-training for Humanoid Loco-Manipulation**|Chuan Qin et.al.|-|[2609.34199](http://arxiv.org/abs/2609.34199)|null|
+|**2026-10-02**|**WB-WAM: Heterogeneous Body-Hand Pre-training for Humanoid Loco-Manipulation**|Chuan Qin et.al.|-|[2609.34199](http://arxiv.org/abs/2609.34199)|null|
 |**2026-09-25**|**Praxis: Distilling Physical Interaction Priors from Egocentric Videos for Generalizable Whole-Body Manipulation**|Shuliang He et.al.|-|[2609.30735](http://arxiv.org/abs/2609.30735)|null|
 |**2026-09-29**|**HuGo: LLMs as Whole-Body Policy Code Designers for Humanoid Loco-Manipulation**|Seoyeon Choi et.al.|-|[2609.30594](http://arxiv.org/abs/2609.30594)|null|
 |**2026-09-24**|**Contact as a Decision Variable: Capability-Tradeoff Contact Selection for Legged Loco-Manipulation**|Al Jaber Mahmud et.al.|-|[2609.30140](http://arxiv.org/abs/2609.30140)|null|
@@ -690,7 +690,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.38046">EgoAlign: Bridging the Human-Humanoid Gap for Long-Range Loco-Manipulation</a></h3>
-<p class="paper-meta">2026-09-30 &middot; Yiming Jiang, Jin Chen, Chongyang Xu, Yilun Chen, Aimin Hao, Yisheng He</p>
+<p class="paper-meta">2026-10-01 &middot; Yiming Jiang, Jin Chen, Chongyang Xu, Yilun Chen, Aimin Hao, Yisheng He</p>
 <p class="paper-abstract">Egocentric human demonstrations offer an accessible source of task experience, but differences in body scale and controller response, together with missing robot states, limit their value as humanoid training supervision. We present EgoAlign, a data-construction framework that converts these demonstrations into action and state supervision compatible with a general-purpose, continuous whole-body controller, without collecting physical-robot demonstrations. Using the target-robot model and simulator, EgoAlign guides demonstration collection through execution feedback. It preserves locomotion references for visually guided periodic stepping while adapting upper-body interaction geometry through scale alignment and controller-in-the-loop refinement. A final causal replay reconstructs the corresponding robot states and motion-token labels for training with the human observations. We assess the resulting supervision by fine-tuning a vision--language--action model solely on adapted human demonstrations and deploying it zero-shot on a physical humanoid. The resulting policies perform long-range object relocation, navigation to unseen goal positions, and independently evaluated foot interaction. Refinement improves simulated hand alignment and physical pickup success over kinematic alignment alone, while human collection reduces on-site acquisition time relative to teleoperation. https://lambdahumanoid.github.io/EgoAlign/</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2609.38046">PDF</a></p>
 </div>
@@ -732,7 +732,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.34199">WB-WAM: Heterogeneous Body-Hand Pre-training for Humanoid Loco-Manipulation</a></h3>
-<p class="paper-meta">2026-09-30 &middot; Chuan Qin, Shaoting Zhu, Siyuan Luo, Siqiao Huang, Hongyu Zhao, Shanaka Baduge, Hang Zhao</p>
+<p class="paper-meta">2026-10-02 &middot; Chuan Qin, Shaoting Zhu, Siyuan Luo, Siqiao Huang, Hongyu Zhao, Shanaka Baduge, Hang Zhao</p>
 <p class="paper-abstract">Humanoid loco-manipulation demands coordinated body and hand behavior, while conventional robot pre-training data provide limited coverage of such whole-body motion. We present WB-WAM, a World Action Model that incorporates explicit whole-body action supervision into generative video pre-training. A shared physical action space integrates body, root, and dexterous hand annotations from heterogeneous sources, enabling joint video and action learning from 1880.2 hours of partially annotated video and motion data. The resulting priors are refined through PICO mid-training and adapted to robot tasks with auxiliary forward kinematics supervision. We construct WB-Datasets to support these stages with retargeted egocentric human demonstrations and robot trajectories, allowing task-aligned human motion to supplement limited robot data. Evaluations in simulation demonstrate strong whole-body task performance with 81.9% in HumanoidArena, while real-world experiments further validate WB-WAM with 84.0% mean success across five tasks. Moreover, task-aligned PICO mid-training improves downstream task performance while reducing the need for real-robot demonstrations. These results support heterogeneous whole-body pre-training and human motion transfer as a practical route to data-efficient humanoid loco-manipulation.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2609.34199">PDF</a></p>
 </div>
