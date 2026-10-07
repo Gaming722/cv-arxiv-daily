@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.10.06
+## Updated on 2026.10.07
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -44,6 +44,10 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
 |**2026-09-09**|**🏆 Breaking speed scaling in quadrupedal robots via Huygens' coupled-pendulum dynamics**|Yucheng Tao et.al.|0|[2609.13290](http://arxiv.org/abs/2609.13290)|null|
+|**2026-10-06**|**QF3: Fast Flow RL with Filtered Q-Gradients**|Chung Min Kim et.al.|-|[2610.08789](http://arxiv.org/abs/2610.08789)|null|
+|**2026-10-06**|**Feeling Through the Load: Compliant Quadruped Locomotion under Payload Interactions**|Shaunak A. Mehta et.al.|-|[2610.08637](http://arxiv.org/abs/2610.08637)|null|
+|**2026-10-06**|**Safe Multi-Robot Collaborative Transport Using Density Functions**|Jagannath Prasad Sahoo et.al.|-|[2610.08441](http://arxiv.org/abs/2610.08441)|null|
+|**2026-10-06**|**Model-Based Geometry-Aware Generative Optimization for Constrained Locomotion Planning**|Zhilin He et.al.|-|[2610.07772](http://arxiv.org/abs/2610.07772)|null|
 |**2026-10-05**|**Transporting Unsecured Stacked Payloads with a Quadrupedal Robot via Multi-Objective Reinforcement Learning**|Nobuo Namura et.al.|-|[2610.05819](http://arxiv.org/abs/2610.05819)|null|
 |**2026-10-01**|**PROMO: Preference-conditioned Multi-Objective Reinforcement Learning for Quadrupedal Robots**|Amr Mousa et.al.|-|[2610.01260](http://arxiv.org/abs/2610.01260)|null|
 |**2026-09-27**|**Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement**|Pavel Bushuyeu et.al.|-|[2609.38216](http://arxiv.org/abs/2609.38216)|null|
@@ -126,6 +130,30 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 <p class="paper-meta">2026-09-09 &middot; Yucheng Tao, Yongbin Jin, Shaowen Cheng, Xianwei Liu, Yanyan Yuan, Yanhong Liang, Chengkai Su, Chaojie Fu, Guorong Lan, Wei Yang, Hongtao Wang &middot; 0 citations</p>
 <p class="paper-abstract">Achieving biological-level running speeds has largely been pursued through advances in control algorithms, which improve the utilization of existing hardware. However, the ultimate speed limits remain governed by the underlying force and torque requirements of rapid locomotion, which are typically addressed through increased actuator capacity. Inspired by Huygens&#x27; coupled pendulums, we demonstrate that superior locomotion can emerge from principled exploitation of intrinsic dynamics rather than brute-force hardware scaling. Inter-limb inertial coupling redistributes energy across the gait cycle and reduces peak joint torque required for rapid periodic motion, thereby expanding the achievable speed without proportional increases in actuator capability. Incorporating hardware parameters as additional design variables further extends this analysis into a co-optimization framework, enabling the systematic utilization of inertial coupling in robot design. Guided by this framework, a quadruped robot achieves a running speed of 10.74 m/s (Froude number 21.4) and completes a 100-meter sprint in 12.2 seconds, representing the first legged robot to surpass 10 m/s. These results establish inertial coupling as an underlying mechanism governing high-speed legged locomotion and highlight its role in reducing force requirements, offering new insights into the design of agile robotic systems.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2609.13290">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.08789">QF3: Fast Flow RL with Filtered Q-Gradients</a></h3>
+<p class="paper-meta">2026-10-06 &middot; Chung Min Kim, Brent Yi, David McAllister, Hongsuk Choi, Himanshu Gaurav Singh, Jinkun Cao, Ken Goldberg, Pieter Abbeel, Carmelo Sferrazza, Angjoo Kanazawa</p>
+<p class="paper-abstract">Flow policies have become a standard policy class for learning robot behaviors from demonstrations, but reinforcement learning is still critical for improving pre-trained flow policies or learning them from scratch through interaction. We introduce QF3 (Fast Flow RL with Filtered Q-Gradients), an online off-policy RL algorithm that trains a flow policy with flow matching plus the critic&#x27;s action gradient, backpropagated through a one-step prediction of the flow&#x27;s output. To keep updates where the critic and this prediction are reliable, QF3 applies the critic gradient only to action dimensions that stay near the replay action. To our knowledge, QF3 is the first off-policy flow RL method to train humanoid locomotion policies from scratch and transfer them zero-shot to hardware. Paired with a high-throughput off-policy training recipe, it trains humanoid locomotion and motion-tracking policies with a 10x wall-clock speedup over FPO++, a recent on-policy flow RL method. We further apply QF3 to fine-tune pretrained flow-based manipulation policies on both ABC-Sim and Robomimic tasks. These results suggest that QF3 can both learn robot policies from scratch and refine those acquired from demonstrations. Website: https://qf3-rl.github.io/</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.08789">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.08637">Feeling Through the Load: Compliant Quadruped Locomotion under Payload Interactions</a></h3>
+<p class="paper-meta">2026-10-06 &middot; Shaunak A. Mehta, Mayank Mishra, Prajit KrisshnaKumar, Sebastian Scherer, Koichiro Niinuma</p>
+<p class="paper-abstract">Quadruped robots are increasingly expected to carry objects while moving through human environments. But what happens when a person interacts directly with the payload rather than with the robot? If the payload is unrestrained, the robot must distinguish intentional external interactions from ordinary payload motion, while still keeping the load balanced and maintaining stable locomotion. How can a quadruped infer and compliantly respond to such interactions using only onboard measurements? In this work, we develop a force-aware locomotion framework that treats payload interactions as commands that shape the motion of the combined robot-payload system. Our approach separates the learning of force-aware locomotion and force estimation on an unrestrained payload. We combine a compliant load-carrying policy with a causal force estimator, trained through estimator-in-the-loop data aggregation and finetuning, to predict interactions from onboard robot measurements. Our simulations and real-world experiments show that the resulting controller can maintain stable payload-carrying locomotion, yield compliantly to external interactions, and use the inferred force to support human-guided changes in the robot&#x27;s trajectory.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.08637">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.08441">Safe Multi-Robot Collaborative Transport Using Density Functions</a></h3>
+<p class="paper-meta">2026-10-06 &middot; Jagannath Prasad Sahoo, Sriram S. K. S. Narayanan, Umesh Vaidya</p>
+<p class="paper-abstract">This paper presents a hierarchical density-based model predictive control framework for safe collaborative manipulation by multiple quadrupedal robots. The framework enables a team of robots to push a shared object to a desired pose using only the initial and goal poses, without requiring a precomputed reference trajectory. A centralized box-level MPC optimizes contact forces while enforcing a control-density constraint for goal convergence and obstacle avoidance. Each robot then solves its own distributed robot-level whole-body MPC, under a stated shared-information assumption, to track its moving contact location while accounting for static obstacles and the time-varying positions of neighboring robots. The approach is evaluated in MuJoCo using whole-body contact dynamics for two and three Unitree Go2 quadrupeds collaboratively pushing rigid objects through narrow passages. Comparisons with matched Control Barrier Function and RRT* based tracking baselines demonstrate the effectiveness of the proposed density-based formulation for push-only, force- and torque-coupled manipulation tasks. Implementation videos are available at https://jaggu2606.github.io/go2-density-mpc-pushing/</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.08441">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.07772">Model-Based Geometry-Aware Generative Optimization for Constrained Locomotion Planning</a></h3>
+<p class="paper-meta">2026-10-06 &middot; Zhilin He, Xinyuan Wang, Changliu Liu</p>
+<p class="paper-abstract">Constrained Locomotion Planning (CLP) for quadrupeds and humanoids, where robots must satisfy collision avoidance, contact consistency, kinematic feasibility, and support constraints, is challenging under high-dimensional dynamics and highly non-convex environments. Recent Model-Based Diffusion (MBD) approaches recast trajectory optimization as posterior sampling over trajectories, using known dynamics and Monte Carlo rollouts to analytically estimate the denoising score function without demonstration learning. While constrained variants further incorporate feasibility into model-based score rollouts and show promising performance, they are still limited by (1) lacking a task-modulated active constraint geometry that shapes the score direction and reverse stochasticity, and (2) using deterministic DDPM-style reverse transport without adaptive scheduling across different generative transports. Therefore, we introduce Model-Based Geometry-Aware Generative Optimization (2GO) for constrained locomotion, which turns active constraint geometry into executable denoising operators through normal- induced metric shaping, tangent-space stochastic filtering, and CFS-based retraction. 2GO further decouples generative transport from reverse stochasticity through an adaptive diffusion and flow-like schedule. Experiments on constrained quadruped and humanoid locomotion demonstrate strong performance in discrete foothold selection and continuous posture planning, with higher success rates, fewer violations, and improved execution compatibility.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.07772">PDF</a></p>
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2610.05819">Transporting Unsecured Stacked Payloads with a Quadrupedal Robot via Multi-Objective Reinforcement Learning</a></h3>
@@ -573,6 +601,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-10-06**|**Humanoid Horizon: Extending Task Horizon in Whole-Body Loco-Manipulation via Parallel Training, Dynamic Starting, and Reward Gating**|Haozhuo Zhang et.al.|-|[2610.08320](http://arxiv.org/abs/2610.08320)|null|
 |**2026-10-05**|**InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation**|Yucheng Zhang et.al.|-|[2610.06850](http://arxiv.org/abs/2610.06850)|null|
 |**2026-10-05**|**I-BFM: Reward-Conditioned Robust Humanoid Interaction via Unsupervised Reinforcement Learning**|Ziqi Han et.al.|-|[2610.06129](http://arxiv.org/abs/2610.06129)|null|
 |**2026-10-05**|**Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture**|Seungho Yeom et.al.|-|[2610.05678](http://arxiv.org/abs/2610.05678)|null|
@@ -657,6 +686,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.08320">Humanoid Horizon: Extending Task Horizon in Whole-Body Loco-Manipulation via Parallel Training, Dynamic Starting, and Reward Gating</a></h3>
+<p class="paper-meta">2026-10-06 &middot; Haozhuo Zhang, Qiang Zhang, Jian Tang, Mingzhe Ni, Michele Caprio, Angelo Cangelosi, Wei Pan</p>
+<p class="paper-abstract">Cluttered indoor environments, where large and heavy objects are scattered across diverse surfaces, require humanoid robots to sequentially navigate, grasp, transport, and accurately place each item at its target location within a single uninterrupted episode. This long-horizon, whole-body loco-manipulation task remains a significant challenge for current methods. Previous approaches often suffer from two main issues: easy-reward bias, where training overemphasizes early transport stages at the expense of later ones, and catastrophic forgetting, where focusing on later stages leads to a decline in earlier-stage performance. In this work, we introduce Humanoid Horizon, a unified policy framework designed to overcome these limitations through three interrelated mechanisms. The Parallel Training Strategy organizes $N$ scenes into $S$ concurrent stage streams governed by a shared policy, ensuring all transport stages receive continuous gradient updates and removing the bottleneck of sequential optimization. The Dynamic Starting Mechanism updates each environment&#x27;s initial state with terminal states from upstream rollouts, gradually broadening transition coverage and enhancing robustness at stage boundaries. Reward Gating sets the reward to zero for the rest of the episode in later-stage streams when the immediately preceding object is displaced beyond a set threshold, so the shared policy learns not to disturb a just-placed object and earlier placements are preserved throughout the episode. Collectively, these strategies achieve per-stage success rates exceeding 80\% on the two-object LHM-Humanoid benchmark (350 training scenes, 66 held-out scenes). As the number of sequentially transported objects grows beyond two, success declines with the horizon, but the degradation is graceful relative to the sharp drop seen in all baselines.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.08320">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2610.06850">InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation</a></h3>
 <p class="paper-meta">2026-10-05 &middot; Yucheng Zhang, Sirui Xu, Jinhong Li, Liuyu Bian, Anatulya Nandi, Derek Zhang, Xiangchen Liu, Xueting Li, Umar Iqbal, Yu-Xiong Wang, Liang-Yan Gui</p>
@@ -1276,6 +1311,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-10-06**|**DepthWorld: 3D World Model for Robot Manipulation**|Jai Bardhan et.al.|-|[2610.08780](http://arxiv.org/abs/2610.08780)|null|
 |**2026-10-03**|**Flow Policies as Actions of Skill-Level World Models: Learned and Symbolic Abstractions for Long-Horizon Planning**|Andreu Matoses Gimenez et.al.|-|[2610.04767](http://arxiv.org/abs/2610.04767)|null|
 |**2026-10-03**|**EnvDreamer: Large-Scale Multimodal-to-Environment Generation for Embodied AI**|Kabir Swain et.al.|-|[2610.04301](http://arxiv.org/abs/2610.04301)|null|
 |**2026-10-02**|**SUAVE: Unified Video-Action Models via Masked Diffusion**|Rhythm Syed et.al.|-|[2610.04009](http://arxiv.org/abs/2610.04009)|null|
@@ -1318,6 +1354,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.08780">DepthWorld: 3D World Model for Robot Manipulation</a></h3>
+<p class="paper-meta">2026-10-06 &middot; Jai Bardhan, Josef Sivic, Vladimir Petrik</p>
+<p class="paper-abstract">World models offer a data-driven alternative to traditional simulators for robotics, with applications spanning policy evaluation, improvement, and planning. All of these uses depend on faithful 3D geometry, yet current video-based world models are trained on RGB alone and produce rollouts that look correct frame-by-frame but do not compose into a consistent 3D world. Closing this gap requires progress on two fronts: large-scale 3D supervision for manipulation, and an architecture that can absorb it without disturbing strong pretrained video priors. We introduce a calibration pipeline that combines learned stereo depth with a joint factor graph, pooling all episodes collected from the same physical robot to recover its shared kinematic parameters alongside per-scene extrinsics. Applied to the DROID dataset, this yields DROID-3D, a calibrated 3D dataset providing dense metric depth and recalibrated multi-view extrinsics (achieving &lt;0.7 px reprojection error on 90% of episodes for external cameras). We then train DepthWorld, a Stable Video Diffusion-based world model that jointly predicts multi-view RGB and depth via spatial latent tiling, leaving the pretrained Variational Autoencoder (VAE) unchanged. Depth supervision improves RGB prediction itself by +1.48 dB PSNR over an identical RGB-only baseline at equal training budget, while simultaneously yielding accurate metric depth for downstream geometric reasoning.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.08780">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2610.04767">Flow Policies as Actions of Skill-Level World Models: Learned and Symbolic Abstractions for Long-Horizon Planning</a></h3>
 <p class="paper-meta">2026-10-03 &middot; Andreu Matoses Gimenez, Andrei-Carlo Papuc, Chris Pek, Javier Alonso-Mora</p>
