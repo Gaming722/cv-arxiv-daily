@@ -34,7 +34,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 })();
 </script>
 
-## Updated on 2026.10.08
+## Updated on 2026.10.09
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 ## Legged Locomotion
@@ -44,6 +44,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
 |**2026-09-09**|**🏆 Breaking speed scaling in quadrupedal robots via Huygens' coupled-pendulum dynamics**|Yucheng Tao et.al.|0|[2609.13290](http://arxiv.org/abs/2609.13290)|null|
+|**2026-10-08**|**A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control**|Octi Zhang et.al.|-|[2610.12465](http://arxiv.org/abs/2610.12465)|null|
+|**2026-10-08**|**Toward Lunar Legged Robots: Field Deployment Lessons at LUNA**|Adrian Fuhrer et.al.|-|[2610.12276](http://arxiv.org/abs/2610.12276)|null|
+|**2026-10-08**|**Walking on Roofs: Exploring the Potential of Walking Robots for Construction Work on Roofs**|Bjoern-Felix Dettmar et.al.|-|[2610.12272](http://arxiv.org/abs/2610.12272)|null|
+|**2026-10-08**|**DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors**|Puying Shen et.al.|-|[2610.11505](http://arxiv.org/abs/2610.11505)|null|
+|**2026-10-07**|**Higher-Order Morphology Priors for Quadruped Reinforcement Learning Under Actuator Degradation**|Derek You et.al.|-|[2610.10934](http://arxiv.org/abs/2610.10934)|null|
+|**2026-10-07**|**TAPNAV: Humanoid Navigation through Tactile Active Perception**|Huaze Liu et.al.|-|[2610.10748](http://arxiv.org/abs/2610.10748)|null|
 |**2026-10-07**|**HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion**|Mike Zhang et.al.|-|[2610.10489](http://arxiv.org/abs/2610.10489)|null|
 |**2026-10-07**|**ClimbLab: MATLAB Simulation Platform for Legged Climbing Robotics**|Kentaro Uno et.al.|-|[2610.09315](http://arxiv.org/abs/2610.09315)|null|
 |**2026-10-06**|**QF3: Fast Flow RL with Filtered Q-Gradients**|Chung Min Kim et.al.|-|[2610.08789](http://arxiv.org/abs/2610.08789)|null|
@@ -132,6 +138,42 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 <p class="paper-meta">2026-09-09 &middot; Yucheng Tao, Yongbin Jin, Shaowen Cheng, Xianwei Liu, Yanyan Yuan, Yanhong Liang, Chengkai Su, Chaojie Fu, Guorong Lan, Wei Yang, Hongtao Wang &middot; 0 citations</p>
 <p class="paper-abstract">Achieving biological-level running speeds has largely been pursued through advances in control algorithms, which improve the utilization of existing hardware. However, the ultimate speed limits remain governed by the underlying force and torque requirements of rapid locomotion, which are typically addressed through increased actuator capacity. Inspired by Huygens&#x27; coupled pendulums, we demonstrate that superior locomotion can emerge from principled exploitation of intrinsic dynamics rather than brute-force hardware scaling. Inter-limb inertial coupling redistributes energy across the gait cycle and reduces peak joint torque required for rapid periodic motion, thereby expanding the achievable speed without proportional increases in actuator capability. Incorporating hardware parameters as additional design variables further extends this analysis into a co-optimization framework, enabling the systematic utilization of inertial coupling in robot design. Guided by this framework, a quadruped robot achieves a running speed of 10.74 m/s (Froude number 21.4) and completes a 100-meter sprint in 12.2 seconds, representing the first legged robot to surpass 10 m/s. These results establish inertial coupling as an underlying mechanism governing high-speed legged locomotion and highlight its role in reducing force requirements, offering new insights into the design of agile robotic systems.</p>
 <p class="paper-links"><a href="http://arxiv.org/abs/2609.13290">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.12465">A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control</a></h3>
+<p class="paper-meta">2026-10-08 &middot; Octi Zhang, Mateo Guaman Castro, Patrick Yin, Ignacio Dagnino, Abhishek Gupta, Rosario Scalise, Byron Boots</p>
+<p class="paper-abstract">General-purpose robots must perform a wide range of tasks from agile locomotion to dexterous manipulation. While sim-to-real reinforcement learning (RL) has proven to be a useful tool for this goal, current RL pipelines depend on engineering-heavy, per-task structural priors such as shaped rewards and demonstrations. Recent work has shown that diverse simulator resets, combined with massively parallel simulation, can alleviate much of this engineering burden on several manipulation problems. However, we find that naively scaling this paradigm to more precise or dynamic problems remains non-trivial. While simulator resets can help with exploration, uniformly sampling over this distribution wastes a growing fraction of learning experience on task configurations the policy has already mastered or cannot yet attempt. This makes it challenging to see the expected benefits of scaling parallel environments for RL, since much of the learning signal in a batch is wasted during learning. To mitigate this, we introduce Success Guided Sampling (SGS), a simple adaptive sampler that concentrates RL training on task configurations around the frontier of the policy&#x27;s capabilities. Doing so allows large-scale simulated RL to make the most out of the experience in a batch, enabling much more effective scaling to large-scale parallel simulation. Across experiments using up to $2^{20}$ (over one million) parallel environments, SGS enables RL to solve challenging multi-terrain quadruped locomotion and contact-rich assembly tasks that prior methods fail to solve. Finally, we distill the learned manipulation policies into RGB-based policies and demonstrate zero-shot transfer to several challenging assembly tasks on real hardware. Project website: https://sgs-rl.github.io/.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.12465">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.12276">Toward Lunar Legged Robots: Field Deployment Lessons at LUNA</a></h3>
+<p class="paper-meta">2026-10-08 &middot; Adrian Fuhrer, Joseph Church, Oliver Fischer, William Talbot, Nicolas Faesch, Yannic Hofmann, Hendrik Kolvenbach, Yusuke Tanaka, Marco Hutter</p>
+<p class="paper-abstract">Legged robots are promising candidates for future lunar surface missions because they can traverse steep, loose, and obstacle-rich terrain that challenges conventional wheeled rovers. However, readiness for lunar deployment is limited by uncertainties in foot-regolith interaction, dust generation, illumination-driven perception degradation, and operational constraints. This paper reports lessons from the 2025 LUNA analogue campaign, where ANYmal-D and Magnecko traversed loose regolith simulant and crater-like terrain and collected long-horizon navigation and visual-inertial data under challenging lighting. We show that quadrupedal robots can traverse regolith simulant, but performance is affected by sinkage and slip, dust-generating contacts, and perception failures caused by overexposure, shadows, and low-texture regions. These results motivate tighter integration of regolith-aware locomotion policies, illumination-robust perception, repeatable analogue testing, and mission-level operational validation for future lunar legged robots.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.12276">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.12272">Walking on Roofs: Exploring the Potential of Walking Robots for Construction Work on Roofs</a></h3>
+<p class="paper-meta">2026-10-08 &middot; Bjoern-Felix Dettmar, Arne Roennau</p>
+<p class="paper-abstract">This paper investigates the feasibility of deploying quadruped walking robots for the automation of work in roof environments. While quadrupeds have demonstrated versatility across various domains, their large-scale deployment remains limited, partly due to lack of application-specific designs. Roof environments represent a novel and unexplored use case, combining high safety risks for human workers with repetitive, strenuous tasks that could benefit from robotic assistance. A dedicated test rig of a roof&#x27;s surface was designed to evaluate the baseline performance of a commercial quadruped, the \emph{Unitree Go2}, in this new environment. Experiments revealed that standard ball feet are inherently inadequate for locomotion on sloped roofs: slippage increased quadratically with incline angle, get-up and lie-down sequences were only possible on small inclines, and critical failures already occurred regularly on moderate inclines of 25°. This work provides the first systematic assessment of quadruped locomotion in roof environments, highlighting both the potential and the current limitations of this application and establishes a baseline for future research. Effective solutions will require a combination of task-oriented foot designs, advanced contact mechanics and environment-specific control strategies, such as reinforcement learning for roof-adapted gaits.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.12272">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.11505">DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors</a></h3>
+<p class="paper-meta">2026-10-08 &middot; Puying Shen, Wenhao Cui, Huaxing Huang, Bangyu Qin, Shengtao Li, Ziyang Dong, Guoteng Zhang</p>
+<p class="paper-abstract">Humanoid robots possess the structural capability to traverse complex terrains. However, achieving stable t raversal without relying on perceived information remains challenging, particularly in complex environments. This paper introduces DAMP, a reinforcement learning framework aimed at achieving robust and naturalistic humanoid locomotion over challenging terrains, with the assumption that no perceived information is available. The framework leverages recurrent neural networks to capture temporal dependencies and implicitly infer privileged and other task-relevant latent information. By aligning the learned representations with the task objective, the method enables robust and goal-consistent policy learning. This end-to-end framework achieves transfer learning from simulation to real-world environments, demonstrating the proposed method&#x27;s robustness and generalization capabilities. The video of the real-world demonstration can be found at the following link: https://youtu.be/AkI7TZB2DDM.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.11505">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.10934">Higher-Order Morphology Priors for Quadruped Reinforcement Learning Under Actuator Degradation</a></h3>
+<p class="paper-meta">2026-10-07 &middot; Derek You, Zafir Shamsi, Keqin Wang, Christine Allen-Blanchette</p>
+<p class="paper-abstract">Actuator degradation turns quadruped locomotion into a coordination problem requiring joints to compensate for lost actuation. Prior work suggests that morphology-aware graph policies improve learning and generalization under body perturbations. We ask whether these benefits can be strengthened by explicitly modeling higher-order mechanical structure. We represent the Unitree Go1 as a cell complex with limb- and body-level rank-2 cells and apply Hodge-based message passing. Under degradation training, the node-edge-face Hodge actor achieves the highest return on unseen actuator degradations, with higher survival and lower velocity-tracking error. These results support higher-order morphology as a useful inductive bias for whole-body compensation under actuator degradation.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.10934">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.10748">TAPNAV: Humanoid Navigation through Tactile Active Perception</a></h3>
+<p class="paper-meta">2026-10-07 &middot; Huaze Liu, Zhenyu Wu, Jaehwi Jang, Junjie Sheng, Andrew Collins, Aaron Xie, Zhaoyuan Gu, Kaijie Zhu, Ding Jiang, Kevin Cai, Ye Zhao</p>
+<p class="paper-abstract">Navigation in vision-denied environments is challenging for humanoid robots because proprioceptive odometry drifts and localization uncertainty accumulates rapidly. We present TAPNAV, a tactile active-perception framework that enables humanoid navigation toward a goal by actively probing surrounding structures without relying on vision. TAPNAV maintains a pose belief from odometry, IMU, and tactile contact observations, and couples uncertainty-aware global route planning with information-gain-driven local probing. The global planner searches for routes that keep predicted localization uncertainty bounded by exploiting opportunities for tactile correction, while the local planner selects probe actions that maximize expected information gain. A whole-body controller coordinates the humanoid&#x27;s locomotion and end-effector contact to execute the planned navigation and probe motions. We evaluate TAPNAV in simulation and on a Unitree G1 across different floor plans and obstacle geometries. TAPNAV achieves lower state estimation error and a higher task completion rate than baselines. These results demonstrate that actively planning physical interactions with the environment can provide localization cues for reliable humanoid navigation without vision.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.10748">PDF</a></p>
 </div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2610.10489">HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion</a></h3>
@@ -615,6 +657,8 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-10-08**|**LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes**|Peijun Xu et.al.|-|[2610.12069](http://arxiv.org/abs/2610.12069)|null|
+|**2026-10-08**|**Being-M0.7: A Latent World-Action Model for Humanoid Robots**|Junpeng Yue et.al.|-|[2610.11283](http://arxiv.org/abs/2610.11283)|null|
 |**2026-10-07**|**Immiscible Diffusion Policy: Preserving Multimodal Robot Actions through Label-Free Noise Assignment**|Xiao Zhang et.al.|-|[2610.09369](http://arxiv.org/abs/2610.09369)|null|
 |**2026-10-07**|**Co ${}^{2}$ Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction**|Jeonghwan Kim et.al.|-|[2610.09291](http://arxiv.org/abs/2610.09291)|null|
 |**2026-10-06**|**Workhorse: Learning Robust Whole-Body Humanoid Loco-Manipulation from Human Data**|Songbo Hu et.al.|-|[2610.09117](http://arxiv.org/abs/2610.09117)|null|
@@ -704,6 +748,18 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.12069">LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes</a></h3>
+<p class="paper-meta">2026-10-08 &middot; Peijun Xu, Chuansen Nie, Yiyang He, Yinuo Bai, Jingyang Liu, Kuixiang Shao, Yuyang Jiao, Kuanhao Xia, Jiayi Zhu, Zitian Yang, Yanqi Zhang, Tianye Tan, Shuwei Di, Junyi Xu, Jingyi Yu, Jiayuan Gu</p>
+<p class="paper-abstract">Realistic household simulation must capture not only diverse environments but also the lived-in object arrangements and spatial constraints that shape robot motion and interaction. Existing resources often trade off scale, real-world correspondence, and interaction readiness, leaving a gap in faithful, interactive replicas of how real homes are actually arranged. To this end, we introduce LIVIN, a benchmark for spatial and embodied intelligence built on digital twins of 30 diverse lived-in homes. These replicas preserve observed room layouts, furniture configurations, and everyday belongings. To construct them, we design a human-in-the-loop workflow comprising instance recognition, architectural reconstruction, and object generation and placement, with intermediate results reviewed and corrected by humans against the source observations at each stage. We evaluate four tasks in LIVIN: 3D detection, 3D reconstruction, navigation, and loco-manipulation. Our evaluations show that current methods remain challenged by the dense object arrangements, occlusions, limited free space, and constrained interaction regions found in realistic lived-in homes. We hope LIVIN will help advance embodied AI in real-world homes, from spatial understanding to robotic interaction, and ultimately bring embodied intelligence into everyday home environments.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.12069">PDF</a></p>
+</div>
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.11283">Being-M0.7: A Latent World-Action Model for Humanoid Robots</a></h3>
+<p class="paper-meta">2026-10-08 &middot; Junpeng Yue, Boyuan Li, Yuxuan Wang, Zepeng Wang, Yuhui Fu, Feiyang Xie, Yu Zhang, Jing Zhang, Xianqi Zhang, Weibo Li, Xiaofei Zheng, Yuming Fang, Jiangxing Wang, Zongqing Lu</p>
+<p class="paper-abstract">Humanoid loco-manipulation requires coordinated locomotion and manipulation informed by future scene evolution and whole-body motion, yet learning these capabilities is constrained by scarce robot demonstrations. Human video and motion datasets offer scalable supervision, but many contain only video or motion rather than paired video-motion data. Moreover, human motion does not directly specify executable robot actions. We present Being-M0.7, a latent world-action model that transfers visual-motion priors learned from mixed-modality human data to humanoid control through pre-training, robot mid-training, and action post-training. We curate a corpus from more than 10,000 hours of raw human-centric data, integrating video-only, motion-only, and paired video-motion streams to learn complementary visual dynamics and whole-body kinematic structure. Joint prediction of future latent visual states and motion encourages visual representations to encode future kinematics. Robot mid-training adapts this coarse-grained prior to robot viewpoints and body dynamics. During action post-training, an action expert combines visual predictive representations from the frozen, adapted prior with current images and proprioception through gated cross-attention, grounding predictive context in executable whole-body commands. Being-M0.7 achieves the highest aggregate success rate among the compared baselines on SIMPLE and matches the strongest baseline on real-world Unitree G1 loco-manipulation tasks.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.11283">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2610.09369">Immiscible Diffusion Policy: Preserving Multimodal Robot Actions through Label-Free Noise Assignment</a></h3>
 <p class="paper-meta">2026-10-07 &middot; Xiao Zhang, Yuxin Chen, Zhixuan Liang, Guojian Zhan, Chenran Li, Chenfeng Xu, Masayoshi Tomizuka, Yiheng Li</p>
@@ -1846,6 +1902,7 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 
 | Publish Date | Title | Authors | Citations | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|:------|
+|**2026-10-08**|**DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors**|Puying Shen et.al.|-|[2610.11505](http://arxiv.org/abs/2610.11505)|null|
 |**2026-09-20**|**STRIDER: Stepping-Enabled Multi-Gait Hierarchical 3D Loco-Manipulation Framework for Humanoid Robots**|Yuanzhuo Li et.al.|-|[2609.23483](http://arxiv.org/abs/2609.23483)|null|
 |**2026-09-18**|**Beyond Kinematics: Benchmarking Simulation Fidelity for Muscle-Driven Imitation Learning**|Ayah G. Ahmad et.al.|-|[2609.21909](http://arxiv.org/abs/2609.21909)|null|
 |**2026-09-14**|**Flow-Matched Motion Priors: Online Optimal-Transport Rewards for Imitation Learning**|Yilin Zou et.al.|-|[2609.15631](http://arxiv.org/abs/2609.15631)|null|
@@ -1871,6 +1928,12 @@ body.card-view .view-cards { display: grid; grid-template-columns: repeat(auto-f
 </div>
 
 <div class="view-cards">
+<div class="paper-card">
+<h3><a href="http://arxiv.org/abs/2610.11505">DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors</a></h3>
+<p class="paper-meta">2026-10-08 &middot; Puying Shen, Wenhao Cui, Huaxing Huang, Bangyu Qin, Shengtao Li, Ziyang Dong, Guoteng Zhang</p>
+<p class="paper-abstract">Humanoid robots possess the structural capability to traverse complex terrains. However, achieving stable t raversal without relying on perceived information remains challenging, particularly in complex environments. This paper introduces DAMP, a reinforcement learning framework aimed at achieving robust and naturalistic humanoid locomotion over challenging terrains, with the assumption that no perceived information is available. The framework leverages recurrent neural networks to capture temporal dependencies and implicitly infer privileged and other task-relevant latent information. By aligning the learned representations with the task objective, the method enables robust and goal-consistent policy learning. This end-to-end framework achieves transfer learning from simulation to real-world environments, demonstrating the proposed method&#x27;s robustness and generalization capabilities. The video of the real-world demonstration can be found at the following link: https://youtu.be/AkI7TZB2DDM.</p>
+<p class="paper-links"><a href="http://arxiv.org/abs/2610.11505">PDF</a></p>
+</div>
 <div class="paper-card">
 <h3><a href="http://arxiv.org/abs/2609.23483">STRIDER: Stepping-Enabled Multi-Gait Hierarchical 3D Loco-Manipulation Framework for Humanoid Robots</a></h3>
 <p class="paper-meta">2026-09-20 &middot; Yuanzhuo Li, Wen Zhao, Zhe Yong, Xiang Meng, Gang Han, Hengle Ren, Xiaoyang Zheng, Zhen Wang, Yijie Guo</p>
