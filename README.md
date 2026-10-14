@@ -1,4 +1,4 @@
-## Updated on 2026.10.13
+## Updated on 2026.10.14
 > Usage instructions: [here](https://github.com/Gaming722/cv-arxiv-daily/blob/main/docs/README.md#usage)
 
 <details>
@@ -17,10 +17,15 @@
 
 |Publish Date|Title|Authors|Citations|PDF|Code|
 |---|---|---|---|---|---|
+|**2026-10-13**|**Walk Like This: Stylized Locomotion for Physics-Based Characters through Example-Driven Diffusion**|Joshua Aurand et.al.|-|[2610.18147](http://arxiv.org/abs/2610.18147)|null|
+|**2026-10-11**|**Geometry-Aware Predictive Control for Walk-to-Run Bipedal Obstacle Crossing**|Aashish Sahu et.al.|-|[2610.15735](http://arxiv.org/abs/2610.15735)|null|
+|**2026-10-11**|**PointWalker: Mapless Quadruped Locomotion Directly From Raw LiDAR Point Clouds**|Sicen Li et.al.|-|[2610.15548](http://arxiv.org/abs/2610.15548)|null|
+|**2026-10-10**|**Beyond Fixed Visual History: Learning Motion-Adaptive Temporal Receptive Fields for Complex-Terrain Quadruped Locomotion**|Hao Zhang et.al.|-|[2610.14753](http://arxiv.org/abs/2610.14753)|null|
+|**2026-10-07**|**Terrain Traversal Without Motion Priors: Expert-Routed Humanoid Locomotion at Deployment Fidelity**|Thanh Ly et.al.|-|[2610.14061](http://arxiv.org/abs/2610.14061)|null|
 |**2026-10-08**|**A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control**|Octi Zhang et.al.|-|[2610.12465](http://arxiv.org/abs/2610.12465)|null|
 |**2026-10-08**|**Toward Lunar Legged Robots: Field Deployment Lessons at LUNA**|Adrian Fuhrer et.al.|-|[2610.12276](http://arxiv.org/abs/2610.12276)|null|
 |**2026-10-08**|**Walking on Roofs: Exploring the Potential of Walking Robots for Construction Work on Roofs**|Bjoern-Felix Dettmar et.al.|-|[2610.12272](http://arxiv.org/abs/2610.12272)|null|
-|**2026-10-08**|**DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors**|Puying Shen et.al.|-|[2610.11505](http://arxiv.org/abs/2610.11505)|null|
+|**2026-10-13**|**DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors**|Puying Shen et.al.|-|[2610.11505](http://arxiv.org/abs/2610.11505)|null|
 |**2026-10-07**|**Higher-Order Morphology Priors for Quadruped Reinforcement Learning Under Actuator Degradation**|Derek You et.al.|-|[2610.10934](http://arxiv.org/abs/2610.10934)|null|
 |**2026-10-07**|**TAPNAV: Humanoid Navigation through Tactile Active Perception**|Huaze Liu et.al.|-|[2610.10748](http://arxiv.org/abs/2610.10748)|null|
 |**2026-10-07**|**HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion**|Mike Zhang et.al.|-|[2610.10489](http://arxiv.org/abs/2610.10489)|null|
@@ -104,12 +109,15 @@
 |**2026-07-16**|**ADP: Adversarial Dynamics Priors for Physically Grounded Humanoid Locomotion**|Seokju Lee et.al.|-|[2607.03454](http://arxiv.org/abs/2607.03454)|null|
 |**2026-07-02**|**Multi-Rate Nonlinear Model Predictive Control for Wall-Supported Bipedal Locomotion of Quadrupedal Robots**|Taizoon Chunawala et.al.|0|[2607.01574](http://arxiv.org/abs/2607.01574)|null|
 
-<p align=right>(<a href=#updated-on-20261013>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20261014>back to top</a>)</p>
 
 ## Loco-Manipulation
 
 |Publish Date|Title|Authors|Citations|PDF|Code|
 |---|---|---|---|---|---|
+|**2026-10-12**|**UniLAP: A Unified Latent Action Policy for Cross-Embodiment Manipulation**|Lei Yao et.al.|-|[2610.16969](http://arxiv.org/abs/2610.16969)|null|
+|**2026-10-11**|**Learning Safety-Constrained Whole-Body Loco-Manipulation for Lunar Surface Operations**|Alvaro Belmonte-Baeza et.al.|-|[2610.15486](http://arxiv.org/abs/2610.15486)|null|
+|**2026-10-10**|**Test-Time Compute for Humanoid Behavior Foundation Models**|Weiji Xie et.al.|-|[2610.14896](http://arxiv.org/abs/2610.14896)|null|
 |**2026-10-09**|**Belief-Overlap Partial Inversion: Object-Centric Flow Replanning for Humanoid Loco-Manipulation**|Chen Yu et.al.|-|[2610.13087](http://arxiv.org/abs/2610.13087)|null|
 |**2026-10-09**|**VICAR: Video Imitation with Contact-Aware Retargeting for Humanoid Interactive Skills**|Dvij Kalaria et.al.|-|[2610.13079](http://arxiv.org/abs/2610.13079)|null|
 |**2026-10-08**|**PanTact: Teaching Whole-Body Dexterity with a Wearable Contact Interface**|Xiaomeng Xu et.al.|-|[2610.12558](http://arxiv.org/abs/2610.12558)|null|
@@ -201,7 +209,7 @@
 |**2026-06-28**|**AnyBody: Free-Form Whole-Body Humanoid Control from Arbitrary Keypoint Guidance**|Shuning Li et.al.|-|[2606.29209](http://arxiv.org/abs/2606.29209)|null|
 |**2026-06-26**|**CWI: Composite Humanoid Whole-Body Imitation System for Loco-manipulation**|Wenqi Ge et.al.|-|[2606.27676](http://arxiv.org/abs/2606.27676)|null|
 
-<p align=right>(<a href=#updated-on-20261013>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20261014>back to top</a>)</p>
 
 ## Reinforcement Learning for Legged Robots
 
@@ -225,13 +233,14 @@
 |**2025-02-23**|**Quadruped Robot Simulation Using Deep Reinforcement Learning -- A step towards locomotion policy**|Nabeel Ahmad Khan Jadoon et.al.|-|[2502.16401](http://arxiv.org/abs/2502.16401)|null|
 |**2024-08-28**|**Structural Optimization of Lightweight Bipedal Robot via SERL**|Yi Cheng et.al.|11|[2408.15632](http://arxiv.org/abs/2408.15632)|null|
 
-<p align=right>(<a href=#updated-on-20261013>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20261014>back to top</a>)</p>
 
 ## World Models for Robotics
 
 |Publish Date|Title|Authors|Citations|PDF|Code|
 |---|---|---|---|---|---|
 |**2026-08-13**|**🏆 DreamX-Phi 1.0: Action-Conditioned Video World Model for Robotic Manipulation**| DreamX Team et.al.|5|[2608.13489](http://arxiv.org/abs/2608.13489)|null|
+|**2026-10-12**|**D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control**|Xuan Wen et.al.|-|[2610.17114](http://arxiv.org/abs/2610.17114)|null|
 |**2026-10-07**|**vLLM-Omni Technical Report: A Unified Serving Runtime for Omni-Modality Generation**|vLLM-Omni Team et.al.|-|[2610.09307](http://arxiv.org/abs/2610.09307)|null|
 |**2026-10-06**|**DepthWorld: 3D World Model for Robot Manipulation**|Jai Bardhan et.al.|-|[2610.08780](http://arxiv.org/abs/2610.08780)|null|
 |**2026-10-03**|**Flow Policies as Actions of Skill-Level World Models: Learned and Symbolic Abstractions for Long-Horizon Planning**|Andreu Matoses Gimenez et.al.|-|[2610.04767](http://arxiv.org/abs/2610.04767)|null|
@@ -272,12 +281,13 @@
 |**2026-06-04**|**PiL-World: A Chunk-Wise World Model for VLA Policy-in-the-Loop Evaluation**|Chong Ma et.al.|-|[2606.05773](http://arxiv.org/abs/2606.05773)|null|
 |**2026-06-04**|**OSCAR: Omni-Embodiment Action-Conditioned World Model for Robotics**|Zhuoyuan Wu et.al.|0|[2606.04463](http://arxiv.org/abs/2606.04463)|null|
 
-<p align=right>(<a href=#updated-on-20261013>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20261014>back to top</a>)</p>
 
 ## Humanoid Robots
 
 |Publish Date|Title|Authors|Citations|PDF|Code|
 |---|---|---|---|---|---|
+|**2026-10-01**|**OIL: An Object Interaction Layer for Humanoid Whole-Body Control**|Pranay Dugar et.al.|-|[2610.14033](http://arxiv.org/abs/2610.14033)|null|
 |**2026-10-05**|**InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation**|Yucheng Zhang et.al.|-|[2610.06850](http://arxiv.org/abs/2610.06850)|null|
 |**2026-10-03**|**Continual Humanoid Motion Learning**|Zhewen He et.al.|-|[2610.04231](http://arxiv.org/abs/2610.04231)|null|
 |**2026-10-01**|**MASkillBlender: Decentralized Whole-Body Coordination for Multi-Humanoid Loco-Manipulation via Skill Blending**|Yifan Hu et.al.|-|[2610.01102](http://arxiv.org/abs/2610.01102)|null|
@@ -306,13 +316,15 @@
 |**2026-04-30**|**Make Tracking Easy: Neural Motion Retargeting for Humanoid Whole-body Control**|Qingrui Zhao et.al.|14|[2603.22201](http://arxiv.org/abs/2603.22201)|null|
 |**2026-03-05**|**PhysiFlow: Physics-Aware Humanoid Whole-Body VLA via Multi-Brain Latent Flow Matching and Robust Tracking**|Weikai Qin et.al.|1|[2603.05410](http://arxiv.org/abs/2603.05410)|null|
 
-<p align=right>(<a href=#updated-on-20261013>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20261014>back to top</a>)</p>
 
 ## Character Control & Game RL
 
 |Publish Date|Title|Authors|Citations|PDF|Code|
 |---|---|---|---|---|---|
-|**2026-10-08**|**DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors**|Puying Shen et.al.|-|[2610.11505](http://arxiv.org/abs/2610.11505)|null|
+|**2026-10-13**|**Learning Robot Policies for Whole-Body Mobility Assistance via Dynamic Human Motion Generation**|Shikun Ban et.al.|-|[2610.17750](http://arxiv.org/abs/2610.17750)|null|
+|**2026-10-10**|**Push the Limit: Learning High-Speed Sprinting and Aggressive Cornering on a Full-Scale Humanoid**|Huaxing Huang et.al.|-|[2610.14840](http://arxiv.org/abs/2610.14840)|null|
+|**2026-10-13**|**DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors**|Puying Shen et.al.|-|[2610.11505](http://arxiv.org/abs/2610.11505)|null|
 |**2026-09-20**|**STRIDER: Stepping-Enabled Multi-Gait Hierarchical 3D Loco-Manipulation Framework for Humanoid Robots**|Yuanzhuo Li et.al.|-|[2609.23483](http://arxiv.org/abs/2609.23483)|null|
 |**2026-09-18**|**Beyond Kinematics: Benchmarking Simulation Fidelity for Muscle-Driven Imitation Learning**|Ayah G. Ahmad et.al.|-|[2609.21909](http://arxiv.org/abs/2609.21909)|null|
 |**2026-09-14**|**Flow-Matched Motion Priors: Online Optimal-Transport Rewards for Imitation Learning**|Yilin Zou et.al.|-|[2609.15631](http://arxiv.org/abs/2609.15631)|null|
@@ -335,7 +347,7 @@
 |**2026-05-21**|**HUSKY: Humanoid Skateboarding System via Physics-Aware Whole-Body Control**|Jinrui Han et.al.|5|[2602.03205](http://arxiv.org/abs/2602.03205)|null|
 |**2025-12-13**|**Sim2Real Reinforcement Learning for Soccer skills**|Jonathan Spraggett et.al.|-|[2512.12437](http://arxiv.org/abs/2512.12437)|null|
 
-<p align=right>(<a href=#updated-on-20261013>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20261014>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Gaming722/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Gaming722/cv-arxiv-daily/graphs/contributors
